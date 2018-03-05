@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;NETCOREAPP2_0</DefineConstants>
+    <OutputPath>bin\Debug\netcoreapp2.0\netcoreapp2.0\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
+    <PackageReference Include="Polly" Version="5.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Demo.AspNetCore\Demo.AspNetCore.csproj" />
+    <ProjectReference Include="..\Demo.BackgroundJobs.Hangfire\Demo.BackgroundJobs.Hangfire.csproj" />
+    <ProjectReference Include="..\Demo.Common\Demo.Common.csproj" />
+    <ProjectReference Include="..\Demo.IdentityServer4.EntityFrameworkCore\Demo.IdentityServer4.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Demo.IdentityServer4\Demo.IdentityServer4.csproj" />
+    <ProjectReference Include="..\Demo.Notification.Firebase\Demo.Notification.Firebase.csproj" />
+    <ProjectReference Include="..\Demo.Storage.EntityFrameworkCore\Demo.Storage.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Demo.Validation.DataAnnotations\Demo.Validation.DataAnnotations.csproj" />
+    <ProjectReference Include="..\Demo\Demo.csproj" />
+  </ItemGroup>
+
+</Project>
