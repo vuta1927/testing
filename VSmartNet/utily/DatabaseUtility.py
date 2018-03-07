@@ -6,6 +6,7 @@ from PyQt5.QtCore import pyqtSlot
 import sqlite3
 from configs import database, sqlscriptPath
 import uuid
+from models import user
 
 sqlite3.register_converter('GUID', lambda b: uuid.UUID(bytes_le=b))
 sqlite3.register_adapter(uuid.UUID, lambda u: buffer(u.bytes_le))
@@ -17,15 +18,11 @@ class DatabaseUtility:
         self.username = 'admin'
         self.password = '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918'
         self.fullname = 'admin'
-
         try:
             self.conn = sqlite3.connect(self.db)
-            self.cur = conn.cursor()
-            return self
+            self.cur = self.conn.cursor()
         except sqlite3.Error as e:
-            QMessageBox.critical(None, "An Error occurred",
-                                 e.args[0], QMessageBox.Cancel)
-            return None
+            QMessageBox.critical(None, "An Error occurred",e.args[0], QMessageBox.Cancel)
 
     def InitTables(self):
         try:
@@ -34,32 +31,33 @@ class DatabaseUtility:
             if (script != None):
                 try:
                     self.cur.executescript(script)
+                    self.___InitData___()
                     return True
                 except sqlite3.Error as err:
-                    QMessageBox.critical(
-                        None, "An Error occurred", e.args[0], QMessageBox.Cancel)
+                    QMessageBox.critical(None, "An Error occurred", err.args[0], QMessageBox.Cancel)
                     return None
-        except IOError as (errno, strerro):
-            QMessageBox.critical(None, "An I/O Error occurred",
-                                 format(errno, strerror), QMessageBox.Cancel)
+        except IOError as err:
+            QMessageBox.critical(None, "An I/O Error occurred",err.args[1], QMessageBox.Cancel)
             return None
 
-    def InitData(self):
+    def ___InitData___(self):
         try:
             admin = self.GetUser(self.username)
-            if(admin != None or len(admin) > 0):
+            if(admin.id != None):
                 return
 
-            self.cur.execute('INSERT INTO user (username,password,fullname) VALUES(?,?,?)', [
-                             (self.username, self.password, self.fullname)])
-
+            self.cur.execute('INSERT INTO user (username,password,fullname) VALUES(?,?,?)',(self.username, self.password, self.fullname))
+            self.conn.commit()
+            return True
         except sqlite3.Error as err:
-            pass
+            QMessageBox.critical(None, "An Error occurred", e.args[0], QMessageBox.Cancel)
+            return False
 
     def GetUser(self, username):
         try:
-            self.cur.execute('SELECT id FROM user WHERE username = ?', username)
+            self.cur.execute('SELECT id, username, password, fullname FROM user WHERE username = ?', username)
             result = self.cur.fetchone()
-            return result
+            userobj = user.User(result[0], result[1], result[2], result[3])
+            return userobj
         except sqlite3.Error as err:
             return None
