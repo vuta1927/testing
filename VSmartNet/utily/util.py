@@ -1,0 +1,2 @@
+isAuthen =  False
+currentUser = None
