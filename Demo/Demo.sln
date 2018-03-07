@@ -3,25 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{9BFBA4C3-7FDD-4EBF-B7CC-30D074219E3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo", "Demo\Demo.csproj", "{9BFBA4C3-7FDD-4EBF-B7CC-30D074219E3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Common", "Demo.Common\Demo.Common.csproj", "{CEACDEBA-8FCC-403A-BBEF-A5783511B8D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Common", "Demo.Common\Demo.Common.csproj", "{CEACDEBA-8FCC-403A-BBEF-A5783511B8D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.AspNetCore", "Demo.AspNetCore\Demo.AspNetCore.csproj", "{EE89B4DA-948D-41B3-BB80-8DD410DCD309}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.AspNetCore", "Demo.AspNetCore\Demo.AspNetCore.csproj", "{EE89B4DA-948D-41B3-BB80-8DD410DCD309}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.BackgroundJobs.Hangfire", "Demo.BackgroundJobs.Hangfire\Demo.BackgroundJobs.Hangfire.csproj", "{635D8C42-1332-4FE1-887B-DAA9E0D89BBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.BackgroundJobs.Hangfire", "Demo.BackgroundJobs.Hangfire\Demo.BackgroundJobs.Hangfire.csproj", "{635D8C42-1332-4FE1-887B-DAA9E0D89BBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.IdentityServer4", "Demo.IdentityServer4\Demo.IdentityServer4.csproj", "{53EC69C1-A93E-4028-8F7E-FC381181B14E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.IdentityServer4", "Demo.IdentityServer4\Demo.IdentityServer4.csproj", "{53EC69C1-A93E-4028-8F7E-FC381181B14E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.IdentityServer4.EntityFrameworkCore", "Demo.IdentityServer4.EntityFrameworkCore\Demo.IdentityServer4.EntityFrameworkCore.csproj", "{D66B356E-4085-4C8C-83D3-7CD123EA3CB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.IdentityServer4.EntityFrameworkCore", "Demo.IdentityServer4.EntityFrameworkCore\Demo.IdentityServer4.EntityFrameworkCore.csproj", "{D66B356E-4085-4C8C-83D3-7CD123EA3CB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Notification.Firebase", "Demo.Notification.Firebase\Demo.Notification.Firebase.csproj", "{A0C2FE8F-37EC-4470-8362-D82BE1C4D05F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Notification.Firebase", "Demo.Notification.Firebase\Demo.Notification.Firebase.csproj", "{A0C2FE8F-37EC-4470-8362-D82BE1C4D05F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Storage.EntityFrameworkCore", "Demo.Storage.EntityFrameworkCore\Demo.Storage.EntityFrameworkCore.csproj", "{267BBE88-99F9-443E-B694-B3269BC420AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Storage.EntityFrameworkCore", "Demo.Storage.EntityFrameworkCore\Demo.Storage.EntityFrameworkCore.csproj", "{267BBE88-99F9-443E-B694-B3269BC420AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Validation.DataAnnotations", "Demo.Validation.DataAnnotations\Demo.Validation.DataAnnotations.csproj", "{A22FE549-314D-4934-9E3F-E6820381C691}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Validation.DataAnnotations", "Demo.Validation.DataAnnotations\Demo.Validation.DataAnnotations.csproj", "{A22FE549-314D-4934-9E3F-E6820381C691}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{4A46B846-9A70-48EF-B0A6-A150DC24BF3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{6A62A28E-4BF3-429F-8EDB-22306D048EAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,10 +65,10 @@ Global
 		{A22FE549-314D-4934-9E3F-E6820381C691}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A22FE549-314D-4934-9E3F-E6820381C691}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A22FE549-314D-4934-9E3F-E6820381C691}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4A46B846-9A70-48EF-B0A6-A150DC24BF3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4A46B846-9A70-48EF-B0A6-A150DC24BF3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4A46B846-9A70-48EF-B0A6-A150DC24BF3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A46B846-9A70-48EF-B0A6-A150DC24BF3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A62A28E-4BF3-429F-8EDB-22306D048EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A62A28E-4BF3-429F-8EDB-22306D048EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A62A28E-4BF3-429F-8EDB-22306D048EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A62A28E-4BF3-429F-8EDB-22306D048EAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

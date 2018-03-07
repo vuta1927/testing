@@ -1,0 +1,11 @@
+E:\GitHub\testing\Demo\Demo.Storage.EntityFrameworkCore\bin\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.deps.json
+E:\GitHub\testing\Demo\Demo.Storage.EntityFrameworkCore\bin\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.dll
+E:\GitHub\testing\Demo\Demo.Storage.EntityFrameworkCore\bin\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.pdb
+E:\GitHub\testing\Demo\Demo.Storage.EntityFrameworkCore\bin\Debug\netstandard2.0\Demo.dll
+E:\GitHub\testing\Demo\Demo.Storage.EntityFrameworkCore\bin\Debug\netstandard2.0\Demo.pdb
+E:\GitHub\testing\Demo\Demo.Storage.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.csproj.CoreCompileInputs.cache
+E:\GitHub\testing\Demo\Demo.Storage.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.AssemblyInfoInputs.cache
+E:\GitHub\testing\Demo\Demo.Storage.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.AssemblyInfo.cs
+E:\GitHub\testing\Demo\Demo.Storage.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.dll
+E:\GitHub\testing\Demo\Demo.Storage.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.pdb
+E:\GitHub\testing\Demo\Demo.Storage.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.csprojResolveAssemblyReference.cache
