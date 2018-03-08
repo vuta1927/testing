@@ -16,6 +16,7 @@ namespace WebApi.Model
         public DbSet<PersistedGrantEntity> PersistedGrants { get; set; }
         public DbSet<Road> Roads { get; set; }
         public DbSet<Map> Maps { get; set; }
+        public DbSet<MapRole> MapRoles { get; set; }
     }
 
 }
