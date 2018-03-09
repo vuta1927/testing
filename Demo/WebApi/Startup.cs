@@ -30,7 +30,7 @@ namespace WebApi
 {
     public class Startup
     {
-        private static string _defaultCorsPolicyName = "localhost";
+        private static string _defaultCorsPolicyName = "http://localhost:4200";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -41,8 +41,10 @@ namespace WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
-
+            services.AddMvc()
+                .AddJsonOptions(
+                options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            );
             services.AddDomain(options =>
             {
                 options.DefaultNameOrConnectionString = Configuration.GetConnectionString("Default");

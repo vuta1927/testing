@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -29,11 +30,11 @@ namespace WebApi.Controllers.map
 
         // GET: api/Maps
         [HttpGet]
-        public IEnumerable<Map> GetMaps()
+        public IActionResult GetMaps()
         {
-            var email = User.FindFirst("sub")?.Value;
-
-            return _context.Maps;
+            //var email = User.FindFirst("sub")?.Value;
+            var data = _context.Maps.Include(map=>map.Roads);
+            return Ok(data);
         }
 
         // GET: api/Maps/5
