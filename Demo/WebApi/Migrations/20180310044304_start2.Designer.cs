@@ -14,8 +14,8 @@ using WebApi.Model;
 namespace WebApi.Migrations
 {
     [DbContext(typeof(DemoContext))]
-    [Migration("20180307101204_startDemo")]
-    partial class startDemo
+    [Migration("20180310044304_start2")]
+    partial class start2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -385,6 +385,30 @@ namespace WebApi.Migrations
                     b.ToTable("Settings");
                 });
 
+            modelBuilder.Entity("WebApi.Model.GoogleRoad", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Color");
+
+                    b.Property<string>("Direction");
+
+                    b.Property<double>("Distance");
+
+                    b.Property<int>("MapComponentId");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("Paths");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MapComponentId");
+
+                    b.ToTable("GoogleRoads");
+                });
+
             modelBuilder.Entity("WebApi.Model.Map", b =>
                 {
                     b.Property<int>("Id")
@@ -397,28 +421,37 @@ namespace WebApi.Migrations
                     b.ToTable("Maps");
                 });
 
-            modelBuilder.Entity("WebApi.Model.Road", b =>
+            modelBuilder.Entity("WebApi.Model.MapComponent", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Color");
+                    b.Property<int>("MapId");
 
-                    b.Property<string>("Direction");
+                    b.HasKey("Id");
 
-                    b.Property<double>("Distance");
+                    b.HasIndex("MapId")
+                        .IsUnique();
+
+                    b.ToTable("MapComponents");
+                });
+
+            modelBuilder.Entity("WebApi.Model.MapRole", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
 
                     b.Property<int>("MapId");
 
-                    b.Property<string>("Name");
-
-                    b.Property<string>("Paths");
+                    b.Property<int>("RoleId");
 
                     b.HasKey("Id");
 
                     b.HasIndex("MapId");
 
-                    b.ToTable("Roads");
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("MapRoles");
                 });
 
             modelBuilder.Entity("Demo.Security.Permissions.Permission", b =>
@@ -467,11 +500,32 @@ namespace WebApi.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("WebApi.Model.Road", b =>
+            modelBuilder.Entity("WebApi.Model.GoogleRoad", b =>
+                {
+                    b.HasOne("WebApi.Model.MapComponent", "MapComponent")
+                        .WithMany("Roads")
+                        .HasForeignKey("MapComponentId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("WebApi.Model.MapComponent", b =>
                 {
                     b.HasOne("WebApi.Model.Map", "Map")
-                        .WithMany("Roads")
+                        .WithOne("MapComponent")
+                        .HasForeignKey("WebApi.Model.MapComponent", "MapId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("WebApi.Model.MapRole", b =>
+                {
+                    b.HasOne("WebApi.Model.Map", "Map")
+                        .WithMany()
                         .HasForeignKey("MapId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Demo.Security.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

@@ -384,6 +384,30 @@ namespace WebApi.Migrations
                     b.ToTable("Settings");
                 });
 
+            modelBuilder.Entity("WebApi.Model.GoogleRoad", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Color");
+
+                    b.Property<string>("Direction");
+
+                    b.Property<double>("Distance");
+
+                    b.Property<int>("MapComponentId");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("Paths");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MapComponentId");
+
+                    b.ToTable("GoogleRoads");
+                });
+
             modelBuilder.Entity("WebApi.Model.Map", b =>
                 {
                     b.Property<int>("Id")
@@ -394,6 +418,21 @@ namespace WebApi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Maps");
+                });
+
+            modelBuilder.Entity("WebApi.Model.MapComponent", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("MapId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MapId")
+                        .IsUnique();
+
+                    b.ToTable("MapComponents");
                 });
 
             modelBuilder.Entity("WebApi.Model.MapRole", b =>
@@ -412,30 +451,6 @@ namespace WebApi.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("MapRoles");
-                });
-
-            modelBuilder.Entity("WebApi.Model.Road", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Color");
-
-                    b.Property<string>("Direction");
-
-                    b.Property<double>("Distance");
-
-                    b.Property<int>("MapId");
-
-                    b.Property<string>("Name");
-
-                    b.Property<string>("Paths");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("MapId");
-
-                    b.ToTable("Roads");
                 });
 
             modelBuilder.Entity("Demo.Security.Permissions.Permission", b =>
@@ -484,6 +499,22 @@ namespace WebApi.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
+            modelBuilder.Entity("WebApi.Model.GoogleRoad", b =>
+                {
+                    b.HasOne("WebApi.Model.MapComponent", "MapComponent")
+                        .WithMany("Roads")
+                        .HasForeignKey("MapComponentId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("WebApi.Model.MapComponent", b =>
+                {
+                    b.HasOne("WebApi.Model.Map", "Map")
+                        .WithOne("MapComponent")
+                        .HasForeignKey("WebApi.Model.MapComponent", "MapId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
             modelBuilder.Entity("WebApi.Model.MapRole", b =>
                 {
                     b.HasOne("WebApi.Model.Map", "Map")
@@ -494,14 +525,6 @@ namespace WebApi.Migrations
                     b.HasOne("Demo.Security.Role", "Role")
                         .WithMany()
                         .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("WebApi.Model.Road", b =>
-                {
-                    b.HasOne("WebApi.Model.Map", "Map")
-                        .WithMany("Roads")
-                        .HasForeignKey("MapId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

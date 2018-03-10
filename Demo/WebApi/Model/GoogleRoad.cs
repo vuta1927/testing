@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WebApi.Model
 {
-    public class Road
+    public class GoogleRoad
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -12,7 +12,8 @@ namespace WebApi.Model
         public string Color { get; set; }
         public double Distance { get; set; }
         public string Direction { get; set; }
-        public int MapId { get; set; }
-        public virtual Map Map { get; set; }
+        public int MapComponentId { get; set; }
+        public virtual MapComponent MapComponent { get; set; }
+
     }
 }

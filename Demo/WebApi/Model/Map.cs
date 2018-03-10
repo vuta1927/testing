@@ -9,6 +9,6 @@ namespace WebApi.Model
     {
         public int Id { get; set; }
         public int Type { get; set; }
-        public virtual ICollection<Road> Roads { get; set; }
+        public virtual MapComponent MapComponent { get; set; }
     }
 }

@@ -13,9 +13,36 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using WebApi.Core.Authorization;
 using WebApi.Model;
+using  WebApi.Util;
 
 namespace WebApi.Controllers.map
 {
+    public class GRoad: GoogleRoad
+    {
+        public int MapId { get; set; }
+        public new Direction Direction { get; set; }
+        public new ICollection<Coordinate> Paths { get; set; }
+
+    }
+
+    public class Direction
+    {
+        public string Value { get; set; }
+        public string Display { get; set; }
+    }
+
+    public class Coordinate
+    {
+        public double Lat { get; set; }
+        public double Lng { get; set; }
+    }
+
+    public class GMapConponent: MapComponent
+    {
+        public new ICollection<GRoad> Roads { get; set; }
+    }
+
+
     [Produces("application/json")]
     [Route("api/Maps")]
     [AppAuthorize(DemoPermissions.ViewMap)]
@@ -33,7 +60,31 @@ namespace WebApi.Controllers.map
         public IActionResult GetMaps()
         {
             //var email = User.FindFirst("sub")?.Value;
-            var data = _context.Maps.Include(map=>map.Roads);
+            var result = new List<Map>();
+            var data = _context.Maps.Include(map=>map.MapComponent).ThenInclude(com=>com.Roads);
+            foreach (var map in data)
+            {
+                var newComponent = new GMapConponent();
+                var newRoads = new List<GRoad>();
+                foreach (var baseRoad in map.MapComponent.Roads)
+                {
+                    var newRoad = new GRoad()
+                    {
+                        Id = baseRoad.Id,
+                        Color = baseRoad.Color,
+                        Direction = new Direction(){Display = baseRoad.Direction, Value = Util.MapUtilities.ConvertToUnSign(baseRoad.Direction)},
+                        Distance = baseRoad.Distance,
+                        Name = baseRoad.Name,
+                        Paths = ConvertCoordinates(baseRoad.Paths),
+                        MapId = map.Id
+                    };
+                    newRoads.Add(newRoad);
+                }
+                newComponent.Id = map.MapComponent.Id;
+                newComponent.Roads = newRoads;
+                map.MapComponent = newComponent;
+                //result.Add(newMap);
+            }
             return Ok(data);
         }
 
@@ -134,5 +185,22 @@ namespace WebApi.Controllers.map
         {
             return _context.Maps.Any(e => e.Id == id);
         }
+
+        private ICollection<Coordinate> ConvertCoordinates(string paths)
+        {
+            var result = new List<Coordinate>();
+            var temp = paths.Split(';');
+            foreach (var t in temp)
+            {
+                var coord = new Coordinate();
+                var arrCoord = t.Split(',');
+                coord.Lat = Double.Parse(arrCoord[0]);
+                coord.Lng = Double.Parse(arrCoord[1]);
+                result.Add(coord);
+            }
+
+            return result;
+        }
     }
+
 }

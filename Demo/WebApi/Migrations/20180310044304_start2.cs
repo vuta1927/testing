@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace WebApi.Migrations
 {
-    public partial class start : Migration
+    public partial class start2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

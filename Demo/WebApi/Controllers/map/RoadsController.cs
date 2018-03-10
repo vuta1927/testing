@@ -22,9 +22,9 @@ namespace Web.Controllers.road
 
         // GET: api/Roads
         [HttpGet]
-        public IEnumerable<Road> GetRoads()
+        public IEnumerable<GoogleRoad> GetRoads()
         {
-            return _context.Roads;
+            return _context.GoogleRoads;
         }
 
         // GET: api/Roads/5
@@ -36,7 +36,7 @@ namespace Web.Controllers.road
                 return BadRequest(ModelState);
             }
 
-            var road = await _context.Roads.SingleOrDefaultAsync(m => m.Id == id);
+            var road = await _context.GoogleRoads.SingleOrDefaultAsync(m => m.Id == id);
 
             if (road == null)
             {
@@ -48,7 +48,7 @@ namespace Web.Controllers.road
 
         // PUT: api/Roads/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutRoad([FromRoute] int id, [FromBody] Road road)
+        public async Task<IActionResult> PutRoad([FromRoute] int id, [FromBody] GoogleRoad road)
         {
             if (!ModelState.IsValid)
             {
@@ -83,14 +83,14 @@ namespace Web.Controllers.road
 
         // POST: api/Roads
         [HttpPost]
-        public async Task<IActionResult> PostRoad([FromBody] Road road)
+        public async Task<IActionResult> PostRoad([FromBody] GoogleRoad road)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            _context.Roads.Add(road);
+            _context.GoogleRoads.Add(road);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetRoad", new { id = road.Id }, road);
@@ -105,13 +105,13 @@ namespace Web.Controllers.road
                 return BadRequest(ModelState);
             }
 
-            var road = await _context.Roads.SingleOrDefaultAsync(m => m.Id == id);
+            var road = await _context.GoogleRoads.SingleOrDefaultAsync(m => m.Id == id);
             if (road == null)
             {
                 return NotFound();
             }
 
-            _context.Roads.Remove(road);
+            _context.GoogleRoads.Remove(road);
             await _context.SaveChangesAsync();
 
             return Ok(road);
@@ -119,7 +119,7 @@ namespace Web.Controllers.road
 
         private bool RoadExists(int id)
         {
-            return _context.Roads.Any(e => e.Id == id);
+            return _context.GoogleRoads.Any(e => e.Id == id);
         }
     }
 }

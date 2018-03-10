@@ -22,7 +22,7 @@ class DatabaseUtility:
             self.conn = sqlite3.connect(self.db)
             self.cur = self.conn.cursor()
         except sqlite3.Error as e:
-            QMessageBox.critical(None, "An Error occurred",e.args[0], QMessageBox.Cancel)
+            print("[-] An Error occurred " + e.args[0])
 
     def InitTables(self):
         try:
@@ -34,10 +34,10 @@ class DatabaseUtility:
                     self.___InitData___()
                     return True
                 except sqlite3.Error as err:
-                    QMessageBox.critical(None, "An Error occurred", err.args[0], QMessageBox.Cancel)
+                    print("[-] Sqlite3 An Error occurred " + err.args[0])
                     return None
         except IOError as err:
-            QMessageBox.critical(None, "An I/O Error occurred",err.args[1], QMessageBox.Cancel)
+            print("[-] An I/O Error occurred " + err.args[1])
             return None
 
     def ___InitData___(self):
@@ -50,7 +50,7 @@ class DatabaseUtility:
             self.conn.commit()
             return True
         except sqlite3.Error as err:
-            QMessageBox.critical(None, "An Error occurred", e.args[0], QMessageBox.Cancel)
+            print("An Error occurred " + e.args[0])
             return False
 
     def GetUser(self, username):
