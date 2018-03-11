@@ -5430,7 +5430,7 @@
   },
   "libraries": {
     "Dapper/1.50.1": {
-      "sha512": "NIE9+9/Dqh0SF1MWBvuMGg0A8bgTdu8S0HMRrpFvlpnpIO/WklVVcaLS4ZtdI3dvxMmYiJoKBn7se3mgndUV9A==",
+      "sha512": "UnvcSLoFOriBz9uMTwWmhhpvkPke91OfouxkWK+88zrFXbm38DP0MmQNjFYIsnPUnvPd/pC+nhgm+nM+mkdtTg==",
       "type": "package",
       "path": "dapper/1.50.1",
       "files": [
@@ -13962,8 +13962,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anhvu\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13972,20 +13971,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\GitHub\\testing\\Demo\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "D:\\Projects\\testing\\Demo\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "E:\\GitHub\\testing\\Demo\\WebApi\\WebApi.csproj",
-      "packagesPath": "C:\\Users\\anhvu\\.nuget\\packages\\",
-      "outputPath": "E:\\GitHub\\testing\\Demo\\WebApi\\obj\\",
+      "projectPath": "D:\\Projects\\testing\\Demo\\WebApi\\WebApi.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\testing\\Demo\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\anhvu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -13997,32 +13994,32 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\GitHub\\testing\\Demo\\Demo.Notification.Firebase\\Demo.Notification.Firebase.csproj": {
-              "projectPath": "E:\\GitHub\\testing\\Demo\\Demo.Notification.Firebase\\Demo.Notification.Firebase.csproj"
+            "D:\\Projects\\testing\\Demo\\Demo\\Demo.csproj": {
+              "projectPath": "D:\\Projects\\testing\\Demo\\Demo\\Demo.csproj"
             },
-            "E:\\GitHub\\testing\\Demo\\Demo.Common\\Demo.Common.csproj": {
-              "projectPath": "E:\\GitHub\\testing\\Demo\\Demo.Common\\Demo.Common.csproj"
+            "D:\\Projects\\testing\\Demo\\Demo.AspNetCore\\Demo.AspNetCore.csproj": {
+              "projectPath": "D:\\Projects\\testing\\Demo\\Demo.AspNetCore\\Demo.AspNetCore.csproj"
             },
-            "E:\\GitHub\\testing\\Demo\\Demo.Storage.EntityFrameworkCore\\Demo.Storage.EntityFrameworkCore.csproj": {
-              "projectPath": "E:\\GitHub\\testing\\Demo\\Demo.Storage.EntityFrameworkCore\\Demo.Storage.EntityFrameworkCore.csproj"
+            "D:\\Projects\\testing\\Demo\\Demo.Common\\Demo.Common.csproj": {
+              "projectPath": "D:\\Projects\\testing\\Demo\\Demo.Common\\Demo.Common.csproj"
             },
-            "E:\\GitHub\\testing\\Demo\\Demo.IdentityServer4.EntityFrameworkCore\\Demo.IdentityServer4.EntityFrameworkCore.csproj": {
-              "projectPath": "E:\\GitHub\\testing\\Demo\\Demo.IdentityServer4.EntityFrameworkCore\\Demo.IdentityServer4.EntityFrameworkCore.csproj"
+            "D:\\Projects\\testing\\Demo\\Demo.Notification.Firebase\\Demo.Notification.Firebase.csproj": {
+              "projectPath": "D:\\Projects\\testing\\Demo\\Demo.Notification.Firebase\\Demo.Notification.Firebase.csproj"
             },
-            "E:\\GitHub\\testing\\Demo\\Demo.BackgroundJobs.Hangfire\\Demo.BackgroundJobs.Hangfire.csproj": {
-              "projectPath": "E:\\GitHub\\testing\\Demo\\Demo.BackgroundJobs.Hangfire\\Demo.BackgroundJobs.Hangfire.csproj"
+            "D:\\Projects\\testing\\Demo\\Demo.Storage.EntityFrameworkCore\\Demo.Storage.EntityFrameworkCore.csproj": {
+              "projectPath": "D:\\Projects\\testing\\Demo\\Demo.Storage.EntityFrameworkCore\\Demo.Storage.EntityFrameworkCore.csproj"
             },
-            "E:\\GitHub\\testing\\Demo\\Demo.AspNetCore\\Demo.AspNetCore.csproj": {
-              "projectPath": "E:\\GitHub\\testing\\Demo\\Demo.AspNetCore\\Demo.AspNetCore.csproj"
+            "D:\\Projects\\testing\\Demo\\Demo.BackgroundJobs.Hangfire\\Demo.BackgroundJobs.Hangfire.csproj": {
+              "projectPath": "D:\\Projects\\testing\\Demo\\Demo.BackgroundJobs.Hangfire\\Demo.BackgroundJobs.Hangfire.csproj"
             },
-            "E:\\GitHub\\testing\\Demo\\Demo.Validation.DataAnnotations\\Demo.Validation.DataAnnotations.csproj": {
-              "projectPath": "E:\\GitHub\\testing\\Demo\\Demo.Validation.DataAnnotations\\Demo.Validation.DataAnnotations.csproj"
+            "D:\\Projects\\testing\\Demo\\Demo.IdentityServer4\\Demo.IdentityServer4.csproj": {
+              "projectPath": "D:\\Projects\\testing\\Demo\\Demo.IdentityServer4\\Demo.IdentityServer4.csproj"
             },
-            "E:\\GitHub\\testing\\Demo\\Demo.IdentityServer4\\Demo.IdentityServer4.csproj": {
-              "projectPath": "E:\\GitHub\\testing\\Demo\\Demo.IdentityServer4\\Demo.IdentityServer4.csproj"
+            "D:\\Projects\\testing\\Demo\\Demo.Validation.DataAnnotations\\Demo.Validation.DataAnnotations.csproj": {
+              "projectPath": "D:\\Projects\\testing\\Demo\\Demo.Validation.DataAnnotations\\Demo.Validation.DataAnnotations.csproj"
             },
-            "E:\\GitHub\\testing\\Demo\\Demo\\Demo.csproj": {
-              "projectPath": "E:\\GitHub\\testing\\Demo\\Demo\\Demo.csproj"
+            "D:\\Projects\\testing\\Demo\\Demo.IdentityServer4.EntityFrameworkCore\\Demo.IdentityServer4.EntityFrameworkCore.csproj": {
+              "projectPath": "D:\\Projects\\testing\\Demo\\Demo.IdentityServer4.EntityFrameworkCore\\Demo.IdentityServer4.EntityFrameworkCore.csproj"
             }
           }
         }
@@ -14036,42 +14033,42 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "IdentityServer4.AccessTokenValidation": {
-            "target": "Package",
-            "version": "[2.4.0, )"
-          },
-          "Microsoft.AspNetCore.All": {
-            "target": "Package",
-            "version": "[2.0.5, )"
-          },
-          "Microsoft.EntityFrameworkCore.Design": {
-            "target": "Package",
-            "version": "[2.0.1, )"
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "[2.0.1, )"
-          },
           "Microsoft.EntityFrameworkCore.Tools": {
             "target": "Package",
-            "version": "[2.0.1, )"
-          },
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "[2.0.0, )",
-            "autoReferenced": true
-          },
-          "Microsoft.VisualStudio.Web.CodeGeneration": {
-            "target": "Package",
-            "version": "[2.0.2, )"
+            "version": "2.0.1"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
-            "version": "[2.0.2, )"
+            "version": "2.0.2"
+          },
+          "IdentityServer4.AccessTokenValidation": {
+            "target": "Package",
+            "version": "2.4.0"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "target": "Package",
+            "version": "2.0.1"
           },
           "Polly": {
             "target": "Package",
-            "version": "[5.8.0, )"
+            "version": "5.8.0"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "2.0.0",
+            "autoReferenced": true
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "2.0.1"
+          },
+          "Microsoft.AspNetCore.All": {
+            "target": "Package",
+            "version": "2.0.5"
+          },
+          "Microsoft.VisualStudio.Web.CodeGeneration": {
+            "target": "Package",
+            "version": "2.0.2"
           }
         },
         "imports": [

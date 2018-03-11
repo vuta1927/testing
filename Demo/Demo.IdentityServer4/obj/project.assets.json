@@ -718,7 +718,7 @@
           }
         }
       },
-      "NETStandard.Library/2.0.1": {
+      "NETStandard.Library/2.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -2719,14 +2719,12 @@
         "version.txt"
       ]
     },
-    "NETStandard.Library/2.0.1": {
-      "sha512": "oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
+    "NETStandard.Library/2.0.0": {
+      "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
       "type": "package",
-      "path": "netstandard.library/2.0.1",
+      "path": "netstandard.library/2.0.0",
       "files": [
         "LICENSE.TXT",
-        "NETStandard.Library.2.0.1.nupkg.sha512",
-        "NETStandard.Library.nuspec",
         "THIRD-PARTY-NOTICES.TXT",
         "build/NETStandard.Library.targets",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -2844,7 +2842,9 @@
         "build/netstandard2.0/ref/mscorlib.dll",
         "build/netstandard2.0/ref/netstandard.dll",
         "build/netstandard2.0/ref/netstandard.xml",
-        "lib/netstandard1.0/_._"
+        "lib/netstandard1.0/_._",
+        "netstandard.library.2.0.0.nupkg.sha512",
+        "netstandard.library.nuspec"
       ]
     },
     "Newtonsoft.Json/10.0.3": {
@@ -6479,12 +6479,11 @@
       "Demo >= 1.0.0",
       "IdentityServer4 >= 2.1.1",
       "IdentityServer4.AspNetIdentity >= 2.1.0",
-      "NETStandard.Library >= 2.0.1"
+      "NETStandard.Library >= 2.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anhvu\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -6493,20 +6492,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\GitHub\\testing\\Demo\\Demo.IdentityServer4\\Demo.IdentityServer4.csproj",
+      "projectUniqueName": "D:\\Projects\\testing\\Demo\\Demo.IdentityServer4\\Demo.IdentityServer4.csproj",
       "projectName": "Demo.IdentityServer4",
-      "projectPath": "E:\\GitHub\\testing\\Demo\\Demo.IdentityServer4\\Demo.IdentityServer4.csproj",
-      "packagesPath": "C:\\Users\\anhvu\\.nuget\\packages\\",
-      "outputPath": "E:\\GitHub\\testing\\Demo\\Demo.IdentityServer4\\obj\\",
+      "projectPath": "D:\\Projects\\testing\\Demo\\Demo.IdentityServer4\\Demo.IdentityServer4.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\testing\\Demo\\Demo.IdentityServer4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\anhvu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -6518,8 +6515,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "E:\\GitHub\\testing\\Demo\\Demo\\Demo.csproj": {
-              "projectPath": "E:\\GitHub\\testing\\Demo\\Demo\\Demo.csproj"
+            "D:\\Projects\\testing\\Demo\\Demo\\Demo.csproj": {
+              "projectPath": "D:\\Projects\\testing\\Demo\\Demo\\Demo.csproj"
             }
           }
         }
@@ -6533,19 +6530,19 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
-          "IdentityServer4": {
-            "target": "Package",
-            "version": "[2.1.1, )"
-          },
-          "IdentityServer4.AspNetIdentity": {
-            "target": "Package",
-            "version": "[2.1.0, )"
-          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.1, )",
+            "version": "2.0.0",
             "autoReferenced": true
+          },
+          "IdentityServer4.AspNetIdentity": {
+            "target": "Package",
+            "version": "2.1.0"
+          },
+          "IdentityServer4": {
+            "target": "Package",
+            "version": "2.1.1"
           }
         },
         "imports": [
