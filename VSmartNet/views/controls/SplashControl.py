@@ -1,8 +1,8 @@
 #!/usr/bin/python
 import sys
 from constants import *
-from PyQt5.QtWidgets import QDialog, QMessageBox
-from PyQt5.QtCore import pyqtSlot
+from PyQt5.QtWidgets import QDialog, QMessageBox, QDesktopWidget
+from PyQt5.QtCore import pyqtSlot, Qt
 from core import Database
 from views.controls.LoginControl import Login
 import enviroments
@@ -22,9 +22,6 @@ class Splash(QDialog, FORM_SPLASH):
             if i == 100:
                 self.hide()
                 self.is_login()
-                # login = Login()
-                # login.show()
-                # login.exec_()
             if message is not '':
                 self.lblLoading.setText(message)
         else:
@@ -41,5 +38,13 @@ class Splash(QDialog, FORM_SPLASH):
             pass
         else:
             login = Login(self)
+            login.setWindowFlags(Qt.Window |
+                              Qt.CustomizeWindowHint |
+                              Qt.WindowTitleHint |
+                              Qt.WindowStaysOnTopHint)
             login.show()
+            qtRectangle = login.frameGeometry()
+            centerPoint = QDesktopWidget().availableGeometry().center()
+            qtRectangle.moveCenter(centerPoint)
+            login.move(qtRectangle.topLeft())
             login.exec_()

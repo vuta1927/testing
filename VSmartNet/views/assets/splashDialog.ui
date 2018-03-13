@@ -2,13 +2,25 @@
 <ui version="4.0">
  <class>SplashDialog</class>
  <widget class="QDialog" name="SplashDialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>63</height>
+    <height>80</height>
    </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>80</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
   </property>
   <property name="windowTitle">
    <string>VSmart Net</string>
@@ -18,10 +30,19 @@
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QLabel" name="lblLoading">
+       <property name="maximumSize">
+        <size>
+         <width>380</width>
+         <height>16</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>10</pointsize>
         </font>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
        </property>
        <property name="text">
         <string>Loading ...</string>
@@ -34,6 +55,19 @@
         <number>0</number>
        </property>
       </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
      </item>
     </layout>
    </item>

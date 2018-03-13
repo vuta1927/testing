@@ -9,7 +9,7 @@ def main():
     window = MainControl.Main()
     window.show()
     window.setup_config()
-    app.exec_()
+    sys.exit(app.exec_())
 
 if __name__ == "__main__":
     try:

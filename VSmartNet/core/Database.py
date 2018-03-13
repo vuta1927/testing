@@ -2,7 +2,6 @@
 import sys
 from PyQt5.QtCore import QThread, pyqtSignal
 import pymysql.cursors
-from configs import database
 from models import user
 import uuid
 import time
@@ -10,7 +9,7 @@ class SqlDatabase(QThread):
     mysignal = pyqtSignal(int, bool, str)
     def __init__(self, parent=None):
         QThread.__init__(self, parent)
-        self.db = database
+        self.db = 'smartnet'
         self.defaultUserName = 'admin'
         self.defaultUserPassword = 'c7ad44cbad762a5da0a452f9e854fdc1e0e7a52a38015f23f3eab1d80b931dd472634dfac71cd34ebc35d16ab7fb8a90c81f975113d6c7538dc69dd8de9077ec'
         self.defaultUserFullname = 'admin'
@@ -51,7 +50,7 @@ class SqlDatabase(QThread):
             # print("Something went wrong: {}".format(err))
         
         time.sleep(0.3)
-        self.mysignal.emit(100, 'Database initialled')
+        self.mysignal.emit(100, False, 'Database initialled')
         # print("Setup database finished!")
 
     def getUser(self, username):

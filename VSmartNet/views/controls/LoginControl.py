@@ -2,7 +2,7 @@
 import sys
 import hashlib
 from constants import *
-from PyQt5.QtWidgets import QDialog, QMessageBox
+from PyQt5.QtWidgets import QDialog, QMessageBox, QApplication
 from controllers.UserController import *
 from models.user import User
 
@@ -11,6 +11,10 @@ class Login(QDialog, FORM_LOGIN):
         super(Login, self).__init__(parent)
         self.setupUi(self)
         self.btnLogin.clicked.connect(self.btn_login_pressed)
+        self.btnExit.clicked.connect(self.btn_exit_pressed)
+
+    def btn_exit_pressed(self):
+        sys.exit()
 
     def btn_login_pressed(self):
         login_user = User()
@@ -20,6 +24,7 @@ class Login(QDialog, FORM_LOGIN):
         login_user.password = password_hash
         result = check_authenticate(login_user)
         if result is not False:
+            enviroments.isLogin = True
             self.hide()
             # self.hide()
         else:
