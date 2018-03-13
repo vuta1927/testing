@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Demo.Security;
+using IdentityModel.Client;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using WebApi.Core.Authorization;
@@ -59,10 +60,24 @@ namespace WebApi.Controllers.map
         [HttpGet]
         public IActionResult GetMaps()
         {
-            //var email = User.FindFirst("sub")?.Value;
-            var result = new List<Map>();
-            var data = _context.Maps.Include(map=>map.MapComponent).ThenInclude(com=>com.Roads);
-            foreach (var map in data)
+            var caller = User as ClaimsPrincipal;
+            List<int> roleIds = new List<int>();
+            List<Map> maps = new List<Map>();
+            foreach (var claim in caller.Claims)
+            {
+                if (claim.Type == "Roles")
+                {
+                    var role = _context.Roles.Where(r => r.RoleName == claim.Value).Select(i=>i.Id).FirstOrDefault();
+                    roleIds.Add(role);
+                }
+            }
+            foreach (var id in roleIds)
+            {
+                maps = _context.MapRoles.Where(mr => mr.RoleId == id).Select(i => i.Map).Include(map => map.MapComponent).ThenInclude(com => com.Roads).ToList();
+            }
+            
+            //var data = _context.Maps.Include(map=>map.MapComponent).ThenInclude(com=>com.Roads);
+            foreach (var map in maps)
             {
                 var newComponent = new GMapConponent();
                 var newRoads = new List<GRoad>();
@@ -85,7 +100,7 @@ namespace WebApi.Controllers.map
                 map.MapComponent = newComponent;
                 //result.Add(newMap);
             }
-            return Ok(data);
+            return Ok(maps);
         }
 
         // GET: api/Maps/5

@@ -1126,7 +1126,7 @@
           }
         }
       },
-      "NETStandard.Library/2.0.0": {
+      "NETStandard.Library/2.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -2941,12 +2941,14 @@
         "version.txt"
       ]
     },
-    "NETStandard.Library/2.0.0": {
-      "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+    "NETStandard.Library/2.0.1": {
+      "sha512": "oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
       "type": "package",
-      "path": "netstandard.library/2.0.0",
+      "path": "netstandard.library/2.0.1",
       "files": [
         "LICENSE.TXT",
+        "NETStandard.Library.2.0.1.nupkg.sha512",
+        "NETStandard.Library.nuspec",
         "THIRD-PARTY-NOTICES.TXT",
         "build/NETStandard.Library.targets",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -3064,9 +3066,7 @@
         "build/netstandard2.0/ref/mscorlib.dll",
         "build/netstandard2.0/ref/netstandard.dll",
         "build/netstandard2.0/ref/netstandard.xml",
-        "lib/netstandard1.0/_._",
-        "netstandard.library.2.0.0.nupkg.sha512",
-        "netstandard.library.nuspec"
+        "lib/netstandard1.0/_._"
       ]
     },
     "Newtonsoft.Json/10.0.3": {
@@ -5834,11 +5834,12 @@
       "Microsoft.AspNetCore.Mvc.ViewFeatures >= 2.0.2",
       "Microsoft.Extensions.Caching.Memory >= 2.0.0",
       "Microsoft.Extensions.Identity.Core >= 2.0.1",
-      "NETStandard.Library >= 2.0.0"
+      "NETStandard.Library >= 2.0.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Users\\anhvu\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -5847,18 +5848,20 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\Projects\\testing\\Demo\\Demo.AspNetCore\\Demo.AspNetCore.csproj",
+      "projectUniqueName": "E:\\GitHub\\testing\\Demo\\Demo.AspNetCore\\Demo.AspNetCore.csproj",
       "projectName": "Demo.AspNetCore",
-      "projectPath": "D:\\Projects\\testing\\Demo\\Demo.AspNetCore\\Demo.AspNetCore.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\testing\\Demo\\Demo.AspNetCore\\obj\\",
+      "projectPath": "E:\\GitHub\\testing\\Demo\\Demo.AspNetCore\\Demo.AspNetCore.csproj",
+      "packagesPath": "C:\\Users\\anhvu\\.nuget\\packages\\",
+      "outputPath": "E:\\GitHub\\testing\\Demo\\Demo.AspNetCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\anhvu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -5870,8 +5873,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\Projects\\testing\\Demo\\Demo\\Demo.csproj": {
-              "projectPath": "D:\\Projects\\testing\\Demo\\Demo\\Demo.csproj"
+            "E:\\GitHub\\testing\\Demo\\Demo\\Demo.csproj": {
+              "projectPath": "E:\\GitHub\\testing\\Demo\\Demo\\Demo.csproj"
             }
           }
         }
@@ -5887,49 +5890,49 @@
         "dependencies": {
           "Microsoft.AspNetCore": {
             "target": "Package",
-            "version": "2.0.1"
+            "version": "[2.0.1, )"
+          },
+          "Microsoft.AspNetCore.Antiforgery": {
+            "target": "Package",
+            "version": "[2.0.1, )"
+          },
+          "Microsoft.AspNetCore.Authentication": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           },
           "Microsoft.AspNetCore.Authentication.Cookies": {
             "target": "Package",
-            "version": "2.0.1"
+            "version": "[2.0.1, )"
           },
-          "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+          "Microsoft.AspNetCore.Identity": {
             "target": "Package",
-            "version": "2.0.2"
+            "version": "[2.0.1, )"
           },
           "Microsoft.AspNetCore.Mvc.Core": {
             "target": "Package",
-            "version": "2.0.2"
+            "version": "[2.0.2, )"
+          },
+          "Microsoft.AspNetCore.Mvc.Formatters.Json": {
+            "target": "Package",
+            "version": "[2.0.2, )"
+          },
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+            "target": "Package",
+            "version": "[2.0.2, )"
+          },
+          "Microsoft.Extensions.Caching.Memory": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
+          "Microsoft.Extensions.Identity.Core": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.1, )",
             "autoReferenced": true
-          },
-          "Microsoft.Extensions.Identity.Core": {
-            "target": "Package",
-            "version": "2.0.1"
-          },
-          "Microsoft.AspNetCore.Authentication": {
-            "target": "Package",
-            "version": "2.0.1"
-          },
-          "Microsoft.AspNetCore.Mvc.Formatters.Json": {
-            "target": "Package",
-            "version": "2.0.2"
-          },
-          "Microsoft.Extensions.Caching.Memory": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
-          "Microsoft.AspNetCore.Antiforgery": {
-            "target": "Package",
-            "version": "2.0.1"
-          },
-          "Microsoft.AspNetCore.Identity": {
-            "target": "Package",
-            "version": "2.0.1"
           }
         },
         "imports": [

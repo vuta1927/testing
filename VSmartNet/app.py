@@ -1,14 +1,18 @@
 #!/usr/bin/python
-from PyQt5 import QtCore, QtGui, QtWidgets
-from views import MainWindowUI
 import sys
+from PyQt5.QtWidgets import QApplication
+from views.controls import MainControl
+
 
 def main():
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = MainWindowUI.Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
+    app = QApplication(sys.argv)
+    window = MainControl.Main()
+    window.show()
+    window.setup_config()
+    app.exec_()
 
-if __name__ == "__main__": main()
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception as why:
+        print(why)

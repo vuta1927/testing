@@ -23,8 +23,10 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using WebApi.Model;
 using System.Collections;
+using IdentityServer4.Services;
 using WebApi.Controllers.map;
 using WebApi.Controllers.user;
+using WebApi.Core.Configuration;
 
 namespace WebApi
 {
@@ -135,6 +137,7 @@ namespace WebApi
             );
             services.AddTransient<UserController>();
             services.AddTransient<MapsController>();
+            //services.AddTransient<IProfileService, ProjectProfileService>();
         }
 
 

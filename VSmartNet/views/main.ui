@@ -46,7 +46,7 @@
                 <string>Start</string>
                </property>
                <property name="icon">
-                <iconset resource="resource.qrc">
+                <iconset>
                  <normaloff>:/icon/icon/turn_on_off_power-32.png</normaloff>:/icon/icon/turn_on_off_power-32.png</iconset>
                </property>
               </widget>
@@ -60,7 +60,7 @@
                 <string>Stop</string>
                </property>
                <property name="icon">
-                <iconset resource="resource.qrc">
+                <iconset>
                  <normaloff>:/icon/icon/turn_off_on_power-32.png</normaloff>:/icon/icon/turn_off_on_power-32.png</iconset>
                </property>
               </widget>
@@ -74,7 +74,7 @@
                 <string>Settings</string>
                </property>
                <property name="icon">
-                <iconset resource="resource.qrc">
+                <iconset>
                  <normaloff>:/icon/icon/seo2-18-32.png</normaloff>:/icon/icon/seo2-18-32.png</iconset>
                </property>
               </widget>
@@ -146,7 +146,7 @@
                  <string>Send</string>
                 </property>
                 <property name="icon">
-                 <iconset resource="resource.qrc">
+                 <iconset>
                   <normaloff>:/icon/icon/17-48.png</normaloff>:/icon/icon/17-48.png</iconset>
                 </property>
                 <property name="autoDefault">
@@ -237,7 +237,7 @@
                  <string>Search</string>
                 </property>
                 <property name="icon">
-                 <iconset resource="resource.qrc">
+                 <iconset>
                   <normaloff>:/icon/icon/Search-48.png</normaloff>:/icon/icon/Search-48.png</iconset>
                 </property>
                </widget>
@@ -305,7 +305,7 @@
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionQuit">
    <property name="icon">
-    <iconset resource="resource.qrc">
+    <iconset>
      <normaloff>:/icon/icon/logout-16.png</normaloff>:/icon/icon/logout-16.png</iconset>
    </property>
    <property name="text">
@@ -327,7 +327,7 @@
   </action>
   <action name="actionStart">
    <property name="icon">
-    <iconset resource="resource.qrc">
+    <iconset>
      <normaloff>:/icon/icon/turn_on_off_power-16.png</normaloff>:/icon/icon/turn_on_off_power-16.png</iconset>
    </property>
    <property name="text">
@@ -339,7 +339,7 @@
   </action>
   <action name="actionStop_Server">
    <property name="icon">
-    <iconset resource="resource.qrc">
+    <iconset>
      <normaloff>:/icon/icon/turn_off_on_power-16.png</normaloff>:/icon/icon/turn_off_on_power-16.png</iconset>
    </property>
    <property name="text">
@@ -351,7 +351,7 @@
   </action>
  </widget>
  <resources>
-  <include location="resource.qrc"/>
+  <include location="../resource.qrc"/>
  </resources>
  <connections/>
 </ui>

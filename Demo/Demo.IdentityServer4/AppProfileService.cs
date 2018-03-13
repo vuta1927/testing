@@ -1,4 +1,7 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
+using System.Threading.Tasks;
 using Demo.Security;
 using IdentityServer4.AspNetIdentity;
 using IdentityServer4.Extensions;
@@ -31,12 +34,13 @@ namespace Demo.IdentityServer4
             var roleNames = await _userManager.GetRolesAsync(user);
             if (roleNames.IsNullOrEmpty()) return;
 
+            
             foreach (var roleName in roleNames)
             {
                 var role = await _roleManager.FindByNameAsync(roleName);
                 if (role == null) continue;
                 var roleClaims = await _roleManager.GetClaimsAsync(role);
-
+                roleClaims.Add(new Claim("Roles",roleName));
                 context.IssuedClaims.AddRange(roleClaims);
             }
         }

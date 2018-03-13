@@ -1,0 +1,41 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>views/assets/icon/17-16.png</file>
+    <file>views/assets/icon/17-20.png</file>
+    <file>views/assets/icon/17-24.png</file>
+    <file>views/assets/icon/17-32.png</file>
+    <file>views/assets/icon/17-48.png</file>
+    <file>views/assets/icon/150_-_Cancel-20.png</file>
+    <file>views/assets/icon/Activity Monitor (1).png</file>
+    <file>views/assets/icon/Activity Monitor.png</file>
+    <file>views/assets/icon/login-24.png</file>
+    <file>views/assets/icon/logout-16.png</file>
+    <file>views/assets/icon/logout-20.png</file>
+    <file>views/assets/icon/logout-24.png</file>
+    <file>views/assets/icon/logout-32.png</file>
+    <file>views/assets/icon/logout-48.png</file>
+    <file>views/assets/icon/Search-16.png</file>
+    <file>views/assets/icon/Search-20.png</file>
+    <file>views/assets/icon/Search-24.png</file>
+    <file>views/assets/icon/Search-32.png</file>
+    <file>views/assets/icon/Search-48.png</file>
+    <file>views/assets/icon/seo2-18-16.png</file>
+    <file>views/assets/icon/seo2-18-20.png</file>
+    <file>views/assets/icon/seo2-18-24.png</file>
+    <file>views/assets/icon/seo2-18-32.png</file>
+    <file>views/assets/icon/system-monitor.ico</file>
+    <file>views/assets/icon/turn_off_on_power-16.png</file>
+    <file>views/assets/icon/turn_off_on_power-20.png</file>
+    <file>views/assets/icon/turn_off_on_power-24.png</file>
+    <file>views/assets/icon/turn_off_on_power-32.png</file>
+    <file>views/assets/icon/turn_on_off_power-16.png</file>
+    <file>views/assets/icon/turn_on_off_power-20.png</file>
+    <file>views/assets/icon/turn_on_off_power-24.png</file>
+    <file>views/assets/icon/turn_on_off_power-32.png</file>
+    <file>views/assets/icon/UI-2-18-16.png</file>
+    <file>views/assets/icon/UI-2-18-20.png</file>
+    <file>views/assets/icon/UI-2-18-24.png</file>
+    <file>views/assets/icon/UI-2-18-32.png</file>
+    <file>views/assets/icon/user_login.png</file>
+  </qresource>
+</RCC>
