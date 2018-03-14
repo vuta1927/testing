@@ -137,6 +137,7 @@ namespace WebApi
             );
             services.AddTransient<UserController>();
             services.AddTransient<MapsController>();
+            services.AddTransient<RoadsController>();
             //services.AddTransient<IProfileService, ProjectProfileService>();
         }
 

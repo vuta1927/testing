@@ -207,11 +207,14 @@ namespace WebApi.Controllers.map
             var temp = paths.Split(';');
             foreach (var t in temp)
             {
-                var coord = new Coordinate();
-                var arrCoord = t.Split(',');
-                coord.Lat = Double.Parse(arrCoord[0]);
-                coord.Lng = Double.Parse(arrCoord[1]);
-                result.Add(coord);
+                if (!string.IsNullOrEmpty(t))
+                {
+                    var coord = new Coordinate();
+                    var arrCoord = t.Split(',');
+                    coord.Lat = Double.Parse(arrCoord[0]);
+                    coord.Lng = Double.Parse(arrCoord[1]);
+                    result.Add(coord);
+                }
             }
 
             return result;
