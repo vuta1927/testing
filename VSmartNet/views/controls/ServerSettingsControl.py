@@ -2,6 +2,7 @@
 from constants import *
 from PyQt5.QtWidgets import QDialog, QApplication
 import configs
+import json
 import enviroments
 
 class ServerSettingsDialog(QDialog, FORM_CONFIG):
@@ -19,4 +20,6 @@ class ServerSettingsDialog(QDialog, FORM_CONFIG):
     def btn_save_pressed(self):
         configs.hostAddress = self.txtServerAddress.text()
         configs.hostPort = self.txtPortNumber.text()
+        with open('config.json', 'w') as outfile:
+            json.dump({'HostAddress':configs.hostAddress, 'HostPort':configs.hostPort}, outfile)
         self.hide()

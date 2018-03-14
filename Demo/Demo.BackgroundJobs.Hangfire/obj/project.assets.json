@@ -434,7 +434,7 @@
           "ref/netstandard1.3/_._": {}
         }
       },
-      "NETStandard.Library/2.0.1": {
+      "NETStandard.Library/2.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -1930,7 +1930,7 @@
   },
   "libraries": {
     "Dapper/1.50.1": {
-      "sha512": "NIE9+9/Dqh0SF1MWBvuMGg0A8bgTdu8S0HMRrpFvlpnpIO/WklVVcaLS4ZtdI3dvxMmYiJoKBn7se3mgndUV9A==",
+      "sha512": "UnvcSLoFOriBz9uMTwWmhhpvkPke91OfouxkWK+88zrFXbm38DP0MmQNjFYIsnPUnvPd/pC+nhgm+nM+mkdtTg==",
       "type": "package",
       "path": "dapper/1.50.1",
       "files": [
@@ -2440,14 +2440,12 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "NETStandard.Library/2.0.1": {
-      "sha512": "oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
+    "NETStandard.Library/2.0.0": {
+      "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
       "type": "package",
-      "path": "netstandard.library/2.0.1",
+      "path": "netstandard.library/2.0.0",
       "files": [
         "LICENSE.TXT",
-        "NETStandard.Library.2.0.1.nupkg.sha512",
-        "NETStandard.Library.nuspec",
         "THIRD-PARTY-NOTICES.TXT",
         "build/NETStandard.Library.targets",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -2565,7 +2563,9 @@
         "build/netstandard2.0/ref/mscorlib.dll",
         "build/netstandard2.0/ref/netstandard.dll",
         "build/netstandard2.0/ref/netstandard.xml",
-        "lib/netstandard1.0/_._"
+        "lib/netstandard1.0/_._",
+        "netstandard.library.2.0.0.nupkg.sha512",
+        "netstandard.library.nuspec"
       ]
     },
     "Newtonsoft.Json/10.0.3": {
@@ -6381,12 +6381,11 @@
     ".NETStandard,Version=v2.0": [
       "Demo >= 1.0.0",
       "HangFire >= 1.6.17",
-      "NETStandard.Library >= 2.0.1"
+      "NETStandard.Library >= 2.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anhvu\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -6395,20 +6394,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\GitHub\\testing\\Demo\\Demo.BackgroundJobs.Hangfire\\Demo.BackgroundJobs.Hangfire.csproj",
+      "projectUniqueName": "D:\\Projects\\testing\\Demo\\Demo.BackgroundJobs.Hangfire\\Demo.BackgroundJobs.Hangfire.csproj",
       "projectName": "Demo.BackgroundJobs.Hangfire",
-      "projectPath": "E:\\GitHub\\testing\\Demo\\Demo.BackgroundJobs.Hangfire\\Demo.BackgroundJobs.Hangfire.csproj",
-      "packagesPath": "C:\\Users\\anhvu\\.nuget\\packages\\",
-      "outputPath": "E:\\GitHub\\testing\\Demo\\Demo.BackgroundJobs.Hangfire\\obj\\",
+      "projectPath": "D:\\Projects\\testing\\Demo\\Demo.BackgroundJobs.Hangfire\\Demo.BackgroundJobs.Hangfire.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\testing\\Demo\\Demo.BackgroundJobs.Hangfire\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\anhvu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -6420,8 +6417,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "E:\\GitHub\\testing\\Demo\\Demo\\Demo.csproj": {
-              "projectPath": "E:\\GitHub\\testing\\Demo\\Demo\\Demo.csproj"
+            "D:\\Projects\\testing\\Demo\\Demo\\Demo.csproj": {
+              "projectPath": "D:\\Projects\\testing\\Demo\\Demo\\Demo.csproj"
             }
           }
         }
@@ -6435,15 +6432,15 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
-          "HangFire": {
-            "target": "Package",
-            "version": "[1.6.17, )"
-          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.1, )",
+            "version": "2.0.0",
             "autoReferenced": true
+          },
+          "HangFire": {
+            "target": "Package",
+            "version": "1.6.17"
           }
         },
         "imports": [

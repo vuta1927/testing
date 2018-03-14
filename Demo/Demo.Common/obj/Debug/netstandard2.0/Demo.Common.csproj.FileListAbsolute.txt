@@ -7,3 +7,12 @@ E:\GitHub\testing\Demo\Demo.Common\obj\Debug\netstandard2.0\Demo.Common.Assembly
 E:\GitHub\testing\Demo\Demo.Common\obj\Debug\netstandard2.0\Demo.Common.dll
 E:\GitHub\testing\Demo\Demo.Common\obj\Debug\netstandard2.0\Demo.Common.pdb
 E:\GitHub\testing\Demo\Demo.Common\obj\Debug\netstandard2.0\Demo.Common.csprojResolveAssemblyReference.cache
+D:\Projects\testing\Demo\Demo.Common\bin\Debug\netstandard2.0\Demo.Common.deps.json
+D:\Projects\testing\Demo\Demo.Common\bin\Debug\netstandard2.0\Demo.Common.dll
+D:\Projects\testing\Demo\Demo.Common\bin\Debug\netstandard2.0\Demo.Common.pdb
+D:\Projects\testing\Demo\Demo.Common\obj\Debug\netstandard2.0\Demo.Common.csprojResolveAssemblyReference.cache
+D:\Projects\testing\Demo\Demo.Common\obj\Debug\netstandard2.0\Demo.Common.csproj.CoreCompileInputs.cache
+D:\Projects\testing\Demo\Demo.Common\obj\Debug\netstandard2.0\Demo.Common.AssemblyInfoInputs.cache
+D:\Projects\testing\Demo\Demo.Common\obj\Debug\netstandard2.0\Demo.Common.AssemblyInfo.cs
+D:\Projects\testing\Demo\Demo.Common\obj\Debug\netstandard2.0\Demo.Common.dll
+D:\Projects\testing\Demo\Demo.Common\obj\Debug\netstandard2.0\Demo.Common.pdb

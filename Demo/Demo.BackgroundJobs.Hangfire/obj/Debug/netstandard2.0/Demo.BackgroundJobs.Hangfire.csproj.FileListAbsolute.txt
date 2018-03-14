@@ -9,3 +9,14 @@ E:\GitHub\testing\Demo\Demo.BackgroundJobs.Hangfire\obj\Debug\netstandard2.0\Dem
 E:\GitHub\testing\Demo\Demo.BackgroundJobs.Hangfire\obj\Debug\netstandard2.0\Demo.BackgroundJobs.Hangfire.dll
 E:\GitHub\testing\Demo\Demo.BackgroundJobs.Hangfire\obj\Debug\netstandard2.0\Demo.BackgroundJobs.Hangfire.pdb
 E:\GitHub\testing\Demo\Demo.BackgroundJobs.Hangfire\obj\Debug\netstandard2.0\Demo.BackgroundJobs.Hangfire.csprojResolveAssemblyReference.cache
+D:\Projects\testing\Demo\Demo.BackgroundJobs.Hangfire\bin\Debug\netstandard2.0\Demo.BackgroundJobs.Hangfire.deps.json
+D:\Projects\testing\Demo\Demo.BackgroundJobs.Hangfire\bin\Debug\netstandard2.0\Demo.BackgroundJobs.Hangfire.dll
+D:\Projects\testing\Demo\Demo.BackgroundJobs.Hangfire\bin\Debug\netstandard2.0\Demo.BackgroundJobs.Hangfire.pdb
+D:\Projects\testing\Demo\Demo.BackgroundJobs.Hangfire\bin\Debug\netstandard2.0\Demo.dll
+D:\Projects\testing\Demo\Demo.BackgroundJobs.Hangfire\bin\Debug\netstandard2.0\Demo.pdb
+D:\Projects\testing\Demo\Demo.BackgroundJobs.Hangfire\obj\Debug\netstandard2.0\Demo.BackgroundJobs.Hangfire.csprojResolveAssemblyReference.cache
+D:\Projects\testing\Demo\Demo.BackgroundJobs.Hangfire\obj\Debug\netstandard2.0\Demo.BackgroundJobs.Hangfire.csproj.CoreCompileInputs.cache
+D:\Projects\testing\Demo\Demo.BackgroundJobs.Hangfire\obj\Debug\netstandard2.0\Demo.BackgroundJobs.Hangfire.AssemblyInfoInputs.cache
+D:\Projects\testing\Demo\Demo.BackgroundJobs.Hangfire\obj\Debug\netstandard2.0\Demo.BackgroundJobs.Hangfire.AssemblyInfo.cs
+D:\Projects\testing\Demo\Demo.BackgroundJobs.Hangfire\obj\Debug\netstandard2.0\Demo.BackgroundJobs.Hangfire.dll
+D:\Projects\testing\Demo\Demo.BackgroundJobs.Hangfire\obj\Debug\netstandard2.0\Demo.BackgroundJobs.Hangfire.pdb
