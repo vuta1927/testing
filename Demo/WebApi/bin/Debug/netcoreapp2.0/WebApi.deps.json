@@ -4584,7 +4584,7 @@
     "Dapper/1.50.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UnvcSLoFOriBz9uMTwWmhhpvkPke91OfouxkWK+88zrFXbm38DP0MmQNjFYIsnPUnvPd/pC+nhgm+nM+mkdtTg==",
+      "sha512": "sha512-NIE9+9/Dqh0SF1MWBvuMGg0A8bgTdu8S0HMRrpFvlpnpIO/WklVVcaLS4ZtdI3dvxMmYiJoKBn7se3mgndUV9A==",
       "path": "dapper/1.50.1",
       "hashPath": "dapper.1.50.1.nupkg.sha512"
     },

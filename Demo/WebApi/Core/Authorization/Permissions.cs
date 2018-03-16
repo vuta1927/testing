@@ -8,7 +8,11 @@ namespace WebApi.Core.Authorization
     {
         public static readonly Permission ViewMapPermission = new Permission(DemoPermissions.ViewMap);
 
-        public static readonly Permission EditMapPermission = new Permission(DemoPermissions.EditMap);
+        public static readonly Permission EditMapPermission = new Permission(DemoPermissions.MapEdit);
+
+        public static readonly Permission MapAddPermission = new Permission(DemoPermissions.MapAdd);
+
+        public static readonly Permission MapDeletePermission = new Permission(DemoPermissions.MapDelete);
 
         public static readonly Permission AdminPermission = new Permission(DemoPermissions.Administrator);
 
@@ -20,6 +24,8 @@ namespace WebApi.Core.Authorization
             {
                 ViewMapPermission,
                 EditMapPermission,
+                MapAddPermission,
+                MapDeletePermission,
                 Page,
                 AdminPermission
             };
@@ -31,13 +37,8 @@ namespace WebApi.Core.Authorization
             {
                 new PermissionStereotype
                 {
-                    Name = "Map",
-                    Permissions = new[] { ViewMapPermission, EditMapPermission }
-                },
-                new PermissionStereotype
-                {
-                    Name = "Gmap",
-                    Permissions = new[]{ ViewMapPermission, EditMapPermission }
+                    Name = "Hanoi",
+                    Permissions = new[] { ViewMapPermission, EditMapPermission, MapAddPermission, MapDeletePermission }
                 },
                 new PermissionStereotype
                 {

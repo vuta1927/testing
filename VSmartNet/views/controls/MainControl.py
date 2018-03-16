@@ -6,9 +6,7 @@ from views.controls.ServerSettingsControl import ServerSettingsDialog
 from views.controls.SplashControl import Splash
 import enviroments
 import configs
-import socket
-from threading import Thread
-from core.ServerController import ClientThread
+from core.ServerController import Server
 
 class Main(QMainWindow, FORM_MAIN):
     def __init__(self, parent=None):
@@ -17,25 +15,16 @@ class Main(QMainWindow, FORM_MAIN):
         self.setupUi(self)
         self.btnSetting.clicked.connect(self.open_server_settings_dialog)
         self.btnServerStart.clicked.connect(self.btn_server_start_pressed)
+        self.btnServerStop.clicked.connect()
         enviroments.init()
         configs.init()
 
     def btn_server_start_pressed(self):
-        tcpServer = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        tcpServer.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        tcpServer.bind((configs.hostAddress, configs.hostPort))
-        threads = []
-        while True:
-            tcpServer.listen(4)
-            print("Multithreaded Python server : Waiting for connections from TCP clients...")
-            (conn, (ip, port)) = tcpServer.accept()
-            newthread = ClientThread(ip, port)
-            newthread.start()
-            threads.append(newthread)
+        enviroments.server = Server()
+        enviroments.server.start()
 
-        for t in threads:
-            t.join()
-
+    def btn_server_stop_pressed(self):
+        enviroments.server.stop()
 
     def open_server_settings_dialog(self):
         server_settings_dialog = ServerSettingsDialog()

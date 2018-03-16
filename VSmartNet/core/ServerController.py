@@ -1,45 +1,50 @@
 import socket
 from threading import Thread
-from socketserver import ThreadingMixIn
+import configs
+from PyQt5.QtCore import QThread
+import signal
 
-# Multithreaded Python server : TCP Server Socket Thread Pool
+class Server(QThread):
+    # Register the signal handlers
+    signal.signal(signal.SIGTERM, stop)
+    signal.signal(signal.SIGINT, stop)
+    def __init__(self):
+        Thread.__init__(self)
+        self.host_address = configs.hostAddress
+        self.host_port = configs.hostPort
+        self.client_threads = []
 
+    def run(self):
+        tcp_server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        tcp_server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        tcp_server.bind((self.host_address, self.host_port))
+        while True:
+            tcp_server.listen(4)
+            print("Python server : Waiting for connections from TCP clients...")
+            (conn, (ip, port)) = tcp_server .accept()
+            new_client_thread = ClientThread(ip, port, conn)
+            new_client_thread.start()
+            self.client_threads.append(new_client_thread)
+
+        for t in threads:
+            t.join()
+
+    def stop(self):
+        self.server_signal.emit()
 
 class ClientThread(Thread):
-
-    def __init__(self, ip, port):
+    def __init__(self, ip, port, conn):
         Thread.__init__(self)
         self.ip = ip
         self.port = port
-        print ("[+] New server socket thread started for " + ip + ":" + str(port))
+        self.conn = conn
+        print("[+] New server socket thread started for " + ip + ":" + str(port))
 
     def run(self):
         while True:
-            data = conn.recv(2048)
-            print ("Server received data:", data.decode())
-            MESSAGE = input("Multithreaded Python server : Enter Response from Server/Enter exit:")
-            if MESSAGE == 'exit':
+            data = self.conn.recv(2048)
+            print("Server received data:", data.decode())
+            message = input("Python server : Enter Response from Server/Enter exit:")
+            if message == 'exit':
                 break
-            conn.send(MESSAGE.encode())  # echo
-
-
-# Multithreaded Python server : TCP Server Socket Program Stub
-TCP_IP = '0.0.0.0'
-TCP_PORT = 2004
-BUFFER_SIZE = 20  # Usually 1024, but we need quick response
-
-tcpServer = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-tcpServer.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-tcpServer.bind((TCP_IP, TCP_PORT))
-threads = []
-
-while True:
-    tcpServer.listen(4)
-    print ("Multithreaded Python server : Waiting for connections from TCP clients...")
-    (conn, (ip, port)) = tcpServer.accept()
-    newthread = ClientThread(ip, port)
-    newthread.start()
-    threads.append(newthread)
-
-for t in threads:
-    t.join()
+            self.conn.send(message.encode())  # echo

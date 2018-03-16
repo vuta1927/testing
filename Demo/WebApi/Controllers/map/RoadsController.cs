@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
+using Demo.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using WebApi.Core.Authorization;
 using WebApi.Model;
 
 namespace WebApi.Controllers.map
@@ -22,6 +25,7 @@ namespace WebApi.Controllers.map
 
     [Produces("application/json")]
     [Route("api/Roads")]
+    [AppAuthorize(DemoPermissions.ViewMap)]
     public class RoadsController : Controller
     {
         private readonly DemoContext _context;
@@ -31,14 +35,6 @@ namespace WebApi.Controllers.map
             _context = context;
         }
 
-        // GET: api/Roads
-        [HttpGet]
-        public IEnumerable<GoogleRoad> GetRoads()
-        {
-            return _context.GoogleRoads;
-        }
-
-        // GET: api/Roads/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetRoad([FromRoute] int id)
         {
@@ -57,8 +53,44 @@ namespace WebApi.Controllers.map
             return Ok(road);
         }
 
+        // GET: api/Roads
+        [HttpGet("From/{mapId}/{pos}")]
+        public IActionResult GetRoads([FromRoute] int mapId, [FromRoute] int pos)
+        {
+            var data = _context.GoogleRoads.Where(r => r.MapId == mapId).Skip(pos).Take(5).ToList();
+            if (data.Count < 0)
+            {
+                return NotFound();
+            }
+
+            return Ok(data);
+        }
+
+        // GET: api/Roads/5
+        [HttpGet("search/{text}/{mapId}")]
+        public async Task<IActionResult> GetRoads([FromRoute] string text, [FromRoute] int mapId, [FromRoute] int pos)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var sqlText = new SqlParameter("text", text);
+            var sqlMapId = new SqlParameter("mapId", mapId);
+            var sqlPos = new SqlParameter("pos", pos);
+            var roads = await _context.GoogleRoads.FromSql(@"SELECT * FROM [dbo].[GoogleRoads] WHERE FREETEXT ((Direction, Name), @text) AND MapId=@mapId ORDER BY Id", sqlText, sqlMapId).AsNoTracking().ToListAsync();
+
+            if (roads.Count < 0)
+            {
+                return NotFound();
+            }
+
+            return Ok(roads);
+        }
+
         // PUT: api/Roads/5
         [HttpPut("{id}")]
+        [AppAuthorize(DemoPermissions.MapEdit)]
         public async Task<IActionResult> PutRoads([FromRoute] int id, [FromBody] List<RequestRoad> data)
         {
             if (!ModelState.IsValid)
@@ -73,8 +105,6 @@ namespace WebApi.Controllers.map
                 {
                     return BadRequest();
                 }
-
-                var mapComponentId = _context.MapComponents.Where(c => c.MapId == road.MapId).Select(m => m.Id).FirstOrDefault();
                 var r = new GoogleRoad()
                 {
                     Id = road.Id,
@@ -83,7 +113,7 @@ namespace WebApi.Controllers.map
                     Distance = road.Distance,
                     Color = road.Color,
                     Paths = road.Paths,
-                    MapComponentId = mapComponentId
+                    MapId = road.Id
                 };
 
                 _context.Entry(r).State = EntityState.Modified;
@@ -108,7 +138,6 @@ namespace WebApi.Controllers.map
             {
                 for (var i = 0; i < data.Count; i++)
                 {
-                    var mapComponentId = _context.MapComponents.Where(c => c.MapId == data[i].MapId).Select(m => m.Id).FirstOrDefault();
                     var road = new GoogleRoad()
                     {
                         Id = data[i].Id,
@@ -117,7 +146,7 @@ namespace WebApi.Controllers.map
                         Distance = data[i].Distance,
                         Color = data[i].Color,
                         Paths = data[i].Paths,
-                        MapComponentId = mapComponentId
+                        MapId = data[i].MapId
                     };
 
                     _context.Entry(road).State = EntityState.Modified;
@@ -145,34 +174,38 @@ namespace WebApi.Controllers.map
 
         // POST: api/Roads
         [HttpPost]
+        [AppAuthorize(DemoPermissions.MapAdd)]
         public async Task<IActionResult> PostRoad([FromBody] RequestRoad road)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
-            var mapComponent = _context.MapComponents.Where(c => c.MapId == road.MapId).FirstOrDefault();
-            if (mapComponent != null)
+            var newRoad = new GoogleRoad()
             {
-                var newRoad = new GoogleRoad()
-                {
-                    Paths = road.Paths,
-                    Direction = road.Direction,
-                    Distance = road.Distance,
-                    Color = road.Color,
-                    Name = road.Name,
-                    MapComponentId = mapComponent.Id
-                };
+                Paths = road.Paths,
+                Direction = road.Direction,
+                Distance = road.Distance,
+                Color = road.Color,
+                Name = road.Name,
+                MapId = road.Id
+            };
+            try
+            {
                 _context.GoogleRoads.Add(newRoad);
                 await _context.SaveChangesAsync();
 
                 return CreatedAtAction("GetRoad", new { id = newRoad.Id }, newRoad);
             }
-            return BadRequest("There are no map component for this map.");
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
         }
 
         // DELETE: api/Roads/5
         [HttpDelete("{id}")]
+        [AppAuthorize(DemoPermissions.MapDelete)]
         public async Task<IActionResult> DeleteRoad([FromRoute] int id)
         {
             if (!ModelState.IsValid)

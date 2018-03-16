@@ -733,7 +733,7 @@
           }
         }
       },
-      "NETStandard.Library/2.0.0": {
+      "NETStandard.Library/2.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -2848,12 +2848,14 @@
         "version.txt"
       ]
     },
-    "NETStandard.Library/2.0.0": {
-      "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+    "NETStandard.Library/2.0.1": {
+      "sha512": "oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
       "type": "package",
-      "path": "netstandard.library/2.0.0",
+      "path": "netstandard.library/2.0.1",
       "files": [
         "LICENSE.TXT",
+        "NETStandard.Library.2.0.1.nupkg.sha512",
+        "NETStandard.Library.nuspec",
         "THIRD-PARTY-NOTICES.TXT",
         "build/NETStandard.Library.targets",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -2971,9 +2973,7 @@
         "build/netstandard2.0/ref/mscorlib.dll",
         "build/netstandard2.0/ref/netstandard.dll",
         "build/netstandard2.0/ref/netstandard.xml",
-        "lib/netstandard1.0/_._",
-        "netstandard.library.2.0.0.nupkg.sha512",
-        "netstandard.library.nuspec"
+        "lib/netstandard1.0/_._"
       ]
     },
     "Newtonsoft.Json/10.0.3": {
@@ -6716,11 +6716,12 @@
     ".NETStandard,Version=v2.0": [
       "Demo.IdentityServer4 >= 1.0.0",
       "Demo.Storage.EntityFrameworkCore >= 1.0.0",
-      "NETStandard.Library >= 2.0.0"
+      "NETStandard.Library >= 2.0.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Users\\anhvu\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -6729,18 +6730,20 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\Projects\\testing\\Demo\\Demo.IdentityServer4.EntityFrameworkCore\\Demo.IdentityServer4.EntityFrameworkCore.csproj",
+      "projectUniqueName": "E:\\GitHub\\testing\\Demo\\Demo.IdentityServer4.EntityFrameworkCore\\Demo.IdentityServer4.EntityFrameworkCore.csproj",
       "projectName": "Demo.IdentityServer4.EntityFrameworkCore",
-      "projectPath": "D:\\Projects\\testing\\Demo\\Demo.IdentityServer4.EntityFrameworkCore\\Demo.IdentityServer4.EntityFrameworkCore.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\testing\\Demo\\Demo.IdentityServer4.EntityFrameworkCore\\obj\\",
+      "projectPath": "E:\\GitHub\\testing\\Demo\\Demo.IdentityServer4.EntityFrameworkCore\\Demo.IdentityServer4.EntityFrameworkCore.csproj",
+      "packagesPath": "C:\\Users\\anhvu\\.nuget\\packages\\",
+      "outputPath": "E:\\GitHub\\testing\\Demo\\Demo.IdentityServer4.EntityFrameworkCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\anhvu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -6752,11 +6755,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\Projects\\testing\\Demo\\Demo.Storage.EntityFrameworkCore\\Demo.Storage.EntityFrameworkCore.csproj": {
-              "projectPath": "D:\\Projects\\testing\\Demo\\Demo.Storage.EntityFrameworkCore\\Demo.Storage.EntityFrameworkCore.csproj"
+            "E:\\GitHub\\testing\\Demo\\Demo.Storage.EntityFrameworkCore\\Demo.Storage.EntityFrameworkCore.csproj": {
+              "projectPath": "E:\\GitHub\\testing\\Demo\\Demo.Storage.EntityFrameworkCore\\Demo.Storage.EntityFrameworkCore.csproj"
             },
-            "D:\\Projects\\testing\\Demo\\Demo.IdentityServer4\\Demo.IdentityServer4.csproj": {
-              "projectPath": "D:\\Projects\\testing\\Demo\\Demo.IdentityServer4\\Demo.IdentityServer4.csproj"
+            "E:\\GitHub\\testing\\Demo\\Demo.IdentityServer4\\Demo.IdentityServer4.csproj": {
+              "projectPath": "E:\\GitHub\\testing\\Demo\\Demo.IdentityServer4\\Demo.IdentityServer4.csproj"
             }
           }
         }
@@ -6773,7 +6776,7 @@
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.1, )",
             "autoReferenced": true
           }
         },

@@ -384,6 +384,24 @@ namespace WebApi.Migrations
                     b.ToTable("Settings");
                 });
 
+            modelBuilder.Entity("WebApi.Model.CommentIcon", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Descriptions");
+
+                    b.Property<int>("MapId");
+
+                    b.Property<string>("Url");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MapId");
+
+                    b.ToTable("CommentIcons");
+                });
+
             modelBuilder.Entity("WebApi.Model.GoogleRoad", b =>
                 {
                     b.Property<int>("Id")
@@ -395,7 +413,7 @@ namespace WebApi.Migrations
 
                     b.Property<double>("Distance");
 
-                    b.Property<int>("MapComponentId");
+                    b.Property<int>("MapId");
 
                     b.Property<string>("Name");
 
@@ -403,9 +421,31 @@ namespace WebApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("MapComponentId");
+                    b.HasIndex("MapId");
 
                     b.ToTable("GoogleRoads");
+                });
+
+            modelBuilder.Entity("WebApi.Model.GoogleRoadIcon", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Descriptions");
+
+                    b.Property<int>("GoogleRoadId");
+
+                    b.Property<double>("Lat");
+
+                    b.Property<double>("Lng");
+
+                    b.Property<string>("Url");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GoogleRoadId");
+
+                    b.ToTable("GoogleRoadIcons");
                 });
 
             modelBuilder.Entity("WebApi.Model.Map", b =>
@@ -418,21 +458,6 @@ namespace WebApi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Maps");
-                });
-
-            modelBuilder.Entity("WebApi.Model.MapComponent", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("MapId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("MapId")
-                        .IsUnique();
-
-                    b.ToTable("MapComponents");
                 });
 
             modelBuilder.Entity("WebApi.Model.MapRole", b =>
@@ -499,19 +524,27 @@ namespace WebApi.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("WebApi.Model.GoogleRoad", b =>
+            modelBuilder.Entity("WebApi.Model.CommentIcon", b =>
                 {
-                    b.HasOne("WebApi.Model.MapComponent", "MapComponent")
-                        .WithMany("Roads")
-                        .HasForeignKey("MapComponentId")
+                    b.HasOne("WebApi.Model.Map", "Map")
+                        .WithMany("CommentIcons")
+                        .HasForeignKey("MapId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("WebApi.Model.MapComponent", b =>
+            modelBuilder.Entity("WebApi.Model.GoogleRoad", b =>
                 {
                     b.HasOne("WebApi.Model.Map", "Map")
-                        .WithOne("MapComponent")
-                        .HasForeignKey("WebApi.Model.MapComponent", "MapId")
+                        .WithMany("GoogleRoads")
+                        .HasForeignKey("MapId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("WebApi.Model.GoogleRoadIcon", b =>
+                {
+                    b.HasOne("WebApi.Model.GoogleRoad", "GoogleRoad")
+                        .WithMany()
+                        .HasForeignKey("GoogleRoadId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

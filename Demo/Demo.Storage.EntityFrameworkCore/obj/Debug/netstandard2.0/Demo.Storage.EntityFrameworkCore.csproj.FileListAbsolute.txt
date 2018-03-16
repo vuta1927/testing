@@ -9,14 +9,3 @@ E:\GitHub\testing\Demo\Demo.Storage.EntityFrameworkCore\obj\Debug\netstandard2.0
 E:\GitHub\testing\Demo\Demo.Storage.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.dll
 E:\GitHub\testing\Demo\Demo.Storage.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.pdb
 E:\GitHub\testing\Demo\Demo.Storage.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.csprojResolveAssemblyReference.cache
-D:\Projects\testing\Demo\Demo.Storage.EntityFrameworkCore\bin\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.deps.json
-D:\Projects\testing\Demo\Demo.Storage.EntityFrameworkCore\bin\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.dll
-D:\Projects\testing\Demo\Demo.Storage.EntityFrameworkCore\bin\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.pdb
-D:\Projects\testing\Demo\Demo.Storage.EntityFrameworkCore\bin\Debug\netstandard2.0\Demo.dll
-D:\Projects\testing\Demo\Demo.Storage.EntityFrameworkCore\bin\Debug\netstandard2.0\Demo.pdb
-D:\Projects\testing\Demo\Demo.Storage.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.csprojResolveAssemblyReference.cache
-D:\Projects\testing\Demo\Demo.Storage.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.csproj.CoreCompileInputs.cache
-D:\Projects\testing\Demo\Demo.Storage.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.AssemblyInfoInputs.cache
-D:\Projects\testing\Demo\Demo.Storage.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.AssemblyInfo.cs
-D:\Projects\testing\Demo\Demo.Storage.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.dll
-D:\Projects\testing\Demo\Demo.Storage.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.pdb

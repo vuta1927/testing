@@ -18,7 +18,8 @@ namespace WebApi.Model
         public DbSet<GoogleRoad> GoogleRoads { get; set; }
         public DbSet<Map> Maps { get; set; }
         public DbSet<MapRole> MapRoles { get; set; }
-        public DbSet<MapComponent> MapComponents { get; set; }
+        public DbSet<CommentIcon> CommentIcons { get; set; }
+        public DbSet<GoogleRoadIcon> GoogleRoadIcons { get; set; }
     }
 
 }

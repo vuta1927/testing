@@ -12,8 +12,8 @@ namespace WebApi.Model
         public string Color { get; set; }
         public double Distance { get; set; }
         public string Direction { get; set; }
-        public int MapComponentId { get; set; }
-        public virtual MapComponent MapComponent { get; set; }
+        public int MapId { get; set; }
+        public virtual Map Map { get; set; }
 
     }
 }

@@ -21,15 +21,9 @@ namespace WebApi.Controllers.map
     public class GRoad: GoogleRoad
     {
         public int MapId { get; set; }
-        public new Direction Direction { get; set; }
         public new ICollection<Coordinate> Paths { get; set; }
 
-    }
-
-    public class Direction
-    {
-        public string Value { get; set; }
-        public string Display { get; set; }
+        public List<GoogleRoadIcon> GoogleRoadIcons { get; set; }
     }
 
     public class Coordinate
@@ -38,9 +32,9 @@ namespace WebApi.Controllers.map
         public double Lng { get; set; }
     }
 
-    public class GMapConponent: MapComponent
+    public class GMap: Map
     {
-        public new ICollection<GRoad> Roads { get; set; }
+        public new ICollection<GRoad> GoogleRoads { get; set; }
     }
 
 
@@ -73,34 +67,40 @@ namespace WebApi.Controllers.map
             }
             foreach (var id in roleIds)
             {
-                maps = _context.MapRoles.Where(mr => mr.RoleId == id).Select(i => i.Map).Include(map => map.MapComponent).ThenInclude(com => com.Roads).ToList();
+                maps = _context.MapRoles.Where(mr => mr.RoleId == id).Select(i => i.Map).Include(m => m.CommentIcons).Include(com => com.GoogleRoads).ToList();
             }
-            
-            //var data = _context.Maps.Include(map=>map.MapComponent).ThenInclude(com=>com.Roads);
+            var Gmaps = new List<GMap>();
             foreach (var map in maps)
             {
-                var newComponent = new GMapConponent();
+                var newMap = new GMap();
                 var newRoads = new List<GRoad>();
-                foreach (var baseRoad in map.MapComponent.Roads)
+                foreach (var baseRoad in map.GoogleRoads)
                 {
+                    var icons = _context.GoogleRoadIcons.Where(g => g.GoogleRoadId == baseRoad.Id).ToList();
                     var newRoad = new GRoad()
                     {
                         Id = baseRoad.Id,
                         Color = baseRoad.Color,
-                        Direction = new Direction(){Display = baseRoad.Direction, Value = Util.MapUtilities.ConvertToUnSign(baseRoad.Direction)},
+                        Direction = baseRoad.Direction,
                         Distance = baseRoad.Distance,
                         Name = baseRoad.Name,
                         Paths = ConvertCoordinates(baseRoad.Paths),
+                        GoogleRoadIcons = icons,
                         MapId = map.Id
                     };
                     newRoads.Add(newRoad);
                 }
-                newComponent.Id = map.MapComponent.Id;
-                newComponent.Roads = newRoads;
-                map.MapComponent = newComponent;
-                //result.Add(newMap);
+                newMap.GoogleRoads = newRoads;
+                newMap.Id = map.Id;
+                newMap.Type = map.Type;
+                foreach (var component in map.CommentIcons)
+                {
+                    component.Map = null;
+                }
+                newMap.CommentIcons = map.CommentIcons;
+                Gmaps.Add(newMap);
             }
-            return Ok(maps);
+            return Ok(Gmaps);
         }
 
         // GET: api/Maps/5
@@ -124,7 +124,7 @@ namespace WebApi.Controllers.map
 
         // PUT: api/Maps/5
         [HttpPut("{id}")]
-        [AppAuthorize(DemoPermissions.EditMap)]
+        [AppAuthorize(DemoPermissions.MapEdit)]
         public async Task<IActionResult> PutMap([FromRoute] int id, [FromBody] Map map)
         {
             if (!ModelState.IsValid)
@@ -160,7 +160,7 @@ namespace WebApi.Controllers.map
 
         // POST: api/Maps
         [HttpPost]
-        [AppAuthorize(DemoPermissions.EditMap)]
+        [AppAuthorize(DemoPermissions.MapAdd)]
         public async Task<IActionResult> PostMap([FromBody] Map map)
         {
             if (!ModelState.IsValid)
@@ -176,7 +176,7 @@ namespace WebApi.Controllers.map
 
         // DELETE: api/Maps/5
         [HttpDelete("{id}")]
-        [AppAuthorize(DemoPermissions.EditMap)]
+        [AppAuthorize(DemoPermissions.MapDelete)]
         public async Task<IActionResult> DeleteMap([FromRoute] int id)
         {
             if (!ModelState.IsValid)

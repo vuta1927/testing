@@ -9,6 +9,7 @@ namespace WebApi.Model
     {
         public int Id { get; set; }
         public int Type { get; set; }
-        public virtual MapComponent MapComponent { get; set; }
+        public virtual List<GoogleRoad> GoogleRoads { get; set; }
+        public virtual List<CommentIcon> CommentIcons { get; set; }
     }
 }

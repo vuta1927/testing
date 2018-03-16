@@ -9,14 +9,3 @@ E:\GitHub\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.Identi
 E:\GitHub\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.IdentityServer4.dll
 E:\GitHub\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.IdentityServer4.pdb
 E:\GitHub\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.IdentityServer4.csprojResolveAssemblyReference.cache
-D:\Projects\testing\Demo\Demo.IdentityServer4\bin\Debug\netstandard2.0\Demo.IdentityServer4.deps.json
-D:\Projects\testing\Demo\Demo.IdentityServer4\bin\Debug\netstandard2.0\Demo.IdentityServer4.dll
-D:\Projects\testing\Demo\Demo.IdentityServer4\bin\Debug\netstandard2.0\Demo.IdentityServer4.pdb
-D:\Projects\testing\Demo\Demo.IdentityServer4\bin\Debug\netstandard2.0\Demo.dll
-D:\Projects\testing\Demo\Demo.IdentityServer4\bin\Debug\netstandard2.0\Demo.pdb
-D:\Projects\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.IdentityServer4.csprojResolveAssemblyReference.cache
-D:\Projects\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.IdentityServer4.csproj.CoreCompileInputs.cache
-D:\Projects\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.IdentityServer4.AssemblyInfoInputs.cache
-D:\Projects\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.IdentityServer4.AssemblyInfo.cs
-D:\Projects\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.IdentityServer4.dll
-D:\Projects\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.IdentityServer4.pdb

@@ -13,6 +13,10 @@ namespace WebApi.Core.Authorization
 
         public const string ViewMap = "ViewMap";
 
-        public const string EditMap = "EditMap";
+        public const string MapEdit = "MapEdit";
+
+        public const string MapDelete = "MapDelete";
+
+        public const string MapAdd = "MapAdd";
     }
 }

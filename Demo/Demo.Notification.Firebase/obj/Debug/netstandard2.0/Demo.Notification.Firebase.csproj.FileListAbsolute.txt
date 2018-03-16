@@ -8,14 +8,4 @@ E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.
 E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.AssemblyInfo.cs
 E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.dll
 E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.pdb
-D:\Projects\testing\Demo\Demo.Notification.Firebase\bin\Debug\netstandard2.0\Demo.Notification.Firebase.deps.json
-D:\Projects\testing\Demo\Demo.Notification.Firebase\bin\Debug\netstandard2.0\Demo.Notification.Firebase.dll
-D:\Projects\testing\Demo\Demo.Notification.Firebase\bin\Debug\netstandard2.0\Demo.Notification.Firebase.pdb
-D:\Projects\testing\Demo\Demo.Notification.Firebase\bin\Debug\netstandard2.0\Demo.dll
-D:\Projects\testing\Demo\Demo.Notification.Firebase\bin\Debug\netstandard2.0\Demo.pdb
-D:\Projects\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.csprojResolveAssemblyReference.cache
-D:\Projects\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.csproj.CoreCompileInputs.cache
-D:\Projects\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.AssemblyInfoInputs.cache
-D:\Projects\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.AssemblyInfo.cs
-D:\Projects\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.dll
-D:\Projects\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.pdb
+E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.csprojResolveAssemblyReference.cache

@@ -1,8 +1,8 @@
 # Python TCP Client A
 import socket 
 
-host = socket.gethostname() 
-port = 2004
+host = "127.0.0.1"#socket.gethostname()
+port = 6268
 BUFFER_SIZE = 2000 
 MESSAGE = input("tcpClientA: Enter message/ Enter exit:") 
  
@@ -12,7 +12,7 @@ tcpClientA.connect((host, port))
 while MESSAGE != 'exit':
     tcpClientA.send(MESSAGE.encode())     
     data = tcpClientA.recv(BUFFER_SIZE)
-    print (" Client2 received data:", data.decode())
+    print(" Client2 received data:", data.decode())
     MESSAGE = input("tcpClientA: Enter message to continue/ Enter exit:")
 
 tcpClientA.close() 

@@ -9,14 +9,3 @@ E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.
 E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.dll
 E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.pdb
 E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.csprojResolveAssemblyReference.cache
-D:\Projects\testing\Demo\Demo.AspNetCore\bin\Debug\netstandard2.0\Demo.AspNetCore.deps.json
-D:\Projects\testing\Demo\Demo.AspNetCore\bin\Debug\netstandard2.0\Demo.AspNetCore.dll
-D:\Projects\testing\Demo\Demo.AspNetCore\bin\Debug\netstandard2.0\Demo.AspNetCore.pdb
-D:\Projects\testing\Demo\Demo.AspNetCore\bin\Debug\netstandard2.0\Demo.dll
-D:\Projects\testing\Demo\Demo.AspNetCore\bin\Debug\netstandard2.0\Demo.pdb
-D:\Projects\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.csprojResolveAssemblyReference.cache
-D:\Projects\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.csproj.CoreCompileInputs.cache
-D:\Projects\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.AssemblyInfoInputs.cache
-D:\Projects\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.AssemblyInfo.cs
-D:\Projects\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.dll
-D:\Projects\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.pdb

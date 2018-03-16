@@ -7,4 +7,4 @@ def init():
         if config['HostAddress'] is not None:
             hostAddress = config['HostAddress']
         if config['HostPort'] is not None:
-            hostPort = config['HostPort']
+            hostPort = int(config['HostPort'])

@@ -4,4 +4,7 @@ def init():
     dBContext = None
     global isLogin
     isLogin = False
-
+    global stopSignal
+    stopSignal = False
+    global server
+    server = None

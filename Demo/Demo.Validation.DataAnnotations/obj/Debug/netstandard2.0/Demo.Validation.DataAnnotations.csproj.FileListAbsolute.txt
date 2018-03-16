@@ -9,14 +9,3 @@ E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\
 E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\Demo.Validation.DataAnnotations.dll
 E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\Demo.Validation.DataAnnotations.pdb
 E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\Demo.Validation.DataAnnotations.csprojResolveAssemblyReference.cache
-D:\Projects\testing\Demo\Demo.Validation.DataAnnotations\bin\Debug\netstandard2.0\Demo.Validation.DataAnnotations.deps.json
-D:\Projects\testing\Demo\Demo.Validation.DataAnnotations\bin\Debug\netstandard2.0\Demo.Validation.DataAnnotations.dll
-D:\Projects\testing\Demo\Demo.Validation.DataAnnotations\bin\Debug\netstandard2.0\Demo.Validation.DataAnnotations.pdb
-D:\Projects\testing\Demo\Demo.Validation.DataAnnotations\bin\Debug\netstandard2.0\Demo.dll
-D:\Projects\testing\Demo\Demo.Validation.DataAnnotations\bin\Debug\netstandard2.0\Demo.pdb
-D:\Projects\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\Demo.Validation.DataAnnotations.csprojResolveAssemblyReference.cache
-D:\Projects\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\Demo.Validation.DataAnnotations.csproj.CoreCompileInputs.cache
-D:\Projects\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\Demo.Validation.DataAnnotations.AssemblyInfoInputs.cache
-D:\Projects\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\Demo.Validation.DataAnnotations.AssemblyInfo.cs
-D:\Projects\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\Demo.Validation.DataAnnotations.dll
-D:\Projects\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\Demo.Validation.DataAnnotations.pdb
