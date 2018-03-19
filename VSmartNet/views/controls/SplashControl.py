@@ -38,10 +38,7 @@ class Splash(QDialog, FORM_SPLASH):
             pass
         else:
             login = Login(self)
-            login.setWindowFlags(Qt.Window |
-                              Qt.CustomizeWindowHint |
-                              Qt.WindowTitleHint |
-                              Qt.WindowStaysOnTopHint)
+            login.setWindowFlags(Qt.Window | Qt.CustomizeWindowHint | Qt.WindowTitleHint | Qt.WindowStaysOnTopHint)
             login.show()
             qtRectangle = login.frameGeometry()
             centerPoint = QDesktopWidget().availableGeometry().center()

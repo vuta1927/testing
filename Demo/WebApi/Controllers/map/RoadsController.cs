@@ -113,7 +113,7 @@ namespace WebApi.Controllers.map
                     Distance = road.Distance,
                     Color = road.Color,
                     Paths = road.Paths,
-                    MapId = road.Id
+                    MapId = road.MapId
                 };
 
                 _context.Entry(r).State = EntityState.Modified;
@@ -188,7 +188,7 @@ namespace WebApi.Controllers.map
                 Distance = road.Distance,
                 Color = road.Color,
                 Name = road.Name,
-                MapId = road.Id
+                MapId = road.MapId
             };
             try
             {
@@ -212,7 +212,12 @@ namespace WebApi.Controllers.map
             {
                 return BadRequest(ModelState);
             }
-
+            var iconOnRoad = await _context.GoogleRoadIcons.SingleOrDefaultAsync(i => i.GoogleRoadId == id);
+            if (iconOnRoad == null)
+            {
+                return NotFound();
+            }
+            _context.GoogleRoadIcons.Remove(iconOnRoad);
             var road = await _context.GoogleRoads.SingleOrDefaultAsync(m => m.Id == id);
             if (road == null)
             {

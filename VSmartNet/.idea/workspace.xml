@@ -5,183 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e9051cc-3305-406f-afed-526ae3ab7f8e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/bin/Debug/netstandard2.0/Demo.AspNetCore.deps.json" afterPath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/bin/Debug/netstandard2.0/Demo.AspNetCore.deps.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/bin/Debug/netstandard2.0/Demo.AspNetCore.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/bin/Debug/netstandard2.0/Demo.AspNetCore.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/bin/Debug/netstandard2.0/Demo.AspNetCore.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/bin/Debug/netstandard2.0/Demo.AspNetCore.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/bin/Debug/netstandard2.0/Demo.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/bin/Debug/netstandard2.0/Demo.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/bin/Debug/netstandard2.0/Demo.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/bin/Debug/netstandard2.0/Demo.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/Debug/netstandard2.0/Demo.AspNetCore.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/Debug/netstandard2.0/Demo.AspNetCore.csproj.CoreCompileInputs.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/Debug/netstandard2.0/Demo.AspNetCore.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/Debug/netstandard2.0/Demo.AspNetCore.csproj.FileListAbsolute.txt" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/Debug/netstandard2.0/Demo.AspNetCore.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/Debug/netstandard2.0/Demo.AspNetCore.csprojResolveAssemblyReference.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/Debug/netstandard2.0/Demo.AspNetCore.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/Debug/netstandard2.0/Demo.AspNetCore.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/Debug/netstandard2.0/Demo.AspNetCore.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/Debug/netstandard2.0/Demo.AspNetCore.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/Demo.AspNetCore.csproj.nuget.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/Demo.AspNetCore.csproj.nuget.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/Demo.AspNetCore.csproj.nuget.g.props" afterPath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/Demo.AspNetCore.csproj.nuget.g.props" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/Demo.AspNetCore.csproj.nuget.g.targets" afterPath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/Demo.AspNetCore.csproj.nuget.g.targets" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/project.assets.json" afterPath="$PROJECT_DIR$/../Demo/Demo.AspNetCore/obj/project.assets.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/bin/Debug/netstandard2.0/Demo.BackgroundJobs.Hangfire.deps.json" afterPath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/bin/Debug/netstandard2.0/Demo.BackgroundJobs.Hangfire.deps.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/bin/Debug/netstandard2.0/Demo.BackgroundJobs.Hangfire.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/bin/Debug/netstandard2.0/Demo.BackgroundJobs.Hangfire.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/bin/Debug/netstandard2.0/Demo.BackgroundJobs.Hangfire.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/bin/Debug/netstandard2.0/Demo.BackgroundJobs.Hangfire.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/bin/Debug/netstandard2.0/Demo.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/bin/Debug/netstandard2.0/Demo.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/bin/Debug/netstandard2.0/Demo.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/bin/Debug/netstandard2.0/Demo.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/Debug/netstandard2.0/Demo.BackgroundJobs.Hangfire.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/Debug/netstandard2.0/Demo.BackgroundJobs.Hangfire.csproj.CoreCompileInputs.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/Debug/netstandard2.0/Demo.BackgroundJobs.Hangfire.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/Debug/netstandard2.0/Demo.BackgroundJobs.Hangfire.csproj.FileListAbsolute.txt" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/Debug/netstandard2.0/Demo.BackgroundJobs.Hangfire.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/Debug/netstandard2.0/Demo.BackgroundJobs.Hangfire.csprojResolveAssemblyReference.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/Debug/netstandard2.0/Demo.BackgroundJobs.Hangfire.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/Debug/netstandard2.0/Demo.BackgroundJobs.Hangfire.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/Debug/netstandard2.0/Demo.BackgroundJobs.Hangfire.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/Debug/netstandard2.0/Demo.BackgroundJobs.Hangfire.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/Demo.BackgroundJobs.Hangfire.csproj.nuget.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/Demo.BackgroundJobs.Hangfire.csproj.nuget.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/Demo.BackgroundJobs.Hangfire.csproj.nuget.g.props" afterPath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/Demo.BackgroundJobs.Hangfire.csproj.nuget.g.props" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/Demo.BackgroundJobs.Hangfire.csproj.nuget.g.targets" afterPath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/Demo.BackgroundJobs.Hangfire.csproj.nuget.g.targets" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/project.assets.json" afterPath="$PROJECT_DIR$/../Demo/Demo.BackgroundJobs.Hangfire/obj/project.assets.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Common/bin/Debug/netstandard2.0/Demo.Common.deps.json" afterPath="$PROJECT_DIR$/../Demo/Demo.Common/bin/Debug/netstandard2.0/Demo.Common.deps.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Common/bin/Debug/netstandard2.0/Demo.Common.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.Common/bin/Debug/netstandard2.0/Demo.Common.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Common/obj/Debug/netstandard2.0/Demo.Common.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.Common/obj/Debug/netstandard2.0/Demo.Common.csproj.CoreCompileInputs.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Common/obj/Debug/netstandard2.0/Demo.Common.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/../Demo/Demo.Common/obj/Debug/netstandard2.0/Demo.Common.csproj.FileListAbsolute.txt" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Common/obj/Debug/netstandard2.0/Demo.Common.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.Common/obj/Debug/netstandard2.0/Demo.Common.csprojResolveAssemblyReference.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Common/obj/Debug/netstandard2.0/Demo.Common.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.Common/obj/Debug/netstandard2.0/Demo.Common.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Common/obj/Demo.Common.csproj.nuget.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.Common/obj/Demo.Common.csproj.nuget.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Common/obj/Demo.Common.csproj.nuget.g.props" afterPath="$PROJECT_DIR$/../Demo/Demo.Common/obj/Demo.Common.csproj.nuget.g.props" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Common/obj/Demo.Common.csproj.nuget.g.targets" afterPath="$PROJECT_DIR$/../Demo/Demo.Common/obj/Demo.Common.csproj.nuget.g.targets" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Common/obj/project.assets.json" afterPath="$PROJECT_DIR$/../Demo/Demo.Common/obj/project.assets.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.IdentityServer4.EntityFrameworkCore.deps.json" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.IdentityServer4.EntityFrameworkCore.deps.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.IdentityServer4.EntityFrameworkCore.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.IdentityServer4.EntityFrameworkCore.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.IdentityServer4.EntityFrameworkCore.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.IdentityServer4.EntityFrameworkCore.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.IdentityServer4.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.IdentityServer4.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.IdentityServer4.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.IdentityServer4.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.IdentityServer4.EntityFrameworkCore.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.IdentityServer4.EntityFrameworkCore.csproj.CoreCompileInputs.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.IdentityServer4.EntityFrameworkCore.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.IdentityServer4.EntityFrameworkCore.csproj.FileListAbsolute.txt" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.IdentityServer4.EntityFrameworkCore.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.IdentityServer4.EntityFrameworkCore.csprojResolveAssemblyReference.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.IdentityServer4.EntityFrameworkCore.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.IdentityServer4.EntityFrameworkCore.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.IdentityServer4.EntityFrameworkCore.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.IdentityServer4.EntityFrameworkCore.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/Demo.IdentityServer4.EntityFrameworkCore.csproj.nuget.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/Demo.IdentityServer4.EntityFrameworkCore.csproj.nuget.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/Demo.IdentityServer4.EntityFrameworkCore.csproj.nuget.g.props" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/Demo.IdentityServer4.EntityFrameworkCore.csproj.nuget.g.props" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/Demo.IdentityServer4.EntityFrameworkCore.csproj.nuget.g.targets" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/Demo.IdentityServer4.EntityFrameworkCore.csproj.nuget.g.targets" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/project.assets.json" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4.EntityFrameworkCore/obj/project.assets.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/bin/Debug/netstandard2.0/Demo.IdentityServer4.deps.json" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/bin/Debug/netstandard2.0/Demo.IdentityServer4.deps.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/bin/Debug/netstandard2.0/Demo.IdentityServer4.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/bin/Debug/netstandard2.0/Demo.IdentityServer4.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/bin/Debug/netstandard2.0/Demo.IdentityServer4.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/bin/Debug/netstandard2.0/Demo.IdentityServer4.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/bin/Debug/netstandard2.0/Demo.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/bin/Debug/netstandard2.0/Demo.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/bin/Debug/netstandard2.0/Demo.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/bin/Debug/netstandard2.0/Demo.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/Debug/netstandard2.0/Demo.IdentityServer4.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/Debug/netstandard2.0/Demo.IdentityServer4.csproj.CoreCompileInputs.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/Debug/netstandard2.0/Demo.IdentityServer4.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/Debug/netstandard2.0/Demo.IdentityServer4.csproj.FileListAbsolute.txt" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/Debug/netstandard2.0/Demo.IdentityServer4.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/Debug/netstandard2.0/Demo.IdentityServer4.csprojResolveAssemblyReference.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/Debug/netstandard2.0/Demo.IdentityServer4.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/Debug/netstandard2.0/Demo.IdentityServer4.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/Debug/netstandard2.0/Demo.IdentityServer4.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/Debug/netstandard2.0/Demo.IdentityServer4.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/Demo.IdentityServer4.csproj.nuget.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/Demo.IdentityServer4.csproj.nuget.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/Demo.IdentityServer4.csproj.nuget.g.props" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/Demo.IdentityServer4.csproj.nuget.g.props" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/Demo.IdentityServer4.csproj.nuget.g.targets" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/Demo.IdentityServer4.csproj.nuget.g.targets" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/project.assets.json" afterPath="$PROJECT_DIR$/../Demo/Demo.IdentityServer4/obj/project.assets.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Messaging.NServiceBus/NServiceBusConfig.cs" afterPath="$PROJECT_DIR$/../Demo/Demo.Messaging.NServiceBus/NServiceBusConfig.cs" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/bin/Debug/netstandard2.0/Demo.Notification.Firebase.deps.json" afterPath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/bin/Debug/netstandard2.0/Demo.Notification.Firebase.deps.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/bin/Debug/netstandard2.0/Demo.Notification.Firebase.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/bin/Debug/netstandard2.0/Demo.Notification.Firebase.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/bin/Debug/netstandard2.0/Demo.Notification.Firebase.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/bin/Debug/netstandard2.0/Demo.Notification.Firebase.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/bin/Debug/netstandard2.0/Demo.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/bin/Debug/netstandard2.0/Demo.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/bin/Debug/netstandard2.0/Demo.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/bin/Debug/netstandard2.0/Demo.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/obj/Debug/netstandard2.0/Demo.Notification.Firebase.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/obj/Debug/netstandard2.0/Demo.Notification.Firebase.csproj.CoreCompileInputs.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/obj/Debug/netstandard2.0/Demo.Notification.Firebase.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/obj/Debug/netstandard2.0/Demo.Notification.Firebase.csproj.FileListAbsolute.txt" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/obj/Debug/netstandard2.0/Demo.Notification.Firebase.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/obj/Debug/netstandard2.0/Demo.Notification.Firebase.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/obj/Debug/netstandard2.0/Demo.Notification.Firebase.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/obj/Debug/netstandard2.0/Demo.Notification.Firebase.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/obj/Demo.Notification.Firebase.csproj.nuget.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/obj/Demo.Notification.Firebase.csproj.nuget.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/obj/Demo.Notification.Firebase.csproj.nuget.g.props" afterPath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/obj/Demo.Notification.Firebase.csproj.nuget.g.props" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/obj/Demo.Notification.Firebase.csproj.nuget.g.targets" afterPath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/obj/Demo.Notification.Firebase.csproj.nuget.g.targets" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/obj/project.assets.json" afterPath="$PROJECT_DIR$/../Demo/Demo.Notification.Firebase/obj/project.assets.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.deps.json" afterPath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.deps.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/bin/Debug/netstandard2.0/Demo.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.csproj.CoreCompileInputs.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.csproj.FileListAbsolute.txt" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.csprojResolveAssemblyReference.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/Debug/netstandard2.0/Demo.Storage.EntityFrameworkCore.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/Demo.Storage.EntityFrameworkCore.csproj.nuget.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/Demo.Storage.EntityFrameworkCore.csproj.nuget.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/Demo.Storage.EntityFrameworkCore.csproj.nuget.g.props" afterPath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/Demo.Storage.EntityFrameworkCore.csproj.nuget.g.props" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/Demo.Storage.EntityFrameworkCore.csproj.nuget.g.targets" afterPath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/Demo.Storage.EntityFrameworkCore.csproj.nuget.g.targets" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/project.assets.json" afterPath="$PROJECT_DIR$/../Demo/Demo.Storage.EntityFrameworkCore/obj/project.assets.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/bin/Debug/netstandard2.0/Demo.Validation.DataAnnotations.deps.json" afterPath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/bin/Debug/netstandard2.0/Demo.Validation.DataAnnotations.deps.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/bin/Debug/netstandard2.0/Demo.Validation.DataAnnotations.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/bin/Debug/netstandard2.0/Demo.Validation.DataAnnotations.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/bin/Debug/netstandard2.0/Demo.Validation.DataAnnotations.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/bin/Debug/netstandard2.0/Demo.Validation.DataAnnotations.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/bin/Debug/netstandard2.0/Demo.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/bin/Debug/netstandard2.0/Demo.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/bin/Debug/netstandard2.0/Demo.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/bin/Debug/netstandard2.0/Demo.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/Debug/netstandard2.0/Demo.Validation.DataAnnotations.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/Debug/netstandard2.0/Demo.Validation.DataAnnotations.csproj.CoreCompileInputs.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/Debug/netstandard2.0/Demo.Validation.DataAnnotations.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/Debug/netstandard2.0/Demo.Validation.DataAnnotations.csproj.FileListAbsolute.txt" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/Debug/netstandard2.0/Demo.Validation.DataAnnotations.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/Debug/netstandard2.0/Demo.Validation.DataAnnotations.csprojResolveAssemblyReference.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/Debug/netstandard2.0/Demo.Validation.DataAnnotations.dll" afterPath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/Debug/netstandard2.0/Demo.Validation.DataAnnotations.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/Debug/netstandard2.0/Demo.Validation.DataAnnotations.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/Debug/netstandard2.0/Demo.Validation.DataAnnotations.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/Demo.Validation.DataAnnotations.csproj.nuget.cache" afterPath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/Demo.Validation.DataAnnotations.csproj.nuget.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/Demo.Validation.DataAnnotations.csproj.nuget.g.props" afterPath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/Demo.Validation.DataAnnotations.csproj.nuget.g.props" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/Demo.Validation.DataAnnotations.csproj.nuget.g.targets" afterPath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/Demo.Validation.DataAnnotations.csproj.nuget.g.targets" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/project.assets.json" afterPath="$PROJECT_DIR$/../Demo/Demo.Validation.DataAnnotations/obj/project.assets.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo/bin/Debug/netstandard2.0/Demo.deps.json" afterPath="$PROJECT_DIR$/../Demo/Demo/bin/Debug/netstandard2.0/Demo.deps.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo/bin/Debug/netstandard2.0/Demo.dll" afterPath="$PROJECT_DIR$/../Demo/Demo/bin/Debug/netstandard2.0/Demo.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo/bin/Debug/netstandard2.0/Demo.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo/bin/Debug/netstandard2.0/Demo.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo/obj/Debug/netstandard2.0/Demo.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/../Demo/Demo/obj/Debug/netstandard2.0/Demo.csproj.CoreCompileInputs.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo/obj/Debug/netstandard2.0/Demo.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/../Demo/Demo/obj/Debug/netstandard2.0/Demo.csproj.FileListAbsolute.txt" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo/obj/Debug/netstandard2.0/Demo.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/../Demo/Demo/obj/Debug/netstandard2.0/Demo.csprojResolveAssemblyReference.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo/obj/Debug/netstandard2.0/Demo.dll" afterPath="$PROJECT_DIR$/../Demo/Demo/obj/Debug/netstandard2.0/Demo.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo/obj/Debug/netstandard2.0/Demo.pdb" afterPath="$PROJECT_DIR$/../Demo/Demo/obj/Debug/netstandard2.0/Demo.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo/obj/Demo.csproj.nuget.cache" afterPath="$PROJECT_DIR$/../Demo/Demo/obj/Demo.csproj.nuget.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo/obj/Demo.csproj.nuget.g.props" afterPath="$PROJECT_DIR$/../Demo/Demo/obj/Demo.csproj.nuget.g.props" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo/obj/Demo.csproj.nuget.g.targets" afterPath="$PROJECT_DIR$/../Demo/Demo/obj/Demo.csproj.nuget.g.targets" />
-      <change beforePath="$PROJECT_DIR$/../Demo/Demo/obj/project.assets.json" afterPath="$PROJECT_DIR$/../Demo/Demo/obj/project.assets.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/Controllers/map/MapsController.cs" afterPath="$PROJECT_DIR$/../Demo/WebApi/Controllers/map/MapsController.cs" />
+      <change beforePath="$PROJECT_DIR$/../Demo/.vs/Demo/v15/.suo" afterPath="$PROJECT_DIR$/../Demo/.vs/Demo/v15/.suo" />
       <change beforePath="$PROJECT_DIR$/../Demo/WebApi/Controllers/map/RoadsController.cs" afterPath="$PROJECT_DIR$/../Demo/WebApi/Controllers/map/RoadsController.cs" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/Core/Authorization/DemoPermissions.cs" afterPath="$PROJECT_DIR$/../Demo/WebApi/Core/Authorization/DemoPermissions.cs" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/Core/Authorization/Permissions.cs" afterPath="$PROJECT_DIR$/../Demo/WebApi/Core/Authorization/Permissions.cs" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/Migrations/DemoContextModelSnapshot.cs" afterPath="$PROJECT_DIR$/../Demo/WebApi/Migrations/DemoContextModelSnapshot.cs" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/Model/DemoContext.cs" afterPath="$PROJECT_DIR$/../Demo/WebApi/Model/DemoContext.cs" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/Model/GoogleRoad.cs" afterPath="$PROJECT_DIR$/../Demo/WebApi/Model/GoogleRoad.cs" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/Model/Map.cs" afterPath="$PROJECT_DIR$/../Demo/WebApi/Model/Map.cs" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/Startup.cs" afterPath="$PROJECT_DIR$/../Demo/WebApi/Startup.cs" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.AspNetCore.dll" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.AspNetCore.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.AspNetCore.pdb" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.AspNetCore.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.BackgroundJobs.Hangfire.dll" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.BackgroundJobs.Hangfire.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.BackgroundJobs.Hangfire.pdb" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.BackgroundJobs.Hangfire.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.Common.dll" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.Common.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.IdentityServer4.EntityFrameworkCore.dll" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.IdentityServer4.EntityFrameworkCore.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.IdentityServer4.EntityFrameworkCore.pdb" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.IdentityServer4.EntityFrameworkCore.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.IdentityServer4.dll" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.IdentityServer4.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.IdentityServer4.pdb" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.IdentityServer4.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.Notification.Firebase.dll" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.Notification.Firebase.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.Notification.Firebase.pdb" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.Notification.Firebase.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.Storage.EntityFrameworkCore.dll" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.Storage.EntityFrameworkCore.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.Storage.EntityFrameworkCore.pdb" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.Storage.EntityFrameworkCore.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.Validation.DataAnnotations.dll" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.Validation.DataAnnotations.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.Validation.DataAnnotations.pdb" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.Validation.DataAnnotations.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.dll" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.pdb" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/Demo.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/WebApi.deps.json" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/WebApi.deps.json" />
       <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/WebApi.dll" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/WebApi.dll" />
       <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/WebApi.pdb" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/WebApi.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/WebApi.runtimeconfig.dev.json" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/WebApi.runtimeconfig.dev.json" />
       <change beforePath="$PROJECT_DIR$/../Demo/WebApi/obj/Debug/netcoreapp2.0/WebApi.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/../Demo/WebApi/obj/Debug/netcoreapp2.0/WebApi.csproj.CoreCompileInputs.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/obj/Debug/netcoreapp2.0/WebApi.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/../Demo/WebApi/obj/Debug/netcoreapp2.0/WebApi.csproj.FileListAbsolute.txt" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/obj/Debug/netcoreapp2.0/WebApi.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/../Demo/WebApi/obj/Debug/netcoreapp2.0/WebApi.csprojResolveAssemblyReference.cache" />
       <change beforePath="$PROJECT_DIR$/../Demo/WebApi/obj/Debug/netcoreapp2.0/WebApi.dll" afterPath="$PROJECT_DIR$/../Demo/WebApi/obj/Debug/netcoreapp2.0/WebApi.dll" />
       <change beforePath="$PROJECT_DIR$/../Demo/WebApi/obj/Debug/netcoreapp2.0/WebApi.pdb" afterPath="$PROJECT_DIR$/../Demo/WebApi/obj/Debug/netcoreapp2.0/WebApi.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/obj/WebApi.csproj.nuget.cache" afterPath="$PROJECT_DIR$/../Demo/WebApi/obj/WebApi.csproj.nuget.cache" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/obj/WebApi.csproj.nuget.g.props" afterPath="$PROJECT_DIR$/../Demo/WebApi/obj/WebApi.csproj.nuget.g.props" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/obj/WebApi.csproj.nuget.g.targets" afterPath="$PROJECT_DIR$/../Demo/WebApi/obj/WebApi.csproj.nuget.g.targets" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/obj/project.assets.json" afterPath="$PROJECT_DIR$/../Demo/WebApi/obj/project.assets.json" />
-      <change beforePath="$PROJECT_DIR$/../Demo/packages/System.Collections.Immutable.1.4.0/lib/netstandard1.0/System.Collections.Immutable.xml" afterPath="$PROJECT_DIR$/../Demo/packages/System.Collections.Immutable.1.4.0/lib/netstandard1.0/System.Collections.Immutable.xml" />
-      <change beforePath="$PROJECT_DIR$/../Demo/packages/System.Collections.Immutable.1.4.0/lib/netstandard2.0/System.Collections.Immutable.xml" afterPath="$PROJECT_DIR$/../Demo/packages/System.Collections.Immutable.1.4.0/lib/netstandard2.0/System.Collections.Immutable.xml" />
-      <change beforePath="$PROJECT_DIR$/../Demo/packages/System.Collections.Immutable.1.4.0/lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml" afterPath="$PROJECT_DIR$/../Demo/packages/System.Collections.Immutable.1.4.0/lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml" />
-      <change beforePath="$PROJECT_DIR$/../Demo/packages/System.Data.SqlClient.4.4.0/ref/net461/System.Data.SqlClient.xml" afterPath="$PROJECT_DIR$/../Demo/packages/System.Data.SqlClient.4.4.0/ref/net461/System.Data.SqlClient.xml" />
-      <change beforePath="$PROJECT_DIR$/../Demo/packages/System.Data.SqlClient.4.4.0/ref/netstandard2.0/System.Data.SqlClient.xml" afterPath="$PROJECT_DIR$/../Demo/packages/System.Data.SqlClient.4.4.0/ref/netstandard2.0/System.Data.SqlClient.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/VSmartNet.iml" afterPath="$PROJECT_DIR$/.idea/VSmartNet.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/config.json" afterPath="$PROJECT_DIR$/config.json" />
-      <change beforePath="$PROJECT_DIR$/configs.py" afterPath="$PROJECT_DIR$/configs.py" />
+      <change beforePath="$PROJECT_DIR$/core/Database.py" afterPath="$PROJECT_DIR$/core/Database.py" />
       <change beforePath="$PROJECT_DIR$/core/ServerController.py" afterPath="$PROJECT_DIR$/core/ServerController.py" />
-      <change beforePath="$PROJECT_DIR$/core/clientA.py" afterPath="$PROJECT_DIR$/core/clientA.py" />
-      <change beforePath="$PROJECT_DIR$/enviroments.py" afterPath="$PROJECT_DIR$/enviroments.py" />
       <change beforePath="$PROJECT_DIR$/views/controls/MainControl.py" afterPath="$PROJECT_DIR$/views/controls/MainControl.py" />
+      <change beforePath="$PROJECT_DIR$/views/controls/SplashControl.py" afterPath="$PROJECT_DIR$/views/controls/SplashControl.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -191,7 +26,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/VSmartNet$app.coverage" NAME="app Coverage Results" MODIFIED="1521195976452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/VSmartNet$app.coverage" NAME="app Coverage Results" MODIFIED="1521452809823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.47492063">
@@ -201,7 +36,7 @@
             <entry file="file://$PROJECT_DIR$/views/controls/MainControl.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="442">
-                  <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="26" />
+                  <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
                   <folding>
                     <element signature="e#18#41#0" expanded="true" />
                   </folding>
@@ -212,10 +47,12 @@
           <file leaf-file-name="Database.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/core/Database.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-476">
-                  <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="17" />
+                <state relative-caret-position="-357">
+                  <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
                   <folding>
-                    <marker date="1521190555144" expanded="true" signature="1597:1672" ph="INSERT INTO users... " />
+                    <element signature="e#18#28#0" expanded="true" />
+                    <marker date="1521446955386" expanded="true" signature="1597:1672" ph="INSERT INTO users... " />
+                    <marker date="1521446955386" expanded="true" signature="2376:2415" ph="SELECT * FRO... users" />
                   </folding>
                 </state>
               </provider>
@@ -225,7 +62,7 @@
             <entry file="file://$PROJECT_DIR$/core/clientA.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="51">
-                  <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+                  <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -245,7 +82,7 @@
             <entry file="file://$PROJECT_DIR$/configs.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="153">
-                  <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+                  <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
                   <folding />
                 </state>
               </provider>
@@ -254,10 +91,22 @@
           <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+                <state relative-caret-position="187">
+                  <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
                   <folding>
                     <element signature="e#18#28#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="exp_thread.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/exp_thread.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="323">
+                  <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#0#15#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -270,9 +119,11 @@
           <file leaf-file-name="SplashControl.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/controls/SplashControl.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="17" lean-forward="true" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-                  <folding />
+                <state relative-caret-position="306">
+                  <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="7" />
+                  <folding>
+                    <element signature="e#18#28#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -280,8 +131,8 @@
           <file leaf-file-name="ServerController.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/core/ServerController.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+                <state relative-caret-position="38">
+                  <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -292,8 +143,8 @@
           <file leaf-file-name="enviroments.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/enviroments.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -313,6 +164,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>progress</find>
+      <find>self.mysignal</find>
+      <find>time.sleep</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -330,15 +183,16 @@
         <option value="$PROJECT_DIR$/models/user.py" />
         <option value="$PROJECT_DIR$/controllers/UserController.py" />
         <option value="$PROJECT_DIR$/constants.py" />
-        <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/views/controls/SplashControl.py" />
         <option value="$PROJECT_DIR$/views/controls/LoginControl.py" />
-        <option value="$PROJECT_DIR$/core/Database.py" />
         <option value="$PROJECT_DIR$/views/controls/ServerSettingsControl.py" />
         <option value="$PROJECT_DIR$/configs.py" />
         <option value="$PROJECT_DIR$/config.json" />
         <option value="$PROJECT_DIR$/core/clientA.py" />
         <option value="$PROJECT_DIR$/enviroments.py" />
+        <option value="$PROJECT_DIR$/core/exp_thread.py" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/views/controls/SplashControl.py" />
+        <option value="$PROJECT_DIR$/core/Database.py" />
         <option value="$PROJECT_DIR$/views/controls/MainControl.py" />
         <option value="$PROJECT_DIR$/core/ServerController.py" />
       </list>
@@ -377,7 +231,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -390,41 +244,11 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="VSmartNet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VSmartNet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VSmartNet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VSmartNet" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VSmartNet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VSmartNet" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VSmartNet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VSmartNet" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="controls" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ChatLan-comp/ChatLan-comp/Source Code" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/exp_thread.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -490,12 +314,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1796875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -503,7 +328,7 @@
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17943338" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26757607" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -552,19 +377,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="13" />
+      <option name="time" value="36" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/enviroments.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/ServerController.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -598,7 +415,7 @@
         <state relative-caret-position="238">
           <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding>
-            <element signature="e#18#28#0" expanded="false" />
+            <element signature="e#18#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -617,9 +434,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <element signature="e#18#28#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -627,9 +442,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#18#41#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -684,7 +497,7 @@
         <state relative-caret-position="238">
           <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding>
-            <element signature="e#18#28#0" expanded="false" />
+            <element signature="e#18#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -693,9 +506,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <element signature="e#18#28#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -711,9 +522,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="13" column="62" lean-forward="false" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
-          <folding>
-            <element signature="e#18#41#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -805,9 +614,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#18#41#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -823,7 +630,7 @@
         <state relative-caret-position="646">
           <caret line="44" column="25" lean-forward="true" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
           <folding>
-            <element signature="e#18#28#0" expanded="false" />
+            <element signature="e#18#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -915,20 +722,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#18#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/configs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -941,20 +738,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/controls/LoginControl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding>
-            <element signature="e#18#28#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/clientA.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+          <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -967,36 +754,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#18#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/enviroments.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/controls/LoginControl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/exp_thread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/Database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="-357">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding>
-            <marker date="1521190555144" expanded="true" signature="1597:1672" ph="INSERT INTO users... " />
+            <element signature="e#18#28#0" expanded="true" />
+            <marker date="1521446955386" expanded="true" signature="1597:1672" ph="INSERT INTO users... " />
+            <marker date="1521446955386" expanded="true" signature="2376:2415" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/controls/SplashControl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="true" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="306">
+          <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="e#18#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/controls/MainControl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="26" />
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="e#18#41#0" expanded="true" />
           </folding>
@@ -1005,8 +824,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/ServerController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="38">
+          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

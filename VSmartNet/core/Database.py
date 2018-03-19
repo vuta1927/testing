@@ -31,16 +31,16 @@ class SqlDatabase(QThread):
 
     def ___InitData___(self):
         self.mysignal.emit(20, False, 'Connected to database ...')
-        time.sleep(0.3)
+        time.sleep(0.1)
         defaultUser = self.getUser(self.defaultUserName)
         if(defaultUser != None):
-            time.sleep(0.3)
+            time.sleep(0.1)
             self.mysignal.emit(100, False, '')
             # print("Setup database finished!")
             return
         
         try:
-            time.sleep(0.3)
+            time.sleep(0.1)
             sql = 'INSERT INTO users (id, username, password, fullname) VALUES(%s, %s, %s, %s)'
             self.cur.execute(sql, (str(uuid.uuid4()), self.defaultUserName, self.defaultUserPassword, self.defaultUserFullname))
             self.conn.commit()
@@ -49,13 +49,13 @@ class SqlDatabase(QThread):
             self.mysignal.emit(70, True, "Something went wrong: {}".format(err))
             # print("Something went wrong: {}".format(err))
         
-        time.sleep(0.3)
+        time.sleep(0.1)
         self.mysignal.emit(100, False, 'Database initialled')
         # print("Setup database finished!")
 
     def getUser(self, username):
         try:
-            time.sleep(0.3)
+            time.sleep(0.1)
             self.mysignal.emit(50, False, '')
             self.cur.execute('SELECT * FROM users WHERE username = %s', username)
         except mysql.connector.Error as err:

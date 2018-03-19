@@ -6,7 +6,7 @@ from views.controls.ServerSettingsControl import ServerSettingsDialog
 from views.controls.SplashControl import Splash
 import enviroments
 import configs
-from core.ServerController import Server
+from core.ServerController import ServerThread
 
 class Main(QMainWindow, FORM_MAIN):
     def __init__(self, parent=None):
@@ -15,15 +15,20 @@ class Main(QMainWindow, FORM_MAIN):
         self.setupUi(self)
         self.btnSetting.clicked.connect(self.open_server_settings_dialog)
         self.btnServerStart.clicked.connect(self.btn_server_start_pressed)
-        self.btnServerStop.clicked.connect()
+        self.btnServerStop.clicked.connect(self.btn_server_stop_pressed)
+        self.btnServerStop.setEnabled(False)
         enviroments.init()
         configs.init()
 
     def btn_server_start_pressed(self):
-        enviroments.server = Server()
+        self.btnServerStart.setEnabled(False)
+        self.btnServerStop.setEnabled(True)
+        enviroments.server = ServerThread(self)
         enviroments.server.start()
 
     def btn_server_stop_pressed(self):
+        self.btnServerStart.setEnabled(True)
+        self.btnServerStop.setEnabled(False)
         enviroments.server.stop()
 
     def open_server_settings_dialog(self):
@@ -43,3 +48,4 @@ class Main(QMainWindow, FORM_MAIN):
         qtRectangle.moveCenter(centerPoint)
         splash.move(qtRectangle.topLeft())
         splash.exec_()
+
