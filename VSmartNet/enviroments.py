@@ -1,4 +1,5 @@
 #!/usr/bin/python
+import queue
 def init():
     global dBContext
     dBContext = None
@@ -8,3 +9,5 @@ def init():
     stopSignal = False
     global server
     server = None
+    global client_response
+    client_response = queue.Queue()

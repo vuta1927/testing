@@ -25,7 +25,7 @@ class SqlDatabase(QThread):
         except Exception as e:
             # print(e)
             self.mysignal.emit(5, True, 'Cant not connect to database !')
-        if(self.conn != None):
+        if self.conn is not None:
             self.cur = self.conn.cursor()
             self.___InitData___()
 
@@ -33,7 +33,7 @@ class SqlDatabase(QThread):
         self.mysignal.emit(20, False, 'Connected to database ...')
         time.sleep(0.1)
         defaultUser = self.getUser(self.defaultUserName)
-        if(defaultUser != None):
+        if defaultUser is not None:
             time.sleep(0.1)
             self.mysignal.emit(100, False, '')
             # print("Setup database finished!")
@@ -62,7 +62,7 @@ class SqlDatabase(QThread):
             self.mysignal.emit(50, True, "Something went wrong: {}".format(err))
             # print("Something went wrong: {}".format(err))
         result = self.cur.fetchone()
-        if(result != None):
+        if result is not None:
             return user.User(result['id'], result['username'], result['password'], result['fullname'])
         else:
             return
