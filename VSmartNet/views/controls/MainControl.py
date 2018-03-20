@@ -24,7 +24,7 @@ class Main(QMainWindow, FORM_MAIN):
         self.btnServerStart.setEnabled(False)
         self.btnServerStop.setEnabled(True)
         enviroments.server = ServerThread(self)
-        enviroments.server.callback_response_signal.connect(self._process_response_signal)
+        enviroments.server.response_signal.connect(self.process_response_signal)
         enviroments.server.start()
         self.statusBar().showMessage("Server started! Waiting for connections from TCP clients...")
 
@@ -53,5 +53,5 @@ class Main(QMainWindow, FORM_MAIN):
         splash.exec_()
 
     @pyqtSlot(int, bool, object)
-    def _process_response_signal(self, command_type, status, message):
+    def process_response_signal(self, command_type, status, message):
         print(command_type)

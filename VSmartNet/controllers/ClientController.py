@@ -31,11 +31,8 @@ def add(client):
     try:
         sql = 'INSERT INTO clients (clientId, macAddress, stationId, dateStart, descriptions) VALUES(%s, %s, %s, %s, %s)'
         enviroments.dBContext.cur.execute(sql, (client.clientId, client.macAddress, client.stationId, client.dateStart, client.descriptions))
+        enviroments.dBContext.conn.commit()
+        return None
     except Exception as e:
         print(e)
-
-    result = enviroments.dBContext.cur.fetchone()
-    if result is not None:
-        return Client(result['id'], result['clientId'], result['macAddress'], result['stationId'], result['dateStart'], result['descriptions'])
-    else:
         return None

@@ -213,11 +213,11 @@ namespace WebApi.Controllers.map
                 return BadRequest(ModelState);
             }
             var iconOnRoad = await _context.GoogleRoadIcons.SingleOrDefaultAsync(i => i.GoogleRoadId == id);
-            if (iconOnRoad == null)
+            if (iconOnRoad != null)
             {
-                return NotFound();
+                _context.GoogleRoadIcons.Remove(iconOnRoad);
             }
-            _context.GoogleRoadIcons.Remove(iconOnRoad);
+            
             var road = await _context.GoogleRoads.SingleOrDefaultAsync(m => m.Id == id);
             if (road == null)
             {

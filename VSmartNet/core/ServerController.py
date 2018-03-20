@@ -1,17 +1,17 @@
 import socket
 from threading import Thread, Event
-from PyQt5.QtCore import pyqtSignal, pyqtSlot
+from PyQt5.QtCore import pyqtSignal, pyqtSlot, QThread
 import queue
 import configs
 from models.command import Command
 from models.client import Client
 import controllers.ClientController as clientControl
 from models.response import Response
-class ServerThread(Thread):
+class ServerThread(QThread):
     # Register the signal handlers
     response_signal = pyqtSignal(int, bool, object)
     def __init__(self, parent):
-        super(ServerThread, self).__init__()
+        QThread.__init__(self)
         self.host_address = configs.hostAddress
         self.host_port = configs.hostPort
         self.stop_request = Event()
@@ -52,10 +52,11 @@ class ServerThread(Thread):
     def callback_response_signal(self, command_type, status, message):
         self.response_signal.emit(command_type, status, message)
 
-class ClientThread(Thread):
+class ClientThread(QThread):
     response_signal = pyqtSignal(int, bool, object)
     def __init__(self, ip, port, conn):
-        super(ClientThread, self).__init__()
+        QThread.__init__(self)
+        # super(ClientThread, self).__init__()
         self.ip = ip
         self.port = port
         self.conn = conn
@@ -73,7 +74,7 @@ class ClientThread(Thread):
                 if not data:
                     break
                 res = data.decode().split('#')
-                header = res[0]
+                header = int(res[0])
                 mess = res[1]
                 print("Server received data:", data.decode())
 
@@ -97,14 +98,14 @@ class ClientThread(Thread):
                         self.response_queue.put(Response(host, Command.Type.sensor_checking, False, mess))
                 elif header == Command.Response.info:
                     temp = mess.split(',')
-                    host = Client(int(temp[0]), int(temp[1]), temp[2], int(temp[3]), temp[4])
+                    host = Client(int(temp[0]), int(temp[1]), temp[2], int(temp[3]), temp[4], temp[5])
                     if clientControl.is_exist(host):
                         self.response_queue.put(Response(host, Command.Type.info, True))
                     else:
                         self.response_queue.put(Response(host, Command.Type.info, False, 'client not found!'))
                 elif header == Command.Response.identify:
                     temp = mess.split(',')
-                    host = Client(int(temp[0]), int(temp[1]), temp[2], int(temp[3]), temp[4])
+                    host = Client(int(temp[0]), int(temp[1]), temp[2], int(temp[3]), temp[4], temp[5])
                     if not clientControl.is_exist(host):
                         new_host = clientControl.add(host)
                         self.response_queue.put(Response(host, Command.Type.identify, True))
@@ -138,10 +139,11 @@ class ClientThread(Thread):
     def callback_response_signal(self, command_type, status, message):
         self.response_signal.emit(command_type, status, message)
 
-class ResponseTheard(Thread):
+class ResponseTheard(QThread):
     response_signal = pyqtSignal(int, bool, object)
     def __init__(self, client, response_q):
-        super(ResponseTheard, self).__init__()
+        QThread.__init__(self)
+        # super(ResponseTheard, self).__init__()
         self.client = client
         self.response_queue = response_q
         self.stop_request = Event()
