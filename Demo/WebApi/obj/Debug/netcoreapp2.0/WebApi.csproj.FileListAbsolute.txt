@@ -21,9 +21,10 @@ E:\GitHub\testing\Demo\WebApi\bin\Debug\netcoreapp2.0\Demo.Notification.Firebase
 E:\GitHub\testing\Demo\WebApi\bin\Debug\netcoreapp2.0\Demo.Storage.EntityFrameworkCore.pdb
 E:\GitHub\testing\Demo\WebApi\bin\Debug\netcoreapp2.0\Demo.Validation.DataAnnotations.pdb
 E:\GitHub\testing\Demo\WebApi\bin\Debug\netcoreapp2.0\Demo.pdb
+E:\GitHub\testing\Demo\WebApi\obj\Debug\netcoreapp2.0\WebApi.csprojResolveAssemblyReference.cache
 E:\GitHub\testing\Demo\WebApi\obj\Debug\netcoreapp2.0\WebApi.csproj.CoreCompileInputs.cache
 E:\GitHub\testing\Demo\WebApi\obj\Debug\netcoreapp2.0\WebApi.AssemblyInfoInputs.cache
 E:\GitHub\testing\Demo\WebApi\obj\Debug\netcoreapp2.0\WebApi.AssemblyInfo.cs
+E:\GitHub\testing\Demo\WebApi\obj\Debug\netcoreapp2.0\WebApi.csproj.CopyComplete
 E:\GitHub\testing\Demo\WebApi\obj\Debug\netcoreapp2.0\WebApi.dll
 E:\GitHub\testing\Demo\WebApi\obj\Debug\netcoreapp2.0\WebApi.pdb
-E:\GitHub\testing\Demo\WebApi\obj\Debug\netcoreapp2.0\WebApi.csprojResolveAssemblyReference.cache

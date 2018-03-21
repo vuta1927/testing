@@ -32,7 +32,7 @@ namespace WebApi
 {
     public class Startup
     {
-        private static string _defaultCorsPolicyName = "http://localhost:4200";
+        private static string _defaultCorsPolicyName = "http://localhost:4500";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;

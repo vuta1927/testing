@@ -3,9 +3,10 @@ E:\GitHub\testing\Demo\Demo.AspNetCore\bin\Debug\netstandard2.0\Demo.AspNetCore.
 E:\GitHub\testing\Demo\Demo.AspNetCore\bin\Debug\netstandard2.0\Demo.AspNetCore.pdb
 E:\GitHub\testing\Demo\Demo.AspNetCore\bin\Debug\netstandard2.0\Demo.dll
 E:\GitHub\testing\Demo\Demo.AspNetCore\bin\Debug\netstandard2.0\Demo.pdb
+E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.csprojResolveAssemblyReference.cache
 E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.csproj.CoreCompileInputs.cache
 E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.AssemblyInfoInputs.cache
 E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.AssemblyInfo.cs
+E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.csproj.CopyComplete
 E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.dll
 E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.pdb
-E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Debug\netstandard2.0\Demo.AspNetCore.csprojResolveAssemblyReference.cache

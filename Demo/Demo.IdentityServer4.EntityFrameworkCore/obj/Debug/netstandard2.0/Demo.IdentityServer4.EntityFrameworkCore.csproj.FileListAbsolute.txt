@@ -7,9 +7,10 @@ E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\bin\Debug\netsta
 E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\bin\Debug\netstandard2.0\Demo.IdentityServer4.pdb
 E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\bin\Debug\netstandard2.0\Demo.Storage.EntityFrameworkCore.pdb
 E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\bin\Debug\netstandard2.0\Demo.pdb
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.csprojResolveAssemblyReference.cache
 E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.csproj.CoreCompileInputs.cache
 E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.AssemblyInfoInputs.cache
 E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.AssemblyInfo.cs
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.csproj.CopyComplete
 E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.dll
 E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.pdb
-E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\obj\Debug\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.csprojResolveAssemblyReference.cache

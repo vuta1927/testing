@@ -3,9 +3,10 @@ E:\GitHub\testing\Demo\Demo.IdentityServer4\bin\Debug\netstandard2.0\Demo.Identi
 E:\GitHub\testing\Demo\Demo.IdentityServer4\bin\Debug\netstandard2.0\Demo.IdentityServer4.pdb
 E:\GitHub\testing\Demo\Demo.IdentityServer4\bin\Debug\netstandard2.0\Demo.dll
 E:\GitHub\testing\Demo\Demo.IdentityServer4\bin\Debug\netstandard2.0\Demo.pdb
+E:\GitHub\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.IdentityServer4.csprojResolveAssemblyReference.cache
 E:\GitHub\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.IdentityServer4.csproj.CoreCompileInputs.cache
 E:\GitHub\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.IdentityServer4.AssemblyInfoInputs.cache
 E:\GitHub\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.IdentityServer4.AssemblyInfo.cs
+E:\GitHub\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.IdentityServer4.csproj.CopyComplete
 E:\GitHub\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.IdentityServer4.dll
 E:\GitHub\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.IdentityServer4.pdb
-E:\GitHub\testing\Demo\Demo.IdentityServer4\obj\Debug\netstandard2.0\Demo.IdentityServer4.csprojResolveAssemblyReference.cache

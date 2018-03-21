@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e9051cc-3305-406f-afed-526ae3ab7f8e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../Demo/.vs/Demo/v15/.suo" afterPath="$PROJECT_DIR$/../Demo/.vs/Demo/v15/.suo" />
-      <change beforePath="$PROJECT_DIR$/../Demo/.vs/Demo/v15/Server/sqlite3/storage.ide" afterPath="$PROJECT_DIR$/../Demo/.vs/Demo/v15/Server/sqlite3/storage.ide" />
-      <change beforePath="$PROJECT_DIR$/../Demo/.vs/Demo/v15/Server/sqlite3/storage.ide-shm" afterPath="$PROJECT_DIR$/../Demo/.vs/Demo/v15/Server/sqlite3/storage.ide-shm" />
-      <change beforePath="$PROJECT_DIR$/../Demo/.vs/Demo/v15/Server/sqlite3/storage.ide-wal" afterPath="$PROJECT_DIR$/../Demo/.vs/Demo/v15/Server/sqlite3/storage.ide-wal" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/Controllers/map/RoadsController.cs" afterPath="$PROJECT_DIR$/../Demo/WebApi/Controllers/map/RoadsController.cs" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/WebApi.dll" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/WebApi.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/WebApi.pdb" afterPath="$PROJECT_DIR$/../Demo/WebApi/bin/Debug/netcoreapp2.0/WebApi.pdb" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/obj/Debug/netcoreapp2.0/WebApi.dll" afterPath="$PROJECT_DIR$/../Demo/WebApi/obj/Debug/netcoreapp2.0/WebApi.dll" />
-      <change beforePath="$PROJECT_DIR$/../Demo/WebApi/obj/Debug/netcoreapp2.0/WebApi.pdb" afterPath="$PROJECT_DIR$/../Demo/WebApi/obj/Debug/netcoreapp2.0/WebApi.pdb" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/controllers/ClientController.py" afterPath="$PROJECT_DIR$/controllers/ClientController.py" />
-      <change beforePath="$PROJECT_DIR$/core/ServerController.py" afterPath="$PROJECT_DIR$/core/ServerController.py" />
-      <change beforePath="$PROJECT_DIR$/core/clientA.py" afterPath="$PROJECT_DIR$/core/clientA.py" />
-      <change beforePath="$PROJECT_DIR$/views/controls/MainControl.py" afterPath="$PROJECT_DIR$/views/controls/MainControl.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -97,7 +84,7 @@
           <file leaf-file-name="ServerController.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/core/ServerController.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="133">
+                <state relative-caret-position="281">
                   <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
@@ -355,12 +342,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521531823178</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="up">
+      <created>1521541541368</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1521541541368</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -374,7 +367,7 @@
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15529905" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15529905" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -894,7 +887,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/ServerController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="281">
           <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />

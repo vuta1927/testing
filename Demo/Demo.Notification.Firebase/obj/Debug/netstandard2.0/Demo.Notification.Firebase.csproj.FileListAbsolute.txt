@@ -3,9 +3,10 @@ E:\GitHub\testing\Demo\Demo.Notification.Firebase\bin\Debug\netstandard2.0\Demo.
 E:\GitHub\testing\Demo\Demo.Notification.Firebase\bin\Debug\netstandard2.0\Demo.Notification.Firebase.pdb
 E:\GitHub\testing\Demo\Demo.Notification.Firebase\bin\Debug\netstandard2.0\Demo.dll
 E:\GitHub\testing\Demo\Demo.Notification.Firebase\bin\Debug\netstandard2.0\Demo.pdb
+E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.csprojResolveAssemblyReference.cache
 E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.csproj.CoreCompileInputs.cache
 E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.AssemblyInfoInputs.cache
 E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.AssemblyInfo.cs
+E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.csproj.CopyComplete
 E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.dll
 E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.pdb
-E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.csprojResolveAssemblyReference.cache
