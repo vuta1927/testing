@@ -5,6 +5,7 @@ using Demo.Mapping;
 using Demo.Storage.EntityFrameworkCore;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Demo.Security;
 
 namespace WebApi.Model
 {
@@ -20,6 +21,7 @@ namespace WebApi.Model
         public DbSet<MapRole> MapRoles { get; set; }
         public DbSet<CommentIcon> CommentIcons { get; set; }
         public DbSet<GoogleRoadIcon> GoogleRoadIcons { get; set; }
+        public DbSet<Demo.Security.Role> Role { get; set; }
     }
 
 }

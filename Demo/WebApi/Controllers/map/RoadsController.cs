@@ -57,7 +57,7 @@ namespace WebApi.Controllers.map
         [HttpGet("From/{mapId}/{pos}")]
         public IActionResult GetRoads([FromRoute] int mapId, [FromRoute] int pos)
         {
-            var data = _context.GoogleRoads.Where(r => r.MapId == mapId).Skip(pos).Take(5).ToList();
+            var data = _context.GoogleRoads.Where(r => r.MapId == mapId).Skip(pos).Take(11).ToList();
             if (data.Count < 0)
             {
                 return NotFound();

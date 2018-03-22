@@ -251,7 +251,7 @@ namespace WebApi.Migrations
 
                     b.HasIndex("NormalizedRoleName");
 
-                    b.ToTable("Roles");
+                    b.ToTable("Role");
                 });
 
             modelBuilder.Entity("Demo.Security.RoleClaim", b =>
@@ -438,6 +438,8 @@ namespace WebApi.Migrations
                     b.Property<double>("Lat");
 
                     b.Property<double>("Lng");
+
+                    b.Property<string>("Location");
 
                     b.Property<string>("Url");
 

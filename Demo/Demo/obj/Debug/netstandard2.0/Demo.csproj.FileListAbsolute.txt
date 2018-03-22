@@ -1,9 +1,9 @@
 E:\GitHub\testing\Demo\Demo\bin\Debug\netstandard2.0\Demo.deps.json
 E:\GitHub\testing\Demo\Demo\bin\Debug\netstandard2.0\Demo.dll
 E:\GitHub\testing\Demo\Demo\bin\Debug\netstandard2.0\Demo.pdb
+E:\GitHub\testing\Demo\Demo\obj\Debug\netstandard2.0\Demo.csprojResolveAssemblyReference.cache
 E:\GitHub\testing\Demo\Demo\obj\Debug\netstandard2.0\Demo.csproj.CoreCompileInputs.cache
 E:\GitHub\testing\Demo\Demo\obj\Debug\netstandard2.0\Demo.AssemblyInfoInputs.cache
 E:\GitHub\testing\Demo\Demo\obj\Debug\netstandard2.0\Demo.AssemblyInfo.cs
 E:\GitHub\testing\Demo\Demo\obj\Debug\netstandard2.0\Demo.dll
 E:\GitHub\testing\Demo\Demo\obj\Debug\netstandard2.0\Demo.pdb
-E:\GitHub\testing\Demo\Demo\obj\Debug\netstandard2.0\Demo.csprojResolveAssemblyReference.cache

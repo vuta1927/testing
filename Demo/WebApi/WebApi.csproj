@@ -7,6 +7,8 @@
   <ItemGroup>
     <Compile Remove="Migrations\20180310041245_Add_MapComponent.cs" />
     <Compile Remove="Migrations\20180310041245_Add_MapComponent.Designer.cs" />
+    <Compile Remove="Migrations\20180322104156_init.cs" />
+    <Compile Remove="Migrations\20180322104156_init.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
