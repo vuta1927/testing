@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Security.Claims;
 using Demo.Domain.Entities;
+using Demo.Security.Permissions;
 
 namespace Demo.Security
 {

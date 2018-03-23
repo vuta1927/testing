@@ -231,6 +231,8 @@ namespace WebApi.Migrations
 
                     b.Property<DateTime?>("DeletionTime");
 
+                    b.Property<string>("Descriptions");
+
                     b.Property<bool>("IsDeleted");
 
                     b.Property<DateTime?>("LastModificationTime");
@@ -318,7 +320,7 @@ namespace WebApi.Migrations
 
                     b.HasIndex("NormalizedUserName");
 
-                    b.ToTable("Users");
+                    b.ToTable("User");
                 });
 
             modelBuilder.Entity("Demo.Security.UserLogin", b =>
@@ -480,6 +482,26 @@ namespace WebApi.Migrations
                     b.ToTable("MapRoles");
                 });
 
+            modelBuilder.Entity("WebApi.Model.PermissionRole", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int?>("PermissionId");
+
+                    b.Property<int>("PermissionsId");
+
+                    b.Property<int>("RoleId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PermissionId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("PermissionRoles");
+                });
+
             modelBuilder.Entity("Demo.Security.Permissions.Permission", b =>
                 {
                     b.HasOne("Demo.Security.Permissions.Permission", "Parent")
@@ -556,6 +578,18 @@ namespace WebApi.Migrations
                         .WithMany()
                         .HasForeignKey("MapId")
                         .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Demo.Security.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("WebApi.Model.PermissionRole", b =>
+                {
+                    b.HasOne("Demo.Security.Permissions.Permission", "Permission")
+                        .WithMany()
+                        .HasForeignKey("PermissionId");
 
                     b.HasOne("Demo.Security.Role", "Role")
                         .WithMany()

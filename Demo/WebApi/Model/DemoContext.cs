@@ -22,6 +22,8 @@ namespace WebApi.Model
         public DbSet<CommentIcon> CommentIcons { get; set; }
         public DbSet<GoogleRoadIcon> GoogleRoadIcons { get; set; }
         public DbSet<Demo.Security.Role> Role { get; set; }
+        public DbSet<Demo.Security.User> User { get; set; }
+        public DbSet<PermissionRole> PermissionRoles { get; set; }
     }
 
 }

@@ -9,6 +9,8 @@ namespace Demo.Security
         public string RoleName { get; set; }
         public string NormalizedRoleName { get; set; }
 
+        public string Descriptions { get; set; }
+
         [ForeignKey("RoleId")]
         public ICollection<RoleClaim> RoleClaims { get; set; }
 

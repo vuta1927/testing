@@ -135,7 +135,7 @@ namespace WebApi
                         .AllowAnyMethod()
                 )
             );
-            services.AddTransient<UserController>();
+            services.AddTransient<UsersController>();
             services.AddTransient<MapsController>();
             services.AddTransient<RoadsController>();
             services.AddTransient<GoogleRoadIconsController>();

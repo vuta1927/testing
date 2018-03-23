@@ -2,14 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Demo.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Demo.Security;
+using Demo.Security.Permissions;
+using WebApi.Core.Authorization;
 using WebApi.Model;
 
 namespace WebApi.Controllers.user
 {
+
+    class RoleManage : Role
+    {
+        public List<Permission> Permissions { get; set; }
+    }
+
     [Produces("application/json")]
     [Route("api/Roles")]
     public class RolesController : Controller
@@ -23,9 +32,37 @@ namespace WebApi.Controllers.user
 
         // GET: api/Roles
         [HttpGet]
-        public IEnumerable<Role> GetRole()
+        public IActionResult GetRole()
         {
-            return _context.Role;
+            var roles = new List<RoleManage>();
+            foreach (var r in _context.Role)
+            {
+                var role = new RoleManage()
+                {
+                    Id = r.Id,
+                    RoleName = r.RoleName,
+                    NormalizedRoleName = r.NormalizedRoleName,
+                    RoleClaims = r.RoleClaims,
+                    CreationTime = r.CreationTime,
+                    CreatorUser = r.CreatorUser,
+                    CreatorUserId = r.CreatorUserId,
+                    DeleterUser = r.DeleterUser,
+                    DeleterUserId = r.DeleterUserId,
+                    DeletionTime = r.DeletionTime,
+                    Descriptions = r.Descriptions,
+                    IsDeleted = r.IsDeleted,
+                    LastModificationTime = r.LastModificationTime,
+                    LastModifierUser = r.LastModifierUser,
+                    LastModifierUserId = r.LastModifierUserId,
+                    Permissions = new List<Permission>()
+                };
+                foreach (var row in _context.PermissionRoles.Where(p=>p.RoleId == role.Id))
+                {
+                    role.Permissions.AddRange(_context.Permissions.Where(p => p.Id == row.PermissionId));
+                }
+                roles.Add(role);
+            }
+            return Ok(roles);
         }
 
         // GET: api/Roles/5
@@ -38,7 +75,7 @@ namespace WebApi.Controllers.user
             }
 
             var role = await _context.Role.SingleOrDefaultAsync(m => m.Id == id);
-
+            
             if (role == null)
             {
                 return NotFound();
