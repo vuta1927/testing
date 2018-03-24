@@ -14,7 +14,7 @@ namespace WebApi.Controllers.map
 {
     [Produces("application/json")]
     [Route("api/GoogleRoadIcons")]
-    [AppAuthorize(DemoPermissions.ViewMap)]
+    [AppAuthorize(DemoPermissions.MapView)]
     public class GoogleRoadIconsController : Controller
     {
         private readonly DemoContext _context;

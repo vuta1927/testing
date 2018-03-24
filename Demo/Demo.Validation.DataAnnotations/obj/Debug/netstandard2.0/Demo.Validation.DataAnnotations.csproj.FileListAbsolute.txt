@@ -3,7 +3,6 @@ E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\bin\Debug\netstandard2.0\
 E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\bin\Debug\netstandard2.0\Demo.Validation.DataAnnotations.pdb
 E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\bin\Debug\netstandard2.0\Demo.dll
 E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\bin\Debug\netstandard2.0\Demo.pdb
-E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\Demo.Validation.DataAnnotations.csprojResolveAssemblyReference.cache
 E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\Demo.Validation.DataAnnotations.csproj.CoreCompileInputs.cache
 E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\Demo.Validation.DataAnnotations.AssemblyInfoInputs.cache
 E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\Demo.Validation.DataAnnotations.AssemblyInfo.cs

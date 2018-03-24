@@ -40,7 +40,7 @@ namespace Demo.IdentityServer4
                 var role = await _roleManager.FindByNameAsync(roleName);
                 if (role == null) continue;
                 var roleClaims = await _roleManager.GetClaimsAsync(role);
-                roleClaims.Add(new Claim("Roles",roleName));
+                roleClaims.Add(new Claim("Roles", roleName));
                 context.IssuedClaims.AddRange(roleClaims);
             }
         }

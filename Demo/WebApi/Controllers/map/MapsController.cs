@@ -40,7 +40,7 @@ namespace WebApi.Controllers.map
 
     [Produces("application/json")]
     [Route("api/Maps")]
-    [AppAuthorize(DemoPermissions.ViewMap)]
+    [AppAuthorize(DemoPermissions.MapView)]
     public class MapsController : Controller
     {
         private readonly DemoContext _context;

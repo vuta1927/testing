@@ -13,7 +13,7 @@ using WebApi.Model;
 namespace WebApi.Controllers.user
 {
 
-    [AppAuthorize(DemoPermissions.Administrator)]
+    [AppAuthorize(DemoPermissions.ViewUser)]
     [Produces("application/json")]
     [Route("api/Users")]
     public class UsersController : Controller
@@ -27,9 +27,9 @@ namespace WebApi.Controllers.user
 
         // GET: api/Users
         [HttpGet]
-        public IEnumerable<User> GetUser()
+        public IEnumerable<User> GetUser(int skip, int take)
         {
-            return _context.User;
+            return _context.User.Skip(skip).Take(take);
         }
 
         // GET: api/Users/5

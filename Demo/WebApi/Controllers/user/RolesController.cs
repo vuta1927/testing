@@ -18,7 +18,7 @@ namespace WebApi.Controllers.user
     {
         public List<Permission> Permissions { get; set; }
     }
-
+    [AppAuthorize(DemoPermissions.ViewRole)]
     [Produces("application/json")]
     [Route("api/Roles")]
     public class RolesController : Controller

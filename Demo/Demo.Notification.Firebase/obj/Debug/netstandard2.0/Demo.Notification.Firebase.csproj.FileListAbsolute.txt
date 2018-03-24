@@ -9,4 +9,3 @@ E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.
 E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.csproj.CopyComplete
 E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.dll
 E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.pdb
-E:\GitHub\testing\Demo\Demo.Notification.Firebase\obj\Debug\netstandard2.0\Demo.Notification.Firebase.csprojResolveAssemblyReference.cache

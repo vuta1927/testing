@@ -26,6 +26,7 @@ using System.Collections;
 using IdentityServer4.Services;
 using WebApi.Controllers.map;
 using WebApi.Controllers.user;
+using WebApi.Core.Authorization;
 using WebApi.Core.Configuration;
 
 namespace WebApi
@@ -135,6 +136,7 @@ namespace WebApi
                         .AllowAnyMethod()
                 )
             );
+            services.AddTransient<IProfileService, ProfileService>();
             services.AddTransient<UsersController>();
             services.AddTransient<MapsController>();
             services.AddTransient<RoadsController>();
