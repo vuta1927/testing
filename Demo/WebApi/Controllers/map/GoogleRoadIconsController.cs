@@ -14,7 +14,7 @@ namespace WebApi.Controllers.map
 {
     [Produces("application/json")]
     [Route("api/GoogleRoadIcons")]
-    [AppAuthorize(DemoPermissions.MapView)]
+    [AppAuthorize(DemoPermissions.ViewMap)]
     public class GoogleRoadIconsController : Controller
     {
         private readonly DemoContext _context;
@@ -33,7 +33,7 @@ namespace WebApi.Controllers.map
 
         // GET: api/GoogleRoadIcons/5
         [HttpGet("{id}")]
-        [AppAuthorize(DemoPermissions.MapAdd, DemoPermissions.MapEdit)]
+        [AppAuthorize(DemoPermissions.AddMap, DemoPermissions.EditMap)]
         public async Task<IActionResult> GetGoogleRoadIcon([FromRoute] int id)
         {
             if (!ModelState.IsValid)
@@ -53,7 +53,7 @@ namespace WebApi.Controllers.map
 
         // PUT: api/GoogleRoadIcons/5
         [HttpPut("{id}")]
-        [AppAuthorize(DemoPermissions.MapAdd, DemoPermissions.MapEdit)]
+        [AppAuthorize(DemoPermissions.AddMap, DemoPermissions.EditMap)]
         public async Task<IActionResult> PutGoogleRoadIcon([FromRoute] int id, [FromBody] GoogleRoadIcon googleRoadIcon)
         {
             if (!ModelState.IsValid)
@@ -89,7 +89,7 @@ namespace WebApi.Controllers.map
 
         // POST: api/GoogleRoadIcons
         [HttpPost]
-        [AppAuthorize(DemoPermissions.MapAdd, DemoPermissions.MapEdit)]
+        [AppAuthorize(DemoPermissions.AddMap, DemoPermissions.EditMap)]
         public async Task<IActionResult> PostGoogleRoadIcon([FromBody] GoogleRoadIcon googleRoadIcon)
         {
             if (!ModelState.IsValid)
@@ -114,7 +114,7 @@ namespace WebApi.Controllers.map
 
         // DELETE: api/GoogleRoadIcons/5
         [HttpDelete("{id}")]
-        [AppAuthorize(DemoPermissions.MapDelete)]
+        [AppAuthorize(DemoPermissions.DeleteMap)]
         public async Task<IActionResult> DeleteGoogleRoadIcon([FromRoute] int id)
         {
             if (!ModelState.IsValid)

@@ -215,7 +215,7 @@ namespace WebApi.Migrations
 
                     b.HasIndex("ParentId");
 
-                    b.ToTable("Permissions");
+                    b.ToTable("Permission");
                 });
 
             modelBuilder.Entity("Demo.Security.Role", b =>
@@ -487,9 +487,7 @@ namespace WebApi.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int?>("PermissionId");
-
-                    b.Property<int>("PermissionsId");
+                    b.Property<int>("PermissionId");
 
                     b.Property<int>("RoleId");
 
@@ -589,7 +587,8 @@ namespace WebApi.Migrations
                 {
                     b.HasOne("Demo.Security.Permissions.Permission", "Permission")
                         .WithMany()
-                        .HasForeignKey("PermissionId");
+                        .HasForeignKey("PermissionId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("Demo.Security.Role", "Role")
                         .WithMany()

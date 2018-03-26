@@ -6,6 +6,7 @@ using Demo.Storage.EntityFrameworkCore;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Demo.Security;
+using Demo.Security.Permissions;
 
 namespace WebApi.Model
 {
@@ -24,6 +25,7 @@ namespace WebApi.Model
         public DbSet<Demo.Security.Role> Role { get; set; }
         public DbSet<Demo.Security.User> User { get; set; }
         public DbSet<PermissionRole> PermissionRoles { get; set; }
+        public DbSet<Demo.Security.Permissions.Permission> Permission { get; set; }
     }
 
 }

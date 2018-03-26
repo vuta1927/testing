@@ -8,13 +8,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Demo.Security;
 using Demo.Security.Permissions;
+using Microsoft.Azure.KeyVault.Models;
 using WebApi.Core.Authorization;
 using WebApi.Model;
-
+using WebApi.Model.views;
 namespace WebApi.Controllers.user
 {
 
-    class RoleManage : Role
+    class RoleManage : Demo.Security.Role
     {
         public List<Permission> Permissions { get; set; }
     }
@@ -34,37 +35,20 @@ namespace WebApi.Controllers.user
         [HttpGet]
         public IActionResult GetRole()
         {
-            var roles = new List<RoleManage>();
+            var roles = new List<RoleModel.RoleBase>();
             foreach (var r in _context.Role)
             {
-                var role = new RoleManage()
+                var role = new RoleModel.RoleBase()
                 {
                     Id = r.Id,
                     RoleName = r.RoleName,
-                    NormalizedRoleName = r.NormalizedRoleName,
-                    RoleClaims = r.RoleClaims,
-                    CreationTime = r.CreationTime,
-                    CreatorUser = r.CreatorUser,
-                    CreatorUserId = r.CreatorUserId,
-                    DeleterUser = r.DeleterUser,
-                    DeleterUserId = r.DeleterUserId,
-                    DeletionTime = r.DeletionTime,
-                    Descriptions = r.Descriptions,
-                    IsDeleted = r.IsDeleted,
-                    LastModificationTime = r.LastModificationTime,
-                    LastModifierUser = r.LastModifierUser,
-                    LastModifierUserId = r.LastModifierUserId,
-                    Permissions = new List<Permission>()
+                    Descriptions = r.Descriptions
                 };
-                foreach (var row in _context.PermissionRoles.Where(p=>p.RoleId == role.Id))
-                {
-                    role.Permissions.AddRange(_context.Permissions.Where(p => p.Id == row.PermissionId));
-                }
                 roles.Add(role);
             }
             return Ok(roles);
         }
-
+        
         // GET: api/Roles/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetRole([FromRoute] int id)
@@ -80,13 +64,55 @@ namespace WebApi.Controllers.user
             {
                 return NotFound();
             }
+            
+            var roleForView = new RoleModel.RoleBase()
+            {
+                Id = role.Id,
+                RoleName = role.RoleName,
+                Descriptions = role.Descriptions,
+            };
 
-            return Ok(role);
+            return Ok(roleForView);
+
+            //try
+            //{
+            //    var roleForView = new RoleModel.RoleForView()
+            //    {
+            //        Id = role.Id,
+            //        RoleName = role.RoleName,
+            //        Descriptions = role.Descriptions,
+            //        Permissions = new List<PermissionModel.PermissionWithCategor>()
+            //    };
+            //    foreach (var row in _context.PermissionRoles.Where(p => p.RoleId == role.Id))
+            //    {
+            //        var data = _context.Permissions.Where(p => p.Id == row.PermissionId);
+            //        foreach (var permission in data)
+            //        {
+            //            var viewPermission = new PermissionModel.PermissionWithCategor()
+            //            {
+            //                Id = permission.Id,
+            //                Name = permission.Name,
+            //                DisplayName = permission.DisplayName,
+            //                Category = permission.Category,
+            //                Descriptions = permission.Description,
+            //                IsCheck = false
+            //            };
+            //            roleForView.Permissions.Add(viewPermission);
+            //        }
+            //    }
+
+            //    return Ok(roleForView);
+            //}
+            //catch (Exception e)
+            //{
+            //    return BadRequest(e.Message);
+
+            //}
         }
 
         // PUT: api/Roles/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutRole([FromRoute] int id, [FromBody] Role role)
+        public async Task<IActionResult> PutRole([FromRoute] int id, [FromBody] RoleModel.RoleForUpdate role)
         {
             if (!ModelState.IsValid)
             {
@@ -97,8 +123,15 @@ namespace WebApi.Controllers.user
             {
                 return BadRequest();
             }
-
-            _context.Entry(role).State = EntityState.Modified;
+            var originRole = _context.Role.SingleOrDefault(a => a.Id == id);
+            if (originRole != null)
+            {
+                originRole.RoleName = role.RoleName;
+                originRole.Descriptions = role.Descriptions;
+                originRole.LastModifierUserId = role.LastModifierUserId;
+                originRole.LastModificationTime = DateTime.Now;
+            }
+            //_context.Entry(role).State = EntityState.Modified;
 
             try
             {
@@ -116,19 +149,32 @@ namespace WebApi.Controllers.user
                 }
             }
 
-            return NoContent();
+            return CreatedAtAction("GetRole", new { id = role.Id }, role);
         }
 
         // POST: api/Roles
         [HttpPost]
-        public async Task<IActionResult> PostRole([FromBody] Role role)
+        public async Task<IActionResult> PostRole([FromBody] RoleModel.RoleForCreate role)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            _context.Role.Add(role);
+            if (RoleNameExists(role.RoleName))
+            {
+                return Ok(false);
+            }
+            var newRole = new Role()
+            {
+                RoleName = role.RoleName,
+                Descriptions = role.Descriptions,
+                IsDeleted = false,
+                CreationTime = DateTime.Now,
+                CreatorUserId = role.CreatorUserId,
+                NormalizedRoleName = role.RoleName.ToUpper()
+            };
+            _context.Role.Add(newRole);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetRole", new { id = role.Id }, role);
@@ -158,6 +204,11 @@ namespace WebApi.Controllers.user
         private bool RoleExists(int id)
         {
             return _context.Role.Any(e => e.Id == id);
+        }
+
+        private bool RoleNameExists(string name)
+        {
+            return _context.Role.Any(e => e.RoleName.ToUpper().Equals(name));
         }
     }
 }

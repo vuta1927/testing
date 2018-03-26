@@ -6,13 +6,13 @@ namespace WebApi.Core.Authorization
 {
     public class Permissions : IPermissionProvider
     {
-        public static readonly Permission MapViewPermission = new Permission(DemoPermissions.MapView);
+        public static readonly Permission MapViewPermission = new Permission(DemoPermissions.ViewMap);
 
-        public static readonly Permission MapEditPermission = new Permission(DemoPermissions.MapEdit);
+        public static readonly Permission MapEditPermission = new Permission(DemoPermissions.EditMap);
 
-        public static readonly Permission MapAddPermission = new Permission(DemoPermissions.MapAdd);
+        public static readonly Permission MapAddPermission = new Permission(DemoPermissions.AddMap);
 
-        public static readonly Permission MapDeletePermission = new Permission(DemoPermissions.MapDelete);
+        public static readonly Permission MapDeletePermission = new Permission(DemoPermissions.DeleteMap);
 
         public static readonly Permission ViewUserPermission = new Permission(DemoPermissions.ViewUser);
 

@@ -25,7 +25,7 @@ namespace WebApi.Controllers.map
 
     [Produces("application/json")]
     [Route("api/Roads")]
-    [AppAuthorize(DemoPermissions.MapView)]
+    [AppAuthorize(DemoPermissions.ViewMap)]
     public class RoadsController : Controller
     {
         private readonly DemoContext _context;
@@ -90,7 +90,7 @@ namespace WebApi.Controllers.map
 
         // PUT: api/Roads/5
         [HttpPut("{id}")]
-        [AppAuthorize(DemoPermissions.MapEdit)]
+        [AppAuthorize(DemoPermissions.EditMap)]
         public async Task<IActionResult> PutRoads([FromRoute] int id, [FromBody] List<RequestRoad> data)
         {
             if (!ModelState.IsValid)
@@ -174,7 +174,7 @@ namespace WebApi.Controllers.map
 
         // POST: api/Roads
         [HttpPost]
-        [AppAuthorize(DemoPermissions.MapAdd)]
+        [AppAuthorize(DemoPermissions.AddMap)]
         public async Task<IActionResult> PostRoad([FromBody] RequestRoad road)
         {
             if (!ModelState.IsValid)
@@ -205,7 +205,7 @@ namespace WebApi.Controllers.map
 
         // DELETE: api/Roads/5
         [HttpDelete("{id}")]
-        [AppAuthorize(DemoPermissions.MapDelete)]
+        [AppAuthorize(DemoPermissions.DeleteMap)]
         public async Task<IActionResult> DeleteRoad([FromRoute] int id)
         {
             if (!ModelState.IsValid)

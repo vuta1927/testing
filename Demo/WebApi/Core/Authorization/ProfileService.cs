@@ -36,7 +36,7 @@ namespace WebApi.Core.Authorization
             await base.GetProfileDataAsync(context);
 
             var user = await _userManager.GetUserAsync(context.Subject);
-
+            
             var roleNames = await _userManager.GetRolesAsync(user);
             if (roleNames.IsNullOrEmpty()) return;
 
@@ -53,6 +53,7 @@ namespace WebApi.Core.Authorization
                 };
                 foreach (var permission in permissions)
                     roleClaims.Add(new Claim("Permission", permission));
+                roleClaims.Add(new Claim("id", user.Id.ToString()));
                 context.IssuedClaims.AddRange(roleClaims);
             }
         }
