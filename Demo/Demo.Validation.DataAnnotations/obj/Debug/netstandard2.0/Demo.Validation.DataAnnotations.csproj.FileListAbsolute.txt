@@ -9,3 +9,4 @@ E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\
 E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\Demo.Validation.DataAnnotations.csproj.CopyComplete
 E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\Demo.Validation.DataAnnotations.dll
 E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\Demo.Validation.DataAnnotations.pdb
+E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Debug\netstandard2.0\Demo.Validation.DataAnnotations.csprojResolveAssemblyReference.cache

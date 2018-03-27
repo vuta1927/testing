@@ -6,31 +6,36 @@ namespace WebApi.Core.Authorization
 {
     public class Permissions : IPermissionProvider
     {
-        public static readonly Permission MapViewPermission = new Permission(DemoPermissions.ViewMap);
+        public static readonly Permission MapViewPermission = new Permission
+        {
+            Name = DemoPermissions.ViewMap, DisplayName = "View", Description = "Allow view map", Category = "MAP"
+        };
 
-        public static readonly Permission MapEditPermission = new Permission(DemoPermissions.EditMap);
+        public static readonly Permission MapEditPermission = new Permission{Name = DemoPermissions.EditMap, DisplayName = "Edit", Description = "Allow to edit components on Map", Category = "MAP"};
 
-        public static readonly Permission MapAddPermission = new Permission(DemoPermissions.AddMap);
+        public static readonly Permission MapAddPermission = new Permission{Name = DemoPermissions.AddMap, DisplayName = "Add", Description = "Allow to add new components on Map", Category = "MAP"};
 
-        public static readonly Permission MapDeletePermission = new Permission(DemoPermissions.DeleteMap);
+        public static readonly Permission MapDeletePermission = new Permission{Name = DemoPermissions.DeleteMap, DisplayName = "Delete", Description = "Allow to delete components on Map", Category = "MAP"};
 
-        public static readonly Permission ViewUserPermission = new Permission(DemoPermissions.ViewUser);
+        public static readonly Permission ViewUserPermission = new Permission{Name = DemoPermissions.ViewUser, DisplayName = "View", Description = "Allow view users", Category = "USER"};
 
-        public static readonly Permission EditUserPermission = new Permission(DemoPermissions.EditUser);
+        public static readonly Permission EditUserPermission = new Permission{Name = DemoPermissions.EditUser, DisplayName = "Edit", Description = "Allow to edit user profile", Category = "USER"};
 
-        public static readonly Permission AddUserPermission = new Permission(DemoPermissions.AddUser);
+        public static readonly Permission AddUserPermission = new Permission{Name = DemoPermissions.AddUser, DisplayName = "Add", Description = "Allow to add create user", Category = "USER"};
 
-        public static readonly Permission DeleteUserPermission = new Permission(DemoPermissions.DeleteUser);
+        public static readonly Permission DeleteUserPermission = new Permission{Name = DemoPermissions.DeleteUser, DisplayName = "Delete", Description = "Allow to delete user", Category = "USER"};
 
-        public static readonly Permission ViewRolePermission = new Permission(DemoPermissions.ViewRole);
+        public static readonly Permission ViewRolePermission = new Permission{Name = DemoPermissions.ViewRole, DisplayName = "View", Description = "Allow to view roles", Category = "ROLE"};
 
-        public static readonly Permission EditRolePermission = new Permission(DemoPermissions.EditRole);
+        public static readonly Permission EditRolePermission = new Permission { Name = DemoPermissions.EditRole, DisplayName = "Edit", Description = "Allow to edit role", Category = "ROLE" };
 
-        public static readonly Permission AddRolePermission = new Permission(DemoPermissions.AddRole);
+        public static readonly Permission AddRolePermission = new Permission { Name = DemoPermissions.AddRole, DisplayName = "Add", Description = "Allow to add role", Category = "ROLE" };
 
-        public static readonly Permission DeleteRolePermission = new Permission(DemoPermissions.DeleteRole);
+        public static readonly Permission DeleteRolePermission = new Permission { Name = DemoPermissions.DeleteRole, DisplayName = "Delete", Description = "Allow to delete role", Category = "ROLE" };
 
+        public static readonly Permission MapManagePermissions = new Permission { Name = DemoPermissions.MapManage, DisplayName = "Map mangement", Description = "Allow to manage maps", Category = "MAP" };
 
+        public static readonly Permission AdministratorPermissions = new Permission { Name = DemoPermissions.Administrator, DisplayName = "Administrator", Description = "Administrator permission", Category = "ADMIN" };
 
         //public static readonly Permission AdminPermission = new Permission(DemoPermissions.Administrator);
 
@@ -40,6 +45,9 @@ namespace WebApi.Core.Authorization
         {
             return new[]
             {
+                AdministratorPermissions,
+
+                MapManagePermissions,
                 MapViewPermission,
                 MapEditPermission,
                 MapAddPermission,
@@ -54,6 +62,7 @@ namespace WebApi.Core.Authorization
                 EditRolePermission,
                 DeleteRolePermission,
                 ViewRolePermission,
+
                 //Page,
                 //AdminPermission
             };
@@ -65,7 +74,7 @@ namespace WebApi.Core.Authorization
             {
                 new PermissionStereotype
                 {
-                    Name = "Hanoi",
+                    Name = "Map view group",
                     Permissions = new[] { MapViewPermission }
                 },
                 //new PermissionStereotype

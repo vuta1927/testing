@@ -26,6 +26,7 @@ namespace WebApi.Model
         public DbSet<Demo.Security.User> User { get; set; }
         public DbSet<PermissionRole> PermissionRoles { get; set; }
         public DbSet<Demo.Security.Permissions.Permission> Permission { get; set; }
+        public DbSet<MapType> MapTypes { get; set; }
     }
 
 }

@@ -143,6 +143,7 @@ namespace WebApi
             services.AddTransient<GoogleRoadIconsController>();
             services.AddTransient<RolesController>();
             services.AddTransient<PermissionsController>();
+            services.AddTransient<MapTypesController>();
             //services.AddTransient<IProfileService, ProjectProfileService>();
         }
 

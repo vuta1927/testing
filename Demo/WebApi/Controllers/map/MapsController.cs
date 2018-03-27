@@ -14,13 +14,14 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using WebApi.Core.Authorization;
 using WebApi.Model;
+using WebApi.Model.views;
 using  WebApi.Util;
 
 namespace WebApi.Controllers.map
 {
     public class GRoad: GoogleRoad
     {
-        public int MapId { get; set; }
+        public new int MapId { get; set; }
         public new ICollection<Coordinate> Paths { get; set; }
 
         public List<GoogleRoadIcon> GoogleRoadIcons { get; set; }
@@ -34,12 +35,14 @@ namespace WebApi.Controllers.map
 
     public class GMap: Map
     {
+        public string TypeName { get; set; }
+        public int Type { get; set; }
         public new ICollection<GRoad> GoogleRoads { get; set; }
     }
 
 
     [Produces("application/json")]
-    [Route("api/Maps")]
+    [Route("api/Maps/[action]")]
     [AppAuthorize(DemoPermissions.ViewMap)]
     public class MapsController : Controller
     {
@@ -52,7 +55,7 @@ namespace WebApi.Controllers.map
 
         // GET: api/Maps
         [HttpGet]
-        public IActionResult GetMaps()
+        public IActionResult GetMapsByRole()
         {
             var caller = User as ClaimsPrincipal;
             List<int> roleIds = new List<int>();
@@ -67,9 +70,9 @@ namespace WebApi.Controllers.map
             }
             foreach (var id in roleIds)
             {
-                maps = _context.MapRoles.Where(mr => mr.RoleId == id).Select(i => i.Map).Include(m => m.CommentIcons).Include(com => com.GoogleRoads).ToList();
+                maps = _context.MapRoles.Where(mr => mr.RoleId == id).Select(i => i.Map).Include(m => m.CommentIcons).Include(com => com.GoogleRoads).Include(x=>x.MapType).ToList();
             }
-            var Gmaps = new List<GMap>();
+            var gmaps = new List<GMap>();
             foreach (var map in maps)
             {
                 var newMap = new GMap();
@@ -92,40 +95,65 @@ namespace WebApi.Controllers.map
                 }
                 newMap.GoogleRoads = newRoads;
                 newMap.Id = map.Id;
-                newMap.Type = map.Type;
+                newMap.Name = map.Name;
+                newMap.Type = map.MapTypeId;
+                newMap.Descriptions = map.Descriptions;
+                newMap.TypeName = map.MapType.Name;
                 foreach (var component in map.CommentIcons)
                 {
                     component.Map = null;
                 }
                 newMap.CommentIcons = map.CommentIcons;
-                Gmaps.Add(newMap);
+                gmaps.Add(newMap);
             }
-            return Ok(Gmaps);
+            return Ok(gmaps);
         }
 
-        // GET: api/Maps/5
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetMap([FromRoute] int id)
+        public IActionResult GetMaps([FromRoute] int id)
         {
-            if (!ModelState.IsValid)
+            var result = new List<MapModel.MapView>();
+            var maps = new List<Map>();
+            if (id < 0)
             {
-                return BadRequest(ModelState);
+                maps = _context.Maps.Include(x => x.MapType).ToList();
             }
-
-            var map = await _context.Maps.SingleOrDefaultAsync(m => m.Id == id);
-
-            if (map == null)
+            else
             {
-                return NotFound();
+                maps = _context.Maps.Include(x => x.MapType).ToList();
             }
-
-            return Ok(map);
+            var roles = _context.Role;
+            foreach (var map in maps)
+            {
+                var newMap = new MapModel.MapView
+                {
+                    Id = map.Id, Descriptions = map.Descriptions, Name = map.Name, Roles = new List<MapModel.RoleMap>()
+                };
+                foreach (var role in roles)
+                {
+                    var newMapRole = new MapModel.RoleMap
+                    {
+                        RoleName = role.RoleName,
+                        IsAssigned = false,
+                        RoleDisplayName = role.RoleName,
+                        RoleId = role.Id
+                    };
+                    if (_context.MapRoles.Any(x => x.RoleId == role.Id && x.MapId == map.Id))
+                    {
+                        newMapRole.IsAssigned = true;
+                    }
+                    newMap.Roles.Add(newMapRole);
+                }
+                result.Add(newMap);
+            }
+            
+            return Ok(result);
         }
 
         // PUT: api/Maps/5
         [HttpPut("{id}")]
         [AppAuthorize(DemoPermissions.EditMap)]
-        public async Task<IActionResult> PutMap([FromRoute] int id, [FromBody] Map map)
+        public async Task<IActionResult> PutMap([FromRoute] int id, [FromBody] MapModel.MapUpdateEdit map)
         {
             if (!ModelState.IsValid)
             {
@@ -137,7 +165,12 @@ namespace WebApi.Controllers.map
                 return BadRequest();
             }
 
-            _context.Entry(map).State = EntityState.Modified;
+            var originMap = _context.Maps.SingleOrDefault(x => x.Id == map.Id);
+            if (originMap != null)
+            {
+                originMap.Name = map.Name;
+                originMap.Descriptions = map.Descriptions;
+            }
 
             try
             {
@@ -155,23 +188,24 @@ namespace WebApi.Controllers.map
                 }
             }
 
-            return NoContent();
+            return Ok("OK");
         }
 
         // POST: api/Maps
         [HttpPost]
         [AppAuthorize(DemoPermissions.AddMap)]
-        public async Task<IActionResult> PostMap([FromBody] Map map)
+        public async Task<IActionResult> PostMap([FromBody] MapModel.MapUpdateEdit map)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            _context.Maps.Add(map);
+            var newMap = new Map {Name = map.Name, MapTypeId = map.Type, Descriptions = map.Descriptions};
+            _context.Maps.Add(newMap);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetMap", new { id = map.Id }, map);
+            return CreatedAtAction("GetMap", new { id = newMap.Id }, newMap);
         }
 
         // DELETE: api/Maps/5
@@ -185,6 +219,7 @@ namespace WebApi.Controllers.map
             }
 
             var map = await _context.Maps.SingleOrDefaultAsync(m => m.Id == id);
+
             if (map == null)
             {
                 return NotFound();

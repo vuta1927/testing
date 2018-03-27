@@ -457,9 +457,15 @@ namespace WebApi.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("Type");
+                    b.Property<string>("Descriptions");
+
+                    b.Property<int>("MapTypeId");
+
+                    b.Property<string>("Name");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MapTypeId");
 
                     b.ToTable("Maps");
                 });
@@ -480,6 +486,19 @@ namespace WebApi.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("MapRoles");
+                });
+
+            modelBuilder.Entity("WebApi.Model.MapType", b =>
+                {
+                    b.Property<int>("Id");
+
+                    b.Property<string>("Name");
+
+                    b.Property<int>("Value");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MapTypes");
                 });
 
             modelBuilder.Entity("WebApi.Model.PermissionRole", b =>
@@ -567,6 +586,14 @@ namespace WebApi.Migrations
                     b.HasOne("WebApi.Model.GoogleRoad", "GoogleRoad")
                         .WithMany()
                         .HasForeignKey("GoogleRoadId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("WebApi.Model.Map", b =>
+                {
+                    b.HasOne("WebApi.Model.MapType", "MapType")
+                        .WithMany()
+                        .HasForeignKey("MapTypeId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

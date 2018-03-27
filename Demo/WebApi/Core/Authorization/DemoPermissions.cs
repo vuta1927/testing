@@ -32,5 +32,10 @@ namespace WebApi.Core.Authorization
         public const string EditRole = "EditRole";
 
         public const string DeleteRole = "DeleteRole";
+
+        public const string MapManage = "MapManage";
+
+        public const string Administrator = "Administrator";
+
     }
 }
