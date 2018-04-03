@@ -4,7 +4,7 @@ namespace WebApi.Model.views
 {
     public static class MapModel
     {
-        public class MapUpdateEdit
+        public class MapBase
         {
             public int Id { get; set; }
             public int Type { get; set; }
@@ -22,7 +22,14 @@ namespace WebApi.Model.views
 
         public class MapView : MapUpdateEdit
         {
+            public new MapType Type { get; set; }
+            public string TypeName { get; set; }
             public List<RoleMap> Roles { get; set; }
+        }
+
+        public class MapUpdateEdit : MapBase
+        {
+            public string[] RolesAssigned { get; set; }
         }
     }
 }

@@ -127,7 +127,12 @@ namespace WebApi.Controllers.map
             {
                 var newMap = new MapModel.MapView
                 {
-                    Id = map.Id, Descriptions = map.Descriptions, Name = map.Name, Roles = new List<MapModel.RoleMap>()
+                    Id = map.Id,
+                    Descriptions = map.Descriptions,
+                    Name = map.Name,
+                    Roles = new List<MapModel.RoleMap>(),
+                    TypeName = map.MapType.Name,
+                    Type = map.MapType
                 };
                 foreach (var role in roles)
                 {
@@ -136,7 +141,7 @@ namespace WebApi.Controllers.map
                         RoleName = role.RoleName,
                         IsAssigned = false,
                         RoleDisplayName = role.RoleName,
-                        RoleId = role.Id
+                        RoleId = role.Id,
                     };
                     if (_context.MapRoles.Any(x => x.RoleId == role.Id && x.MapId == map.Id))
                     {
@@ -170,11 +175,29 @@ namespace WebApi.Controllers.map
             {
                 originMap.Name = map.Name;
                 originMap.Descriptions = map.Descriptions;
+                originMap.MapTypeId = map.Type;
             }
 
             try
             {
                 await _context.SaveChangesAsync();
+
+                var mapRoles = _context.MapRoles.Where(x=>x.MapId == id);
+
+                _context.MapRoles.RemoveRange(mapRoles);
+
+                await _context.SaveChangesAsync();
+
+                foreach (var roleName in map.RolesAssigned)
+                {
+                    var role = _context.Role.SingleOrDefault(x => x.RoleName == roleName);
+                    if (role != null)
+                    {
+                        _context.MapRoles.Add(new MapRole { MapId = id, RoleId = role.Id });
+
+                        await _context.SaveChangesAsync();
+                    }
+                }
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -202,10 +225,36 @@ namespace WebApi.Controllers.map
             }
 
             var newMap = new Map {Name = map.Name, MapTypeId = map.Type, Descriptions = map.Descriptions};
-            _context.Maps.Add(newMap);
-            await _context.SaveChangesAsync();
+            try
+            {
+                _context.Maps.Add(newMap);
 
-            return CreatedAtAction("GetMap", new { id = newMap.Id }, newMap);
+                await _context.SaveChangesAsync();
+
+                var mapRoles = _context.MapRoles.Where(x => x.MapId == newMap.Id);
+
+                _context.MapRoles.RemoveRange(mapRoles);
+
+                await _context.SaveChangesAsync();
+
+                foreach (var roleName in map.RolesAssigned)
+                {
+                    var role = _context.Role.SingleOrDefault(x => x.RoleName == roleName);
+                    if (role != null)
+                    {
+                        _context.MapRoles.Add(new MapRole { MapId = newMap.Id, RoleId = role.Id });
+
+                        await _context.SaveChangesAsync();
+                    }
+                }
+
+                return CreatedAtAction("GetMaps", new { id = newMap.Id }, newMap);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+            
         }
 
         // DELETE: api/Maps/5
