@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,6 +31,8 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration" Version="2.0.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.2" />
     <PackageReference Include="Polly" Version="5.8.0" />
+    <PackageReference Include="runtime.native.System.Net.Http" Version="4.3.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.3" />
   </ItemGroup>
 
   <ItemGroup>
@@ -46,9 +49,7 @@
     <ProjectReference Include="..\Demo.Common\Demo.Common.csproj" />
     <ProjectReference Include="..\Demo.IdentityServer4.EntityFrameworkCore\Demo.IdentityServer4.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\Demo.IdentityServer4\Demo.IdentityServer4.csproj" />
-    <ProjectReference Include="..\Demo.Notification.Firebase\Demo.Notification.Firebase.csproj" />
     <ProjectReference Include="..\Demo.Storage.EntityFrameworkCore\Demo.Storage.EntityFrameworkCore.csproj" />
-    <ProjectReference Include="..\Demo.Validation.DataAnnotations\Demo.Validation.DataAnnotations.csproj" />
     <ProjectReference Include="..\Demo\Demo.csproj" />
   </ItemGroup>
 

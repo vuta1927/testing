@@ -1,0 +1,12 @@
+E:\GitHub\testing\Demo\Demo.AspNetCore\bin\Release\netstandard2.0\Demo.AspNetCore.deps.json
+E:\GitHub\testing\Demo\Demo.AspNetCore\bin\Release\netstandard2.0\Demo.AspNetCore.dll
+E:\GitHub\testing\Demo\Demo.AspNetCore\bin\Release\netstandard2.0\Demo.AspNetCore.pdb
+E:\GitHub\testing\Demo\Demo.AspNetCore\bin\Release\netstandard2.0\Demo.dll
+E:\GitHub\testing\Demo\Demo.AspNetCore\bin\Release\netstandard2.0\Demo.pdb
+E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Release\netstandard2.0\Demo.AspNetCore.csprojResolveAssemblyReference.cache
+E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Release\netstandard2.0\Demo.AspNetCore.csproj.CoreCompileInputs.cache
+E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Release\netstandard2.0\Demo.AspNetCore.AssemblyInfoInputs.cache
+E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Release\netstandard2.0\Demo.AspNetCore.AssemblyInfo.cs
+E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Release\netstandard2.0\Demo.AspNetCore.csproj.CopyComplete
+E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Release\netstandard2.0\Demo.AspNetCore.dll
+E:\GitHub\testing\Demo\Demo.AspNetCore\obj\Release\netstandard2.0\Demo.AspNetCore.pdb

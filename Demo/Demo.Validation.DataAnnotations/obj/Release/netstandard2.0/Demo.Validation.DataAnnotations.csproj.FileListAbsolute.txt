@@ -1,0 +1,11 @@
+E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\bin\Release\netstandard2.0\Demo.Validation.DataAnnotations.deps.json
+E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\bin\Release\netstandard2.0\Demo.Validation.DataAnnotations.dll
+E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\bin\Release\netstandard2.0\Demo.Validation.DataAnnotations.pdb
+E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\bin\Release\netstandard2.0\Demo.dll
+E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\bin\Release\netstandard2.0\Demo.pdb
+E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Release\netstandard2.0\Demo.Validation.DataAnnotations.csproj.CoreCompileInputs.cache
+E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Release\netstandard2.0\Demo.Validation.DataAnnotations.AssemblyInfoInputs.cache
+E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Release\netstandard2.0\Demo.Validation.DataAnnotations.AssemblyInfo.cs
+E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Release\netstandard2.0\Demo.Validation.DataAnnotations.csproj.CopyComplete
+E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Release\netstandard2.0\Demo.Validation.DataAnnotations.dll
+E:\GitHub\testing\Demo\Demo.Validation.DataAnnotations\obj\Release\netstandard2.0\Demo.Validation.DataAnnotations.pdb

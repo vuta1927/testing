@@ -1,0 +1,16 @@
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\bin\Release\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.deps.json
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\bin\Release\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.dll
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\bin\Release\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.pdb
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\bin\Release\netstandard2.0\Demo.dll
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\bin\Release\netstandard2.0\Demo.IdentityServer4.dll
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\bin\Release\netstandard2.0\Demo.Storage.EntityFrameworkCore.dll
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\bin\Release\netstandard2.0\Demo.IdentityServer4.pdb
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\bin\Release\netstandard2.0\Demo.Storage.EntityFrameworkCore.pdb
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\bin\Release\netstandard2.0\Demo.pdb
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\obj\Release\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.csprojResolveAssemblyReference.cache
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\obj\Release\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.csproj.CoreCompileInputs.cache
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\obj\Release\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.AssemblyInfoInputs.cache
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\obj\Release\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.AssemblyInfo.cs
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\obj\Release\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.csproj.CopyComplete
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\obj\Release\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.dll
+E:\GitHub\testing\Demo\Demo.IdentityServer4.EntityFrameworkCore\obj\Release\netstandard2.0\Demo.IdentityServer4.EntityFrameworkCore.pdb

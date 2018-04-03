@@ -18,7 +18,6 @@ using Demo.Storage.EntityFrameworkCore;
 using IdentityServer4;
 using IdentityServer4.AccessTokenValidation;
 using Microsoft.EntityFrameworkCore;
-using Demo.Validation.DataAnnotations;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using WebApi.Model;
@@ -60,7 +59,7 @@ namespace WebApi
                 });
 
                 // Configure validation
-                options.Validation.UseDataAnnotations();
+                //options.Validation.UseDataAnnotations();
             });
 
             services.AddIdentityServer()

@@ -202,7 +202,7 @@ namespace WebApi.Controllers.user
                 await _context.SaveChangesAsync();
                 return CreatedAtAction("GetUser", new { id = originUser.Id }, originUser);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return BadRequest();
             }
@@ -251,7 +251,7 @@ namespace WebApi.Controllers.user
                 await _context.SaveChangesAsync();
                 return CreatedAtAction("GetUser", new { id = newUser.Id }, newUser);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return BadRequest();
             }

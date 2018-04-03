@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  webapi:
+    image: webapi
+    build:
+      context: .
+      dockerfile: WebApi/Dockerfile
+    ports:
+      - "5000:80"
+    depends_on:
+      - db
+    links:
+      - db:db
+
+  db:
+    image: microsoft/mssql-server-linux:latest
+    container_name: maptemplate.dev.db
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Express"
+      SA_PASSWORD: "Echo@1927"
+    ports:
+      - "1927:1433"
+    expose:
+      - 1433

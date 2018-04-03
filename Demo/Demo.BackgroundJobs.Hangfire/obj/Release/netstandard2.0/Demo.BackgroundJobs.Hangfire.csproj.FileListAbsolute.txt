@@ -1,0 +1,12 @@
+E:\GitHub\testing\Demo\Demo.BackgroundJobs.Hangfire\bin\Release\netstandard2.0\Demo.BackgroundJobs.Hangfire.deps.json
+E:\GitHub\testing\Demo\Demo.BackgroundJobs.Hangfire\bin\Release\netstandard2.0\Demo.BackgroundJobs.Hangfire.dll
+E:\GitHub\testing\Demo\Demo.BackgroundJobs.Hangfire\bin\Release\netstandard2.0\Demo.BackgroundJobs.Hangfire.pdb
+E:\GitHub\testing\Demo\Demo.BackgroundJobs.Hangfire\bin\Release\netstandard2.0\Demo.dll
+E:\GitHub\testing\Demo\Demo.BackgroundJobs.Hangfire\bin\Release\netstandard2.0\Demo.pdb
+E:\GitHub\testing\Demo\Demo.BackgroundJobs.Hangfire\obj\Release\netstandard2.0\Demo.BackgroundJobs.Hangfire.csprojResolveAssemblyReference.cache
+E:\GitHub\testing\Demo\Demo.BackgroundJobs.Hangfire\obj\Release\netstandard2.0\Demo.BackgroundJobs.Hangfire.csproj.CoreCompileInputs.cache
+E:\GitHub\testing\Demo\Demo.BackgroundJobs.Hangfire\obj\Release\netstandard2.0\Demo.BackgroundJobs.Hangfire.AssemblyInfoInputs.cache
+E:\GitHub\testing\Demo\Demo.BackgroundJobs.Hangfire\obj\Release\netstandard2.0\Demo.BackgroundJobs.Hangfire.AssemblyInfo.cs
+E:\GitHub\testing\Demo\Demo.BackgroundJobs.Hangfire\obj\Release\netstandard2.0\Demo.BackgroundJobs.Hangfire.csproj.CopyComplete
+E:\GitHub\testing\Demo\Demo.BackgroundJobs.Hangfire\obj\Release\netstandard2.0\Demo.BackgroundJobs.Hangfire.dll
+E:\GitHub\testing\Demo\Demo.BackgroundJobs.Hangfire\obj\Release\netstandard2.0\Demo.BackgroundJobs.Hangfire.pdb

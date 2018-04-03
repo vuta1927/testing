@@ -1,0 +1,9 @@
+E:\GitHub\testing\Demo\Demo.Common\bin\Release\netstandard2.0\Demo.Common.deps.json
+E:\GitHub\testing\Demo\Demo.Common\bin\Release\netstandard2.0\Demo.Common.dll
+E:\GitHub\testing\Demo\Demo.Common\bin\Release\netstandard2.0\Demo.Common.pdb
+E:\GitHub\testing\Demo\Demo.Common\obj\Release\netstandard2.0\Demo.Common.csproj.CoreCompileInputs.cache
+E:\GitHub\testing\Demo\Demo.Common\obj\Release\netstandard2.0\Demo.Common.AssemblyInfoInputs.cache
+E:\GitHub\testing\Demo\Demo.Common\obj\Release\netstandard2.0\Demo.Common.AssemblyInfo.cs
+E:\GitHub\testing\Demo\Demo.Common\obj\Release\netstandard2.0\Demo.Common.dll
+E:\GitHub\testing\Demo\Demo.Common\obj\Release\netstandard2.0\Demo.Common.pdb
+E:\GitHub\testing\Demo\Demo.Common\obj\Release\netstandard2.0\Demo.Common.csprojResolveAssemblyReference.cache

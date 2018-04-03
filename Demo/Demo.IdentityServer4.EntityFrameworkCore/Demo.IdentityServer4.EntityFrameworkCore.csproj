@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="runtime.native.System.Net.Http" Version="4.3.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Demo.IdentityServer4\Demo.IdentityServer4.csproj" />
     <ProjectReference Include="..\Demo.Storage.EntityFrameworkCore\Demo.Storage.EntityFrameworkCore.csproj" />
   </ItemGroup>
