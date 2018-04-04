@@ -1,0 +1,7 @@
+E:\GitHub\testing\TestApi\bin\Debug\netcoreapp2.0\TestApi.deps.json
+E:\GitHub\testing\TestApi\bin\Debug\netcoreapp2.0\TestApi.runtimeconfig.json
+E:\GitHub\testing\TestApi\bin\Debug\netcoreapp2.0\TestApi.runtimeconfig.dev.json
+E:\GitHub\testing\TestApi\bin\Debug\netcoreapp2.0\TestApi.dll
+E:\GitHub\testing\TestApi\obj\Debug\netcoreapp2.0\TestApi.csproj.CoreCompileInputs.cache
+E:\GitHub\testing\TestApi\obj\Debug\netcoreapp2.0\TestApi.AssemblyInfoInputs.cache
+E:\GitHub\testing\TestApi\obj\Debug\netcoreapp2.0\TestApi.AssemblyInfo.cs

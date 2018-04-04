@@ -1,26 +1,19 @@
+networks:
+  mapnet:
+    external:
+      name: mapnet
 services:
-  db:
-    container_name: maptemplate.dev.db
-    environment:
-      ACCEPT_EULA: "Y"
-      MSSQL_PID: Express
-      SA_PASSWORD: Echo@1927
-    expose:
-    - '1433'
-    image: microsoft/mssql-server-linux:latest
-    ports:
-    - 1927:1433/tcp
   webapi:
     build:
       context: E:\GitHub\testing\Demo
       dockerfile: WebApi/Dockerfile
-    depends_on:
-    - db
+    container_name: maptemplate.api
     environment:
       ASPNETCORE_ENVIRONMENT: Development
     image: webapi
-    links:
-    - db
+    networks:
+      mapnet:
+        ipv4_address: 10.0.0.10
     ports:
     - 5000:80/tcp
 version: '3.0'

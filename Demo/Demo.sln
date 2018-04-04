@@ -19,15 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Storage.EntityFramewor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{6A62A28E-4BF3-429F-8EDB-22306D048EAA}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{15C9843C-D846-401B-8502-2D4C8D4243E3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapIdentityServer", "MapIdentityServer\MapIdentityServer.csproj", "{F01EE020-F8D4-4EAD-9A78-629AF4614A82}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapTemplateApi", "MapTemplateApi\MapTemplateApi.csproj", "{64FD78E9-4B62-4074-B136-924D97F23A3C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TemplateCore", "TemplateCore", "{F28FB188-042D-40F6-A475-42FFEA71264D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{AED6A301-8C78-4F01-907E-4021F2842F5D}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{75E7CB28-BD98-4AD8-9F87-D5C994ADA3B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,22 +61,10 @@ Global
 		{6A62A28E-4BF3-429F-8EDB-22306D048EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A62A28E-4BF3-429F-8EDB-22306D048EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A62A28E-4BF3-429F-8EDB-22306D048EAA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{15C9843C-D846-401B-8502-2D4C8D4243E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{15C9843C-D846-401B-8502-2D4C8D4243E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{15C9843C-D846-401B-8502-2D4C8D4243E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{15C9843C-D846-401B-8502-2D4C8D4243E3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F01EE020-F8D4-4EAD-9A78-629AF4614A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F01EE020-F8D4-4EAD-9A78-629AF4614A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F01EE020-F8D4-4EAD-9A78-629AF4614A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F01EE020-F8D4-4EAD-9A78-629AF4614A82}.Release|Any CPU.Build.0 = Release|Any CPU
-		{64FD78E9-4B62-4074-B136-924D97F23A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64FD78E9-4B62-4074-B136-924D97F23A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64FD78E9-4B62-4074-B136-924D97F23A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64FD78E9-4B62-4074-B136-924D97F23A3C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AED6A301-8C78-4F01-907E-4021F2842F5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AED6A301-8C78-4F01-907E-4021F2842F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AED6A301-8C78-4F01-907E-4021F2842F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AED6A301-8C78-4F01-907E-4021F2842F5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75E7CB28-BD98-4AD8-9F87-D5C994ADA3B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E7CB28-BD98-4AD8-9F87-D5C994ADA3B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E7CB28-BD98-4AD8-9F87-D5C994ADA3B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E7CB28-BD98-4AD8-9F87-D5C994ADA3B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -49,20 +49,22 @@ namespace WebApi
             );
             services.AddDomain(options =>
             {
-                options.DefaultNameOrConnectionString = Configuration.GetConnectionString("Default");
+                options.DefaultNameOrConnectionString = Configuration.GetConnectionString("Development");
                 options.BackgroundJobs.IsJobExecutionEnabled = false;
                 // Configure storage
                 options.Storage.UseEntityFrameworkCore(c =>
                 {
                     c.AddDbContext<DemoContext>(config =>
-                            config.DbContextOptions.UseSqlServer(Configuration.GetConnectionString("Default")));
+                            config.DbContextOptions.UseSqlServer(Configuration.GetConnectionString("Development")));
                 });
 
                 // Configure validation
                 //options.Validation.UseDataAnnotations();
             });
 
-            services.AddIdentityServer()
+            services.AddIdentityServer(x=> {
+                    x.IssuerUri = "http://localhost:5000";
+                })
                 .AddDeveloperSigningCredential()
                 .AddInMemoryIdentityResources(IdentityServerConfig.GetIdentityResources())
                 .AddInMemoryApiResources(IdentityServerConfig.GetApiResources())
@@ -71,18 +73,6 @@ namespace WebApi
                 .AddAppIdentityServer();
 
             ConfigureAuthService(services);
-            //services.AddAuthentication(options =>
-            //{
-            //    options.DefaultScheme = IdentityServerAuthenticationDefaults.AuthenticationScheme;
-            //    options.DefaultAuthenticateScheme = IdentityServerAuthenticationDefaults.AuthenticationScheme;
-            //}).AddIdentityServerAuthentication(options =>
-            //{
-            //    options.Authority = Configuration.GetSection("IdentityServer")["Authority"];
-            //    options.RequireHttpsMetadata = Configuration.GetSection("IdentityServer")["RequireHttpsMetadata"].To<bool>();
-
-            //    options.ApiName = "client";
-            //    options.ApiSecret = "secret";
-            //});
         }
 
 
@@ -91,7 +81,7 @@ namespace WebApi
             // prevent from mapping "sub" claim to nameidentifier.
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
-            var identityUrl = Configuration["IdentityServer:Authority"];
+            var identityUrl = Configuration["IdentityServer:DevelopmentAuthority"];
 
             services.AddAuthentication(options =>
             {
@@ -117,7 +107,7 @@ namespace WebApi
                     },
                     ValidateIssuer = true
                 };
-            });
+            }); 
 
             // Configure CORS for angular5 UI
             services.AddCors(
@@ -151,7 +141,7 @@ namespace WebApi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.UseCors(_defaultCorsPolicyName); // Enable CORS!
+            app.UseCors(_defaultCorsPolicyName); // Enable CORS!  builder =>builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().AllowCredentials()
 
             // app.UseAuthentication(); // not needed, since UseIdentityServer adds the authentication middleware
             app.UseIdentityServer();
