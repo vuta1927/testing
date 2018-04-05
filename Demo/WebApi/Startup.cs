@@ -49,22 +49,20 @@ namespace WebApi
             );
             services.AddDomain(options =>
             {
-                options.DefaultNameOrConnectionString = Configuration.GetConnectionString("Development");
+                options.DefaultNameOrConnectionString = Configuration.GetConnectionString("Product");
                 options.BackgroundJobs.IsJobExecutionEnabled = false;
                 // Configure storage
                 options.Storage.UseEntityFrameworkCore(c =>
                 {
                     c.AddDbContext<DemoContext>(config =>
-                            config.DbContextOptions.UseSqlServer(Configuration.GetConnectionString("Development")));
+                            config.DbContextOptions.UseSqlServer(Configuration.GetConnectionString("Product")));
                 });
 
                 // Configure validation
                 //options.Validation.UseDataAnnotations();
             });
 
-            services.AddIdentityServer(x=> {
-                    x.IssuerUri = "http://localhost:5000";
-                })
+            services.AddIdentityServer()
                 .AddDeveloperSigningCredential()
                 .AddInMemoryIdentityResources(IdentityServerConfig.GetIdentityResources())
                 .AddInMemoryApiResources(IdentityServerConfig.GetApiResources())
@@ -81,7 +79,7 @@ namespace WebApi
             // prevent from mapping "sub" claim to nameidentifier.
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
-            var identityUrl = Configuration["IdentityServer:DevelopmentAuthority"];
+            var identityUrl = Configuration["IdentityServer:ProductAuthority"];
 
             services.AddAuthentication(options =>
             {

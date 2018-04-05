@@ -3,6 +3,20 @@ networks:
     external:
       name: mapnet
 services:
+  proxy:
+    build:
+      context: E:\GitHub\testing\Demo\Proxy
+      dockerfile: Dockerfile
+    container_name: maptemplate.nginx-proxy
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: proxy
+    links:
+    - webapi
+    networks:
+      mapnet: null
+    ports:
+    - 8080:80/tcp
   webapi:
     build:
       context: E:\GitHub\testing\Demo
@@ -10,10 +24,12 @@ services:
     container_name: maptemplate.api
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+    expose:
+    - '5000'
     image: webapi
     networks:
       mapnet:
         ipv4_address: 10.0.0.10
     ports:
-    - 5000:80/tcp
+    - 5000:5000/tcp
 version: '3.0'

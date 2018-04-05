@@ -1,0 +1,4 @@
+E:\GitHub\testing\Demo\Proxy\obj\Debug\netcoreapp2.0\Proxy.csprojResolveAssemblyReference.cache
+E:\GitHub\testing\Demo\Proxy\obj\Debug\netcoreapp2.0\Proxy.csproj.CoreCompileInputs.cache
+E:\GitHub\testing\Demo\Proxy\obj\Debug\netcoreapp2.0\Proxy.AssemblyInfoInputs.cache
+E:\GitHub\testing\Demo\Proxy\obj\Debug\netcoreapp2.0\Proxy.AssemblyInfo.cs

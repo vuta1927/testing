@@ -23,6 +23,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TemplateCore", "TemplateCor
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{75E7CB28-BD98-4AD8-9F87-D5C994ADA3B3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Proxy", "Proxy", "{D05EF651-E3EF-468D-BCF8-646E3F3336F0}"
+	ProjectSection(SolutionItems) = preProject
+		Proxy\Dockerfile = Proxy\Dockerfile
+		Proxy\nginx.conf = Proxy\nginx.conf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

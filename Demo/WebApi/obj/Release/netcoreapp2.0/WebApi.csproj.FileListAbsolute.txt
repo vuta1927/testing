@@ -9,17 +9,13 @@ E:\GitHub\testing\Demo\WebApi\bin\Release\netcoreapp2.0\Demo.Common.dll
 E:\GitHub\testing\Demo\WebApi\bin\Release\netcoreapp2.0\Demo.dll
 E:\GitHub\testing\Demo\WebApi\bin\Release\netcoreapp2.0\Demo.IdentityServer4.dll
 E:\GitHub\testing\Demo\WebApi\bin\Release\netcoreapp2.0\Demo.IdentityServer4.EntityFrameworkCore.dll
-E:\GitHub\testing\Demo\WebApi\bin\Release\netcoreapp2.0\Demo.Notification.Firebase.dll
 E:\GitHub\testing\Demo\WebApi\bin\Release\netcoreapp2.0\Demo.Storage.EntityFrameworkCore.dll
-E:\GitHub\testing\Demo\WebApi\bin\Release\netcoreapp2.0\Demo.Validation.DataAnnotations.dll
 E:\GitHub\testing\Demo\WebApi\bin\Release\netcoreapp2.0\Demo.AspNetCore.pdb
 E:\GitHub\testing\Demo\WebApi\bin\Release\netcoreapp2.0\Demo.BackgroundJobs.Hangfire.pdb
 E:\GitHub\testing\Demo\WebApi\bin\Release\netcoreapp2.0\Demo.Common.pdb
 E:\GitHub\testing\Demo\WebApi\bin\Release\netcoreapp2.0\Demo.IdentityServer4.EntityFrameworkCore.pdb
 E:\GitHub\testing\Demo\WebApi\bin\Release\netcoreapp2.0\Demo.IdentityServer4.pdb
-E:\GitHub\testing\Demo\WebApi\bin\Release\netcoreapp2.0\Demo.Notification.Firebase.pdb
 E:\GitHub\testing\Demo\WebApi\bin\Release\netcoreapp2.0\Demo.Storage.EntityFrameworkCore.pdb
-E:\GitHub\testing\Demo\WebApi\bin\Release\netcoreapp2.0\Demo.Validation.DataAnnotations.pdb
 E:\GitHub\testing\Demo\WebApi\bin\Release\netcoreapp2.0\Demo.pdb
 E:\GitHub\testing\Demo\WebApi\obj\Release\netcoreapp2.0\WebApi.csprojResolveAssemblyReference.cache
 E:\GitHub\testing\Demo\WebApi\obj\Release\netcoreapp2.0\WebApi.csproj.CoreCompileInputs.cache

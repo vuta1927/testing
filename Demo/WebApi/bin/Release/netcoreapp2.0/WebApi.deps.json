@@ -29,9 +29,7 @@
           "Demo.Common": "1.0.0",
           "Demo.IdentityServer4": "1.0.0",
           "Demo.IdentityServer4.EntityFrameworkCore": "1.0.0",
-          "Demo.Notification.Firebase": "1.0.0",
           "Demo.Storage.EntityFrameworkCore": "1.0.0",
-          "Demo.Validation.DataAnnotations": "1.0.0",
           "IdentityServer4.AccessTokenValidation": "2.4.0",
           "Microsoft.AspNetCore.All": "2.0.5",
           "Microsoft.EntityFrameworkCore.Design": "2.0.1",
@@ -4350,19 +4348,6 @@
           "Demo.IdentityServer4.EntityFrameworkCore.dll": {}
         }
       },
-      "Demo.Notification.Firebase/1.0.0": {
-        "dependencies": {
-          "Demo": "1.0.0",
-          "System.Net.Http": "4.3.3",
-          "runtime.native.System.Net.Http": "4.3.0"
-        },
-        "runtime": {
-          "Demo.Notification.Firebase.dll": {}
-        },
-        "compile": {
-          "Demo.Notification.Firebase.dll": {}
-        }
-      },
       "Demo.Storage.EntityFrameworkCore/1.0.0": {
         "dependencies": {
           "Demo": "1.0.0",
@@ -4376,19 +4361,6 @@
         },
         "compile": {
           "Demo.Storage.EntityFrameworkCore.dll": {}
-        }
-      },
-      "Demo.Validation.DataAnnotations/1.0.0": {
-        "dependencies": {
-          "Demo": "1.0.0",
-          "System.Net.Http": "4.3.3",
-          "runtime.native.System.Net.Http": "4.3.0"
-        },
-        "runtime": {
-          "Demo.Validation.DataAnnotations.dll": {}
-        },
-        "compile": {
-          "Demo.Validation.DataAnnotations.dll": {}
         }
       },
       "Microsoft.NETCore.App/2.0.0": {
@@ -6852,17 +6824,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Demo.Notification.Firebase/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Demo.Storage.EntityFrameworkCore/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Demo.Validation.DataAnnotations/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

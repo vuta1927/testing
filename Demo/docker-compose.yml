@@ -1,5 +1,10 @@
 version: '3'
 
+networks:
+  mapnet:
+    external:
+      name: mapnet
+
 services:
   webapi:
     image: webapi
@@ -7,13 +12,22 @@ services:
     build:
       context: .
       dockerfile: WebApi/Dockerfile
-    ports:
-      - "5000:80"
+    expose:
+      - "5000"
     networks:
       mapnet:
         ipv4_address: 10.0.0.10
 
-networks:
-    mapnet:
-        external:
-          name: mapnet
+  proxy:
+    image: proxy
+    container_name: maptemplate.nginx-proxy
+    build:
+      context: ./Proxy
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    links:
+      - webapi
+    networks:
+      - mapnet
+        
